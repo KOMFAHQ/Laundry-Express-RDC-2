@@ -1,0 +1,3660 @@
+{
+  "count": 61,
+  "heads": [
+    "d2e3f4a5b6c7"
+  ],
+  "missing_parents": [],
+  "migrations": [
+    {
+      "file": "apps/api/alembic/versions/0001_initial_migration.py",
+      "revision": "initial",
+      "down_revision": null,
+      "upgrade_operations": [
+        {
+          "line": 22,
+          "operation": "create_table",
+          "arg": "'users'"
+        },
+        {
+          "line": 42,
+          "operation": "create_index",
+          "arg": "op.f('ix_users_email')"
+        },
+        {
+          "line": 43,
+          "operation": "create_index",
+          "arg": "op.f('ix_users_phone')"
+        },
+        {
+          "line": 46,
+          "operation": "create_table",
+          "arg": "'user_profiles'"
+        },
+        {
+          "line": 62,
+          "operation": "create_index",
+          "arg": "op.f('ix_user_profiles_user_id')"
+        },
+        {
+          "line": 65,
+          "operation": "create_table",
+          "arg": "'refresh_tokens'"
+        },
+        {
+          "line": 80,
+          "operation": "create_index",
+          "arg": "op.f('ix_refresh_tokens_token_hash')"
+        },
+        {
+          "line": 81,
+          "operation": "create_index",
+          "arg": "op.f('ix_refresh_tokens_user_id')"
+        },
+        {
+          "line": 84,
+          "operation": "create_table",
+          "arg": "'password_reset_tokens'"
+        },
+        {
+          "line": 96,
+          "operation": "create_index",
+          "arg": "op.f('ix_password_reset_tokens_token_hash')"
+        },
+        {
+          "line": 97,
+          "operation": "create_index",
+          "arg": "op.f('ix_password_reset_tokens_user_id')"
+        },
+        {
+          "line": 100,
+          "operation": "create_table",
+          "arg": "'customer_addresses'"
+        },
+        {
+          "line": 121,
+          "operation": "create_index",
+          "arg": "op.f('ix_customer_addresses_user_id')"
+        },
+        {
+          "line": 42,
+          "operation": "f",
+          "arg": "'ix_users_email'"
+        },
+        {
+          "line": 43,
+          "operation": "f",
+          "arg": "'ix_users_phone'"
+        },
+        {
+          "line": 62,
+          "operation": "f",
+          "arg": "'ix_user_profiles_user_id'"
+        },
+        {
+          "line": 80,
+          "operation": "f",
+          "arg": "'ix_refresh_tokens_token_hash'"
+        },
+        {
+          "line": 81,
+          "operation": "f",
+          "arg": "'ix_refresh_tokens_user_id'"
+        },
+        {
+          "line": 96,
+          "operation": "f",
+          "arg": "'ix_password_reset_tokens_token_hash'"
+        },
+        {
+          "line": 97,
+          "operation": "f",
+          "arg": "'ix_password_reset_tokens_user_id'"
+        },
+        {
+          "line": 121,
+          "operation": "f",
+          "arg": "'ix_customer_addresses_user_id'"
+        }
+      ]
+    },
+    {
+      "file": "apps/api/alembic/versions/05dc81e265f7_add_missing_foreign_keys_to_order_models.py",
+      "revision": "05dc81e265f7",
+      "down_revision": "initial",
+      "upgrade_operations": [
+        {
+          "line": 21,
+          "operation": "create_foreign_key",
+          "arg": "None"
+        },
+        {
+          "line": 22,
+          "operation": "create_foreign_key",
+          "arg": "None"
+        },
+        {
+          "line": 23,
+          "operation": "create_foreign_key",
+          "arg": "None"
+        },
+        {
+          "line": 24,
+          "operation": "create_foreign_key",
+          "arg": "None"
+        },
+        {
+          "line": 25,
+          "operation": "create_foreign_key",
+          "arg": "None"
+        },
+        {
+          "line": 26,
+          "operation": "create_foreign_key",
+          "arg": "None"
+        },
+        {
+          "line": 27,
+          "operation": "create_foreign_key",
+          "arg": "None"
+        },
+        {
+          "line": 28,
+          "operation": "create_foreign_key",
+          "arg": "None"
+        },
+        {
+          "line": 29,
+          "operation": "create_foreign_key",
+          "arg": "None"
+        },
+        {
+          "line": 30,
+          "operation": "create_foreign_key",
+          "arg": "None"
+        },
+        {
+          "line": 31,
+          "operation": "create_foreign_key",
+          "arg": "None"
+        },
+        {
+          "line": 32,
+          "operation": "create_foreign_key",
+          "arg": "None"
+        },
+        {
+          "line": 33,
+          "operation": "create_foreign_key",
+          "arg": "None"
+        },
+        {
+          "line": 34,
+          "operation": "create_foreign_key",
+          "arg": "None"
+        },
+        {
+          "line": 35,
+          "operation": "create_foreign_key",
+          "arg": "None"
+        },
+        {
+          "line": 36,
+          "operation": "create_foreign_key",
+          "arg": "None"
+        },
+        {
+          "line": 37,
+          "operation": "drop_constraint",
+          "arg": "'password_reset_tokens_token_hash_key'"
+        },
+        {
+          "line": 38,
+          "operation": "create_foreign_key",
+          "arg": "None"
+        },
+        {
+          "line": 39,
+          "operation": "drop_constraint",
+          "arg": "'refresh_tokens_token_hash_key'"
+        },
+        {
+          "line": 40,
+          "operation": "create_foreign_key",
+          "arg": "None"
+        },
+        {
+          "line": 41,
+          "operation": "drop_constraint",
+          "arg": "'user_profiles_user_id_key'"
+        },
+        {
+          "line": 42,
+          "operation": "drop_constraint",
+          "arg": "'users_email_key'"
+        },
+        {
+          "line": 43,
+          "operation": "drop_constraint",
+          "arg": "'users_phone_key'"
+        }
+      ]
+    },
+    {
+      "file": "apps/api/alembic/versions/79dde77c97d6_create_driver_dispatch_tables.py",
+      "revision": "79dde77c97d6",
+      "down_revision": "9bdf5a02252b",
+      "upgrade_operations": [
+        {
+          "line": 21,
+          "operation": "add_column",
+          "arg": "'delivery_tasks'"
+        },
+        {
+          "line": 22,
+          "operation": "add_column",
+          "arg": "'delivery_tasks'"
+        },
+        {
+          "line": 23,
+          "operation": "add_column",
+          "arg": "'delivery_tasks'"
+        },
+        {
+          "line": 24,
+          "operation": "add_column",
+          "arg": "'delivery_tasks'"
+        },
+        {
+          "line": 25,
+          "operation": "add_column",
+          "arg": "'delivery_tasks'"
+        },
+        {
+          "line": 26,
+          "operation": "add_column",
+          "arg": "'delivery_tasks'"
+        },
+        {
+          "line": 27,
+          "operation": "add_column",
+          "arg": "'delivery_tasks'"
+        },
+        {
+          "line": 28,
+          "operation": "add_column",
+          "arg": "'delivery_tasks'"
+        },
+        {
+          "line": 35,
+          "operation": "execute",
+          "arg": "\"\\n        UPDATE delivery_tasks \\n        SET status = \\n            CASE \\n             "
+        },
+        {
+          "line": 50,
+          "operation": "alter_column",
+          "arg": "'delivery_tasks'"
+        },
+        {
+          "line": 55,
+          "operation": "drop_index",
+          "arg": "'ix_delivery_tasks_order_id'"
+        },
+        {
+          "line": 56,
+          "operation": "create_index",
+          "arg": "op.f('ix_delivery_tasks_order_id')"
+        },
+        {
+          "line": 57,
+          "operation": "create_foreign_key",
+          "arg": "None"
+        },
+        {
+          "line": 58,
+          "operation": "drop_column",
+          "arg": "'delivery_tasks'"
+        },
+        {
+          "line": 59,
+          "operation": "drop_column",
+          "arg": "'delivery_tasks'"
+        },
+        {
+          "line": 60,
+          "operation": "add_column",
+          "arg": "'driver_locations'"
+        },
+        {
+          "line": 61,
+          "operation": "create_foreign_key",
+          "arg": "None"
+        },
+        {
+          "line": 62,
+          "operation": "drop_column",
+          "arg": "'driver_locations'"
+        },
+        {
+          "line": 63,
+          "operation": "drop_column",
+          "arg": "'driver_locations'"
+        },
+        {
+          "line": 64,
+          "operation": "add_column",
+          "arg": "'drivers'"
+        },
+        {
+          "line": 65,
+          "operation": "add_column",
+          "arg": "'drivers'"
+        },
+        {
+          "line": 66,
+          "operation": "add_column",
+          "arg": "'drivers'"
+        },
+        {
+          "line": 67,
+          "operation": "drop_column",
+          "arg": "'drivers'"
+        },
+        {
+          "line": 68,
+          "operation": "drop_column",
+          "arg": "'drivers'"
+        },
+        {
+          "line": 73,
+          "operation": "create_foreign_key",
+          "arg": "None"
+        },
+        {
+          "line": 74,
+          "operation": "create_foreign_key",
+          "arg": "None"
+        },
+        {
+          "line": 75,
+          "operation": "create_foreign_key",
+          "arg": "None"
+        },
+        {
+          "line": 76,
+          "operation": "create_foreign_key",
+          "arg": "None"
+        },
+        {
+          "line": 32,
+          "operation": "get_bind",
+          "arg": ""
+        },
+        {
+          "line": 56,
+          "operation": "f",
+          "arg": "'ix_delivery_tasks_order_id'"
+        },
+        {
+          "line": 69,
+          "operation": "get_bind",
+          "arg": ""
+        },
+        {
+          "line": 72,
+          "operation": "create_foreign_key",
+          "arg": "None"
+        }
+      ]
+    },
+    {
+      "file": "apps/api/alembic/versions/88e66e4b89ee_create_payment_dispute_commission_tables.py",
+      "revision": "88e66e4b89ee",
+      "down_revision": "hybrid_dispatch_marketplace",
+      "upgrade_operations": [
+        {
+          "line": 25,
+          "operation": "get_bind",
+          "arg": ""
+        },
+        {
+          "line": 37,
+          "operation": "create_table",
+          "arg": "'payment_intents'"
+        },
+        {
+          "line": 58,
+          "operation": "create_index",
+          "arg": "op.f('ix_payment_intents_customer_id')"
+        },
+        {
+          "line": 59,
+          "operation": "create_index",
+          "arg": "op.f('ix_payment_intents_order_id')"
+        },
+        {
+          "line": 73,
+          "operation": "create_table",
+          "arg": "'payment_transactions'"
+        },
+        {
+          "line": 93,
+          "operation": "create_index",
+          "arg": "op.f('ix_payment_transactions_order_id')"
+        },
+        {
+          "line": 94,
+          "operation": "create_index",
+          "arg": "op.f('ix_payment_transactions_payment_intent_id')"
+        },
+        {
+          "line": 108,
+          "operation": "create_table",
+          "arg": "'payment_provider_events'"
+        },
+        {
+          "line": 121,
+          "operation": "create_index",
+          "arg": "op.f('ix_payment_provider_events_payment_intent_id')"
+        },
+        {
+          "line": 137,
+          "operation": "create_table",
+          "arg": "'disputes'"
+        },
+        {
+          "line": 157,
+          "operation": "create_index",
+          "arg": "op.f('ix_disputes_customer_id')"
+        },
+        {
+          "line": 158,
+          "operation": "create_index",
+          "arg": "op.f('ix_disputes_order_id')"
+        },
+        {
+          "line": 159,
+          "operation": "create_index",
+          "arg": "op.f('ix_disputes_partner_id')"
+        },
+        {
+          "line": 175,
+          "operation": "create_table",
+          "arg": "'commission_records'"
+        },
+        {
+          "line": 192,
+          "operation": "create_index",
+          "arg": "op.f('ix_commission_records_order_id')"
+        },
+        {
+          "line": 193,
+          "operation": "create_index",
+          "arg": "op.f('ix_commission_records_partner_id')"
+        },
+        {
+          "line": 209,
+          "operation": "create_table",
+          "arg": "'refund_requests'"
+        },
+        {
+          "line": 231,
+          "operation": "create_index",
+          "arg": "op.f('ix_refund_requests_customer_id')"
+        },
+        {
+          "line": 232,
+          "operation": "create_index",
+          "arg": "op.f('ix_refund_requests_dispute_id')"
+        },
+        {
+          "line": 233,
+          "operation": "create_index",
+          "arg": "op.f('ix_refund_requests_order_id')"
+        },
+        {
+          "line": 234,
+          "operation": "create_index",
+          "arg": "op.f('ix_refund_requests_payment_intent_id')"
+        },
+        {
+          "line": 248,
+          "operation": "create_table",
+          "arg": "'refund_transactions'"
+        },
+        {
+          "line": 265,
+          "operation": "create_index",
+          "arg": "op.f('ix_refund_transactions_payment_intent_id')"
+        },
+        {
+          "line": 266,
+          "operation": "create_index",
+          "arg": "op.f('ix_refund_transactions_refund_request_id')"
+        },
+        {
+          "line": 282,
+          "operation": "add_column",
+          "arg": "'orders'"
+        },
+        {
+          "line": 283,
+          "operation": "execute",
+          "arg": "text(\"UPDATE orders SET payment_status = 'pending' WHERE payment_status IS NULL\")"
+        },
+        {
+          "line": 284,
+          "operation": "alter_column",
+          "arg": "'orders'"
+        },
+        {
+          "line": 298,
+          "operation": "add_column",
+          "arg": "'orders'"
+        },
+        {
+          "line": 299,
+          "operation": "execute",
+          "arg": "text('UPDATE orders SET amount_paid = 0.0 WHERE amount_paid IS NULL')"
+        },
+        {
+          "line": 300,
+          "operation": "alter_column",
+          "arg": "'orders'"
+        },
+        {
+          "line": 58,
+          "operation": "f",
+          "arg": "'ix_payment_intents_customer_id'"
+        },
+        {
+          "line": 59,
+          "operation": "f",
+          "arg": "'ix_payment_intents_order_id'"
+        },
+        {
+          "line": 93,
+          "operation": "f",
+          "arg": "'ix_payment_transactions_order_id'"
+        },
+        {
+          "line": 94,
+          "operation": "f",
+          "arg": "'ix_payment_transactions_payment_intent_id'"
+        },
+        {
+          "line": 121,
+          "operation": "f",
+          "arg": "'ix_payment_provider_events_payment_intent_id'"
+        },
+        {
+          "line": 157,
+          "operation": "f",
+          "arg": "'ix_disputes_customer_id'"
+        },
+        {
+          "line": 158,
+          "operation": "f",
+          "arg": "'ix_disputes_order_id'"
+        },
+        {
+          "line": 159,
+          "operation": "f",
+          "arg": "'ix_disputes_partner_id'"
+        },
+        {
+          "line": 192,
+          "operation": "f",
+          "arg": "'ix_commission_records_order_id'"
+        },
+        {
+          "line": 193,
+          "operation": "f",
+          "arg": "'ix_commission_records_partner_id'"
+        },
+        {
+          "line": 231,
+          "operation": "f",
+          "arg": "'ix_refund_requests_customer_id'"
+        },
+        {
+          "line": 232,
+          "operation": "f",
+          "arg": "'ix_refund_requests_dispute_id'"
+        },
+        {
+          "line": 233,
+          "operation": "f",
+          "arg": "'ix_refund_requests_order_id'"
+        },
+        {
+          "line": 234,
+          "operation": "f",
+          "arg": "'ix_refund_requests_payment_intent_id'"
+        },
+        {
+          "line": 265,
+          "operation": "f",
+          "arg": "'ix_refund_transactions_payment_intent_id'"
+        },
+        {
+          "line": 266,
+          "operation": "f",
+          "arg": "'ix_refund_transactions_refund_request_id'"
+        }
+      ]
+    },
+    {
+      "file": "apps/api/alembic/versions/9bdf5a02252b_create_pricing_engine_tables.py",
+      "revision": "9bdf5a02252b",
+      "down_revision": "d8c7c8e810cf",
+      "upgrade_operations": [
+        {
+          "line": 21,
+          "operation": "execute",
+          "arg": "\"CREATE TYPE pricingmode AS ENUM ('UNIT', 'KG', 'FIXED')\""
+        },
+        {
+          "line": 22,
+          "operation": "execute",
+          "arg": "\"CREATE TYPE ruletype AS ENUM ('EXPRESS_SURCHARGE', 'FRAGILE_FABRIC_SURCHARGE', 'BULK_DISC"
+        },
+        {
+          "line": 23,
+          "operation": "execute",
+          "arg": "\"CREATE TYPE priceadjustmenttype AS ENUM ('FIXED', 'PERCENTAGE')\""
+        },
+        {
+          "line": 26,
+          "operation": "add_column",
+          "arg": "'partner_services'"
+        },
+        {
+          "line": 27,
+          "operation": "add_column",
+          "arg": "'partner_services'"
+        },
+        {
+          "line": 28,
+          "operation": "add_column",
+          "arg": "'partner_services'"
+        },
+        {
+          "line": 29,
+          "operation": "alter_column",
+          "arg": "'partner_services'"
+        },
+        {
+          "line": 33,
+          "operation": "create_index",
+          "arg": "op.f('ix_partner_services_service_category_id')"
+        },
+        {
+          "line": 34,
+          "operation": "create_foreign_key",
+          "arg": "'partner_services_service_category_id_fkey'"
+        },
+        {
+          "line": 35,
+          "operation": "drop_column",
+          "arg": "'partner_services'"
+        },
+        {
+          "line": 36,
+          "operation": "drop_column",
+          "arg": "'partner_services'"
+        },
+        {
+          "line": 37,
+          "operation": "drop_column",
+          "arg": "'partner_services'"
+        },
+        {
+          "line": 38,
+          "operation": "drop_column",
+          "arg": "'partner_services'"
+        },
+        {
+          "line": 39,
+          "operation": "drop_column",
+          "arg": "'partner_services'"
+        },
+        {
+          "line": 40,
+          "operation": "drop_column",
+          "arg": "'partner_services'"
+        },
+        {
+          "line": 41,
+          "operation": "add_column",
+          "arg": "'pricing_rules'"
+        },
+        {
+          "line": 42,
+          "operation": "add_column",
+          "arg": "'pricing_rules'"
+        },
+        {
+          "line": 43,
+          "operation": "add_column",
+          "arg": "'pricing_rules'"
+        },
+        {
+          "line": 44,
+          "operation": "add_column",
+          "arg": "'pricing_rules'"
+        },
+        {
+          "line": 45,
+          "operation": "add_column",
+          "arg": "'pricing_rules'"
+        },
+        {
+          "line": 46,
+          "operation": "add_column",
+          "arg": "'pricing_rules'"
+        },
+        {
+          "line": 47,
+          "operation": "alter_column",
+          "arg": "'pricing_rules'"
+        },
+        {
+          "line": 51,
+          "operation": "alter_column",
+          "arg": "'pricing_rules'"
+        },
+        {
+          "line": 55,
+          "operation": "drop_index",
+          "arg": "'ix_pricing_rules_service_id'"
+        },
+        {
+          "line": 56,
+          "operation": "create_index",
+          "arg": "op.f('ix_pricing_rules_partner_id')"
+        },
+        {
+          "line": 57,
+          "operation": "drop_constraint",
+          "arg": "'pricing_rules_service_id_fkey'"
+        },
+        {
+          "line": 58,
+          "operation": "create_foreign_key",
+          "arg": "'pricing_rules_service_category_id_fkey'"
+        },
+        {
+          "line": 59,
+          "operation": "create_foreign_key",
+          "arg": "'pricing_rules_service_type_id_fkey'"
+        },
+        {
+          "line": 60,
+          "operation": "create_foreign_key",
+          "arg": "'pricing_rules_partner_id_fkey'"
+        },
+        {
+          "line": 61,
+          "operation": "drop_column",
+          "arg": "'pricing_rules'"
+        },
+        {
+          "line": 62,
+          "operation": "drop_column",
+          "arg": "'pricing_rules'"
+        },
+        {
+          "line": 63,
+          "operation": "drop_column",
+          "arg": "'pricing_rules'"
+        },
+        {
+          "line": 64,
+          "operation": "drop_column",
+          "arg": "'pricing_rules'"
+        },
+        {
+          "line": 65,
+          "operation": "drop_column",
+          "arg": "'pricing_rules'"
+        },
+        {
+          "line": 66,
+          "operation": "drop_column",
+          "arg": "'pricing_rules'"
+        },
+        {
+          "line": 67,
+          "operation": "add_column",
+          "arg": "'service_categories'"
+        },
+        {
+          "line": 68,
+          "operation": "create_index",
+          "arg": "op.f('ix_service_categories_slug')"
+        },
+        {
+          "line": 69,
+          "operation": "drop_column",
+          "arg": "'service_categories'"
+        },
+        {
+          "line": 70,
+          "operation": "drop_column",
+          "arg": "'service_categories'"
+        },
+        {
+          "line": 71,
+          "operation": "add_column",
+          "arg": "'service_types'"
+        },
+        {
+          "line": 72,
+          "operation": "drop_index",
+          "arg": "'ix_service_types_category_id'"
+        },
+        {
+          "line": 73,
+          "operation": "drop_index",
+          "arg": "'ix_service_types_name'"
+        },
+        {
+          "line": 74,
+          "operation": "create_index",
+          "arg": "op.f('ix_service_types_name')"
+        },
+        {
+          "line": 75,
+          "operation": "create_index",
+          "arg": "op.f('ix_service_types_slug')"
+        },
+        {
+          "line": 76,
+          "operation": "drop_constraint",
+          "arg": "'service_types_category_id_fkey'"
+        },
+        {
+          "line": 77,
+          "operation": "drop_column",
+          "arg": "'service_types'"
+        },
+        {
+          "line": 78,
+          "operation": "drop_column",
+          "arg": "'service_types'"
+        },
+        {
+          "line": 79,
+          "operation": "drop_column",
+          "arg": "'service_types'"
+        },
+        {
+          "line": 33,
+          "operation": "f",
+          "arg": "'ix_partner_services_service_category_id'"
+        },
+        {
+          "line": 56,
+          "operation": "f",
+          "arg": "'ix_pricing_rules_partner_id'"
+        },
+        {
+          "line": 68,
+          "operation": "f",
+          "arg": "'ix_service_categories_slug'"
+        },
+        {
+          "line": 74,
+          "operation": "f",
+          "arg": "'ix_service_types_name'"
+        },
+        {
+          "line": 75,
+          "operation": "f",
+          "arg": "'ix_service_types_slug'"
+        }
+      ]
+    },
+    {
+      "file": "apps/api/alembic/versions/9e87723373ba_describe_changes.py",
+      "revision": "9e87723373ba",
+      "down_revision": "05dc81e265f7",
+      "upgrade_operations": []
+    },
+    {
+      "file": "apps/api/alembic/versions/a1b2c3d4e5f7_add_partner_profile_media_json.py",
+      "revision": "a1b2c3d4e5f7",
+      "down_revision": "z9a0b1c2d3e4",
+      "upgrade_operations": [
+        {
+          "line": 19,
+          "operation": "add_column",
+          "arg": "'partners'"
+        }
+      ]
+    },
+    {
+      "file": "apps/api/alembic/versions/a1f4c9d2b6e7_stabilize_orders_contract.py",
+      "revision": "a1f4c9d2b6e7",
+      "down_revision": "88e66e4b89ee",
+      "upgrade_operations": [
+        {
+          "line": 79,
+          "operation": "get_bind",
+          "arg": ""
+        },
+        {
+          "line": 119,
+          "operation": "execute",
+          "arg": "'UPDATE orders SET amount_paid = 0.00 WHERE amount_paid IS NULL'"
+        },
+        {
+          "line": 120,
+          "operation": "execute",
+          "arg": "'UPDATE orders SET refunded_amount = 0.00 WHERE refunded_amount IS NULL'"
+        },
+        {
+          "line": 121,
+          "operation": "execute",
+          "arg": "'UPDATE orders SET express = FALSE WHERE express IS NULL'"
+        },
+        {
+          "line": 122,
+          "operation": "execute",
+          "arg": "'UPDATE orders SET pickup_requested = TRUE WHERE pickup_requested IS NULL'"
+        },
+        {
+          "line": 123,
+          "operation": "execute",
+          "arg": "'UPDATE orders SET delivery_requested = TRUE WHERE delivery_requested IS NULL'"
+        },
+        {
+          "line": 125,
+          "operation": "execute",
+          "arg": "'ALTER TABLE orders ALTER COLUMN subtotal_amount TYPE NUMERIC(10,2) USING ROUND(subtotal_a"
+        },
+        {
+          "line": 128,
+          "operation": "execute",
+          "arg": "'ALTER TABLE orders ALTER COLUMN discount_amount TYPE NUMERIC(10,2) USING ROUND(discount_a"
+        },
+        {
+          "line": 131,
+          "operation": "execute",
+          "arg": "'ALTER TABLE orders ALTER COLUMN pickup_fee TYPE NUMERIC(10,2) USING ROUND(pickup_fee::num"
+        },
+        {
+          "line": 134,
+          "operation": "execute",
+          "arg": "'ALTER TABLE orders ALTER COLUMN delivery_fee TYPE NUMERIC(10,2) USING ROUND(delivery_fee:"
+        },
+        {
+          "line": 137,
+          "operation": "execute",
+          "arg": "'ALTER TABLE orders ALTER COLUMN total_amount TYPE NUMERIC(10,2) USING ROUND(total_amount:"
+        },
+        {
+          "line": 140,
+          "operation": "execute",
+          "arg": "'ALTER TABLE orders ALTER COLUMN amount_paid TYPE NUMERIC(10,2) USING ROUND(amount_paid::n"
+        },
+        {
+          "line": 143,
+          "operation": "execute",
+          "arg": "'ALTER TABLE orders ALTER COLUMN refunded_amount TYPE NUMERIC(10,2) USING ROUND(refunded_a"
+        },
+        {
+          "line": 146,
+          "operation": "execute",
+          "arg": "'ALTER TABLE order_items ALTER COLUMN quantity TYPE NUMERIC(10,2) USING ROUND(quantity::nu"
+        },
+        {
+          "line": 149,
+          "operation": "execute",
+          "arg": "'ALTER TABLE order_items ALTER COLUMN unit_price TYPE NUMERIC(10,2) USING ROUND(unit_price"
+        },
+        {
+          "line": 152,
+          "operation": "execute",
+          "arg": "'ALTER TABLE order_items ALTER COLUMN line_total TYPE NUMERIC(10,2) USING ROUND(line_total"
+        },
+        {
+          "line": 156,
+          "operation": "alter_column",
+          "arg": "'orders'"
+        },
+        {
+          "line": 157,
+          "operation": "alter_column",
+          "arg": "'orders'"
+        },
+        {
+          "line": 158,
+          "operation": "alter_column",
+          "arg": "'orders'"
+        },
+        {
+          "line": 159,
+          "operation": "alter_column",
+          "arg": "'orders'"
+        },
+        {
+          "line": 160,
+          "operation": "alter_column",
+          "arg": "'orders'"
+        },
+        {
+          "line": 237,
+          "operation": "alter_column",
+          "arg": "'orders'"
+        },
+        {
+          "line": 238,
+          "operation": "alter_column",
+          "arg": "'orders'"
+        },
+        {
+          "line": 239,
+          "operation": "alter_column",
+          "arg": "'orders'"
+        },
+        {
+          "line": 240,
+          "operation": "alter_column",
+          "arg": "'orders'"
+        },
+        {
+          "line": 241,
+          "operation": "alter_column",
+          "arg": "'orders'"
+        },
+        {
+          "line": 83,
+          "operation": "add_column",
+          "arg": "'orders'"
+        },
+        {
+          "line": 85,
+          "operation": "add_column",
+          "arg": "'orders'"
+        },
+        {
+          "line": 90,
+          "operation": "add_column",
+          "arg": "'orders'"
+        },
+        {
+          "line": 95,
+          "operation": "add_column",
+          "arg": "'orders'"
+        },
+        {
+          "line": 104,
+          "operation": "add_column",
+          "arg": "'orders'"
+        },
+        {
+          "line": 109,
+          "operation": "add_column",
+          "arg": "'orders'"
+        },
+        {
+          "line": 114,
+          "operation": "add_column",
+          "arg": "'orders'"
+        },
+        {
+          "line": 165,
+          "operation": "create_unique_constraint",
+          "arg": "'uq_orders_idempotency_key'"
+        },
+        {
+          "line": 171,
+          "operation": "create_check_constraint",
+          "arg": "'ck_orders_status_allowed'"
+        },
+        {
+          "line": 177,
+          "operation": "create_check_constraint",
+          "arg": "'ck_orders_payment_status_allowed'"
+        },
+        {
+          "line": 183,
+          "operation": "create_check_constraint",
+          "arg": "'ck_orders_subtotal_non_negative'"
+        },
+        {
+          "line": 189,
+          "operation": "create_check_constraint",
+          "arg": "'ck_orders_discount_non_negative'"
+        },
+        {
+          "line": 195,
+          "operation": "create_check_constraint",
+          "arg": "'ck_orders_pickup_fee_non_negative'"
+        },
+        {
+          "line": 201,
+          "operation": "create_check_constraint",
+          "arg": "'ck_orders_delivery_fee_non_negative'"
+        },
+        {
+          "line": 207,
+          "operation": "create_check_constraint",
+          "arg": "'ck_orders_total_non_negative'"
+        },
+        {
+          "line": 213,
+          "operation": "create_check_constraint",
+          "arg": "'ck_orders_amount_paid_non_negative'"
+        },
+        {
+          "line": 219,
+          "operation": "create_check_constraint",
+          "arg": "'ck_orders_refunded_amount_non_negative'"
+        },
+        {
+          "line": 225,
+          "operation": "create_check_constraint",
+          "arg": "'ck_orders_amount_paid_lte_total'"
+        },
+        {
+          "line": 231,
+          "operation": "create_check_constraint",
+          "arg": "'ck_orders_refunded_amount_lte_paid'"
+        }
+      ]
+    },
+    {
+      "file": "apps/api/alembic/versions/a4b5c6d7e8f9_create_loyalty_settings_configs.py",
+      "revision": "a4b5c6d7e8f9",
+      "down_revision": "f3a4b5c6d7e8",
+      "upgrade_operations": [
+        {
+          "line": 20,
+          "operation": "get_bind",
+          "arg": ""
+        },
+        {
+          "line": 25,
+          "operation": "create_table",
+          "arg": "'loyalty_settings_configs'"
+        },
+        {
+          "line": 36,
+          "operation": "create_index",
+          "arg": "op.f('ix_loyalty_settings_configs_key')"
+        },
+        {
+          "line": 37,
+          "operation": "f",
+          "arg": "'ix_loyalty_settings_configs_key'"
+        }
+      ]
+    },
+    {
+      "file": "apps/api/alembic/versions/a5b6c7d8e9f0_add_loyalty_expiry_policy_fields.py",
+      "revision": "a5b6c7d8e9f0",
+      "down_revision": "f4b5c6d7e8f9",
+      "upgrade_operations": [
+        {
+          "line": 30,
+          "operation": "get_bind",
+          "arg": ""
+        },
+        {
+          "line": 37,
+          "operation": "add_column",
+          "arg": "'loyalty_settings_configs'"
+        },
+        {
+          "line": 44,
+          "operation": "add_column",
+          "arg": "'loyalty_ledger_entries'"
+        },
+        {
+          "line": 49,
+          "operation": "add_column",
+          "arg": "'loyalty_ledger_entries'"
+        },
+        {
+          "line": 55,
+          "operation": "create_index",
+          "arg": "'ix_loyalty_ledger_entries_expires_at'"
+        },
+        {
+          "line": 62,
+          "operation": "create_index",
+          "arg": "'ix_loyalty_ledger_entries_expired_at'"
+        }
+      ]
+    },
+    {
+      "file": "apps/api/alembic/versions/a7b8c9d0e1f2_add_timestamp_defaults_to_marketplace_tables.py",
+      "revision": "a7b8c9d0e1f2",
+      "down_revision": "f1a2b3c4d5e6",
+      "upgrade_operations": [
+        {
+          "line": 30,
+          "operation": "alter_column",
+          "arg": "table_name"
+        },
+        {
+          "line": 37,
+          "operation": "alter_column",
+          "arg": "table_name"
+        }
+      ]
+    },
+    {
+      "file": "apps/api/alembic/versions/a9d7e5c3b1f4_add_timestamp_defaults_to_refund_tables.py",
+      "revision": "a9d7e5c3b1f4",
+      "down_revision": "f7b3c1d2e4a5",
+      "upgrade_operations": []
+    },
+    {
+      "file": "apps/api/alembic/versions/add_logistics_truth_corridor.py",
+      "revision": "add_logistics_truth_corridor",
+      "down_revision": "a5b6c7d8e9f0",
+      "upgrade_operations": [
+        {
+          "line": 21,
+          "operation": "execute",
+          "arg": "'\\n        DELETE FROM delivery_tasks a\\n        USING delivery_tasks b\\n        WHERE a.i"
+        },
+        {
+          "line": 31,
+          "operation": "create_unique_constraint",
+          "arg": "'uniq_delivery_tasks_order_task_type'"
+        },
+        {
+          "line": 38,
+          "operation": "create_index",
+          "arg": "'idx_delivery_tasks_driver_status'"
+        },
+        {
+          "line": 46,
+          "operation": "create_table",
+          "arg": "'operational_proofs'"
+        },
+        {
+          "line": 69,
+          "operation": "create_index",
+          "arg": "op.f('ix_operational_proofs_order_id')"
+        },
+        {
+          "line": 70,
+          "operation": "create_index",
+          "arg": "op.f('ix_operational_proofs_task_id')"
+        },
+        {
+          "line": 71,
+          "operation": "create_index",
+          "arg": "op.f('ix_operational_proofs_proof_type')"
+        },
+        {
+          "line": 72,
+          "operation": "create_index",
+          "arg": "op.f('ix_operational_proofs_verification_status')"
+        },
+        {
+          "line": 75,
+          "operation": "create_table",
+          "arg": "'operational_timelines'"
+        },
+        {
+          "line": 93,
+          "operation": "create_index",
+          "arg": "op.f('ix_operational_timelines_order_id')"
+        },
+        {
+          "line": 94,
+          "operation": "create_index",
+          "arg": "op.f('ix_operational_timelines_task_id')"
+        },
+        {
+          "line": 95,
+          "operation": "create_index",
+          "arg": "'idx_timeline_order_occurred'"
+        },
+        {
+          "line": 96,
+          "operation": "create_index",
+          "arg": "'idx_timeline_task_occurred'"
+        },
+        {
+          "line": 69,
+          "operation": "f",
+          "arg": "'ix_operational_proofs_order_id'"
+        },
+        {
+          "line": 70,
+          "operation": "f",
+          "arg": "'ix_operational_proofs_task_id'"
+        },
+        {
+          "line": 71,
+          "operation": "f",
+          "arg": "'ix_operational_proofs_proof_type'"
+        },
+        {
+          "line": 72,
+          "operation": "f",
+          "arg": "'ix_operational_proofs_verification_status'"
+        },
+        {
+          "line": 93,
+          "operation": "f",
+          "arg": "'ix_operational_timelines_order_id'"
+        },
+        {
+          "line": 94,
+          "operation": "f",
+          "arg": "'ix_operational_timelines_task_id'"
+        }
+      ]
+    },
+    {
+      "file": "apps/api/alembic/versions/add_order_version_for_optimistic_locking.py",
+      "revision": "add_order_version_locking",
+      "down_revision": "add_payment_truth_corridor",
+      "upgrade_operations": [
+        {
+          "line": 21,
+          "operation": "add_column",
+          "arg": "'orders'"
+        },
+        {
+          "line": 24,
+          "operation": "execute",
+          "arg": "'UPDATE orders SET version = 1 WHERE version IS NULL'"
+        },
+        {
+          "line": 27,
+          "operation": "alter_column",
+          "arg": "'orders'"
+        },
+        {
+          "line": 32,
+          "operation": "create_index",
+          "arg": "'idx_orders_version'"
+        }
+      ]
+    },
+    {
+      "file": "apps/api/alembic/versions/add_payment_truth_corridor.py",
+      "revision": "add_payment_truth_corridor",
+      "down_revision": "add_logistics_truth_corridor",
+      "upgrade_operations": [
+        {
+          "line": 23,
+          "operation": "alter_column",
+          "arg": "'payment_intents'"
+        },
+        {
+          "line": 28,
+          "operation": "alter_column",
+          "arg": "'payment_intents'"
+        },
+        {
+          "line": 33,
+          "operation": "alter_column",
+          "arg": "'payment_intents'"
+        },
+        {
+          "line": 40,
+          "operation": "alter_column",
+          "arg": "'payment_transactions'"
+        },
+        {
+          "line": 47,
+          "operation": "alter_column",
+          "arg": "'refund_requests'"
+        },
+        {
+          "line": 52,
+          "operation": "alter_column",
+          "arg": "'refund_requests'"
+        },
+        {
+          "line": 59,
+          "operation": "alter_column",
+          "arg": "'refund_transactions'"
+        },
+        {
+          "line": 66,
+          "operation": "create_check_constraint",
+          "arg": "'ck_payment_intent_amount_paid_lte_expected'"
+        },
+        {
+          "line": 67,
+          "operation": "create_check_constraint",
+          "arg": "'ck_payment_intent_amount_expected_nonneg'"
+        },
+        {
+          "line": 68,
+          "operation": "create_check_constraint",
+          "arg": "'ck_payment_intent_amount_paid_nonneg'"
+        },
+        {
+          "line": 71,
+          "operation": "create_check_constraint",
+          "arg": "'ck_refund_request_requested_amount_nonneg'"
+        },
+        {
+          "line": 72,
+          "operation": "create_check_constraint",
+          "arg": "'ck_refund_request_approved_amount_lte_requested'"
+        },
+        {
+          "line": 73,
+          "operation": "create_check_constraint",
+          "arg": "'ck_refund_request_approved_amount_nonneg'"
+        },
+        {
+          "line": 76,
+          "operation": "create_unique_constraint",
+          "arg": "'uq_payment_provider_events_provider_event_id'"
+        }
+      ]
+    },
+    {
+      "file": "apps/api/alembic/versions/b1c2d3e4f5a6_add_delivery_company_id_to_users.py",
+      "revision": "b1c2d3e4f5a6",
+      "down_revision": "c1d2e3f4a5b6",
+      "upgrade_operations": [
+        {
+          "line": 21,
+          "operation": "add_column",
+          "arg": "'users'"
+        },
+        {
+          "line": 25,
+          "operation": "create_index",
+          "arg": "op.f('ix_users_delivery_company_id')"
+        },
+        {
+          "line": 31,
+          "operation": "create_foreign_key",
+          "arg": "'fk_users_delivery_company_id'"
+        },
+        {
+          "line": 26,
+          "operation": "f",
+          "arg": "'ix_users_delivery_company_id'"
+        }
+      ]
+    },
+    {
+      "file": "apps/api/alembic/versions/b2c3d4e5f6a7_create_order_add_ons_table.py",
+      "revision": "b2c3d4e5f6a7",
+      "down_revision": "a1b2c3d4e5f7",
+      "upgrade_operations": [
+        {
+          "line": 56,
+          "operation": "get_bind",
+          "arg": ""
+        },
+        {
+          "line": 61,
+          "operation": "create_table",
+          "arg": "'order_add_ons'"
+        },
+        {
+          "line": 75,
+          "operation": "create_index",
+          "arg": "op.f('ix_order_add_ons_slug')"
+        },
+        {
+          "line": 88,
+          "operation": "bulk_insert",
+          "arg": "table"
+        },
+        {
+          "line": 75,
+          "operation": "f",
+          "arg": "'ix_order_add_ons_slug'"
+        }
+      ]
+    },
+    {
+      "file": "apps/api/alembic/versions/b2e4f6a9c1d3_align_payment_tables_with_service_contract.py",
+      "revision": "b2e4f6a9c1d3",
+      "down_revision": "a1f4c9d2b6e7",
+      "upgrade_operations": [
+        {
+          "line": 28,
+          "operation": "get_bind",
+          "arg": ""
+        },
+        {
+          "line": 48,
+          "operation": "execute",
+          "arg": "'\\n        UPDATE payment_intents pi\\n        SET customer_id = o.customer_id\\n        FRO"
+        },
+        {
+          "line": 57,
+          "operation": "execute",
+          "arg": "\"UPDATE payment_intents SET payment_method = 'mobile_money' WHERE payment_method IS NULL\""
+        },
+        {
+          "line": 58,
+          "operation": "execute",
+          "arg": "'UPDATE payment_intents SET amount_expected = amount WHERE amount_expected IS NULL AND amo"
+        },
+        {
+          "line": 59,
+          "operation": "execute",
+          "arg": "'UPDATE payment_intents SET amount_paid = 0 WHERE amount_paid IS NULL'"
+        },
+        {
+          "line": 60,
+          "operation": "execute",
+          "arg": "'UPDATE payment_intents SET provider_name = provider WHERE provider_name IS NULL AND provi"
+        },
+        {
+          "line": 61,
+          "operation": "execute",
+          "arg": "'\\n        UPDATE payment_intents\\n        SET provider_reference = provider_payment_id\\n "
+        },
+        {
+          "line": 70,
+          "operation": "alter_column",
+          "arg": "'payment_intents'"
+        },
+        {
+          "line": 71,
+          "operation": "alter_column",
+          "arg": "'payment_intents'"
+        },
+        {
+          "line": 72,
+          "operation": "alter_column",
+          "arg": "'payment_intents'"
+        },
+        {
+          "line": 73,
+          "operation": "alter_column",
+          "arg": "'payment_intents'"
+        },
+        {
+          "line": 92,
+          "operation": "execute",
+          "arg": "'\\n        UPDATE payment_transactions pt\\n        SET order_id = pi.order_id\\n        FRO"
+        },
+        {
+          "line": 101,
+          "operation": "execute",
+          "arg": "\"UPDATE payment_transactions SET transaction_type = 'payment' WHERE transaction_type IS NU"
+        },
+        {
+          "line": 102,
+          "operation": "execute",
+          "arg": "'\\n        UPDATE payment_transactions pt\\n        SET provider_name = pi.provider_name\\n "
+        },
+        {
+          "line": 111,
+          "operation": "execute",
+          "arg": "'\\n        UPDATE payment_transactions\\n        SET raw_provider_payload = transaction_met"
+        },
+        {
+          "line": 120,
+          "operation": "alter_column",
+          "arg": "'payment_transactions'"
+        },
+        {
+          "line": 121,
+          "operation": "alter_column",
+          "arg": "'payment_transactions'"
+        },
+        {
+          "line": 32,
+          "operation": "add_column",
+          "arg": "'payment_intents'"
+        },
+        {
+          "line": 34,
+          "operation": "add_column",
+          "arg": "'payment_intents'"
+        },
+        {
+          "line": 36,
+          "operation": "add_column",
+          "arg": "'payment_intents'"
+        },
+        {
+          "line": 38,
+          "operation": "add_column",
+          "arg": "'payment_intents'"
+        },
+        {
+          "line": 40,
+          "operation": "add_column",
+          "arg": "'payment_intents'"
+        },
+        {
+          "line": 42,
+          "operation": "add_column",
+          "arg": "'payment_intents'"
+        },
+        {
+          "line": 44,
+          "operation": "add_column",
+          "arg": "'payment_intents'"
+        },
+        {
+          "line": 46,
+          "operation": "add_column",
+          "arg": "'payment_intents'"
+        },
+        {
+          "line": 77,
+          "operation": "create_index",
+          "arg": "'ix_payment_intents_customer_id'"
+        },
+        {
+          "line": 80,
+          "operation": "add_column",
+          "arg": "'payment_transactions'"
+        },
+        {
+          "line": 82,
+          "operation": "add_column",
+          "arg": "'payment_transactions'"
+        },
+        {
+          "line": 84,
+          "operation": "add_column",
+          "arg": "'payment_transactions'"
+        },
+        {
+          "line": 86,
+          "operation": "add_column",
+          "arg": "'payment_transactions'"
+        },
+        {
+          "line": 88,
+          "operation": "add_column",
+          "arg": "'payment_transactions'"
+        },
+        {
+          "line": 90,
+          "operation": "add_column",
+          "arg": "'payment_transactions'"
+        },
+        {
+          "line": 125,
+          "operation": "create_index",
+          "arg": "'ix_payment_transactions_order_id'"
+        }
+      ]
+    },
+    {
+      "file": "apps/api/alembic/versions/b5c6d7e8f9a0_create_referral_settings_configs.py",
+      "revision": "b5c6d7e8f9a0",
+      "down_revision": "a4b5c6d7e8f9",
+      "upgrade_operations": [
+        {
+          "line": 20,
+          "operation": "get_bind",
+          "arg": ""
+        },
+        {
+          "line": 25,
+          "operation": "create_table",
+          "arg": "'referral_settings_configs'"
+        },
+        {
+          "line": 36,
+          "operation": "create_index",
+          "arg": "op.f('ix_referral_settings_configs_key')"
+        },
+        {
+          "line": 37,
+          "operation": "f",
+          "arg": "'ix_referral_settings_configs_key'"
+        }
+      ]
+    },
+    {
+      "file": "apps/api/alembic/versions/b6c7d8e9f0a1_create_promo_codes_table.py",
+      "revision": "b6c7d8e9f0a1",
+      "down_revision": "f1a2b3c4d5e6",
+      "upgrade_operations": [
+        {
+          "line": 20,
+          "operation": "get_bind",
+          "arg": ""
+        },
+        {
+          "line": 25,
+          "operation": "create_table",
+          "arg": "'promo_codes'"
+        },
+        {
+          "line": 48,
+          "operation": "create_index",
+          "arg": "op.f('ix_promo_codes_code')"
+        },
+        {
+          "line": 49,
+          "operation": "create_index",
+          "arg": "op.f('ix_promo_codes_partner_id')"
+        },
+        {
+          "line": 50,
+          "operation": "create_index",
+          "arg": "op.f('ix_promo_codes_created_by_user_id')"
+        },
+        {
+          "line": 48,
+          "operation": "f",
+          "arg": "'ix_promo_codes_code'"
+        },
+        {
+          "line": 49,
+          "operation": "f",
+          "arg": "'ix_promo_codes_partner_id'"
+        },
+        {
+          "line": 50,
+          "operation": "f",
+          "arg": "'ix_promo_codes_created_by_user_id'"
+        }
+      ]
+    },
+    {
+      "file": "apps/api/alembic/versions/c1d2e3f4a5b6_create_vehicles_table.py",
+      "revision": "c1d2e3f4a5b6",
+      "down_revision": "b2c3d4e5f6a7",
+      "upgrade_operations": [
+        {
+          "line": 29,
+          "operation": "execute",
+          "arg": "\"\\n        CREATE TABLE IF NOT EXISTS vehicles (\\n            id UUID PRIMARY KEY DEFAULT "
+        },
+        {
+          "line": 49,
+          "operation": "create_index",
+          "arg": "op.f('ix_vehicles_plate')"
+        },
+        {
+          "line": 50,
+          "operation": "create_index",
+          "arg": "op.f('ix_vehicles_driver_id')"
+        },
+        {
+          "line": 21,
+          "operation": "get_bind",
+          "arg": ""
+        },
+        {
+          "line": 24,
+          "operation": "get_bind",
+          "arg": ""
+        },
+        {
+          "line": 27,
+          "operation": "get_bind",
+          "arg": ""
+        },
+        {
+          "line": 49,
+          "operation": "f",
+          "arg": "'ix_vehicles_plate'"
+        },
+        {
+          "line": 50,
+          "operation": "f",
+          "arg": "'ix_vehicles_driver_id'"
+        }
+      ]
+    },
+    {
+      "file": "apps/api/alembic/versions/c4f2a6b8d1e9_align_disputes_table_with_model.py",
+      "revision": "c4f2a6b8d1e9",
+      "down_revision": "b2e4f6a9c1d3",
+      "upgrade_operations": [
+        {
+          "line": 35,
+          "operation": "add_column",
+          "arg": "'disputes'"
+        },
+        {
+          "line": 36,
+          "operation": "execute",
+          "arg": "'UPDATE disputes SET title = LEFT(description, 255) WHERE title IS NULL'"
+        },
+        {
+          "line": 37,
+          "operation": "execute",
+          "arg": "\"UPDATE disputes SET title = 'Legacy dispute' WHERE title IS NULL OR title = ''\""
+        },
+        {
+          "line": 38,
+          "operation": "alter_column",
+          "arg": "'disputes'"
+        },
+        {
+          "line": 48,
+          "operation": "create_foreign_key",
+          "arg": "'disputes_partner_id_fkey'"
+        },
+        {
+          "line": 47,
+          "operation": "drop_constraint",
+          "arg": "partner_fk['name']"
+        }
+      ]
+    },
+    {
+      "file": "apps/api/alembic/versions/c6d7e8f9a0b1_add_loyalty_points_to_users.py",
+      "revision": "c6d7e8f9a0b1",
+      "down_revision": "b5c6d7e8f9a0",
+      "upgrade_operations": [
+        {
+          "line": 20,
+          "operation": "get_bind",
+          "arg": ""
+        },
+        {
+          "line": 24,
+          "operation": "add_column",
+          "arg": "'users'"
+        },
+        {
+          "line": 28,
+          "operation": "execute",
+          "arg": "'UPDATE users SET loyalty_points = 0 WHERE loyalty_points IS NULL'"
+        },
+        {
+          "line": 29,
+          "operation": "alter_column",
+          "arg": "'users'"
+        }
+      ]
+    },
+    {
+      "file": "apps/api/alembic/versions/c8d9e0f1a2b3_create_site_content_configs.py",
+      "revision": "c8d9e0f1a2b3",
+      "down_revision": "b6c7d8e9f0a1",
+      "upgrade_operations": [
+        {
+          "line": 20,
+          "operation": "get_bind",
+          "arg": ""
+        },
+        {
+          "line": 25,
+          "operation": "create_table",
+          "arg": "'site_content_configs'"
+        },
+        {
+          "line": 34,
+          "operation": "create_index",
+          "arg": "op.f('ix_site_content_configs_key')"
+        },
+        {
+          "line": 34,
+          "operation": "f",
+          "arg": "'ix_site_content_configs_key'"
+        }
+      ]
+    },
+    {
+      "file": "apps/api/alembic/versions/d1e2f3a4b5c6_create_subscription_plan_configs.py",
+      "revision": "d1e2f3a4b5c6",
+      "down_revision": "c8d9e0f1a2b3",
+      "upgrade_operations": [
+        {
+          "line": 20,
+          "operation": "get_bind",
+          "arg": ""
+        },
+        {
+          "line": 25,
+          "operation": "create_table",
+          "arg": "'subscription_plan_configs'"
+        },
+        {
+          "line": 39,
+          "operation": "create_index",
+          "arg": "op.f('ix_subscription_plan_configs_slug')"
+        },
+        {
+          "line": 40,
+          "operation": "f",
+          "arg": "'ix_subscription_plan_configs_slug'"
+        }
+      ]
+    },
+    {
+      "file": "apps/api/alembic/versions/d2e3f4a5b6c7_add_delivery_company_id_to_vehicles.py",
+      "revision": "d2e3f4a5b6c7",
+      "down_revision": "b1c2d3e4f5a6",
+      "upgrade_operations": [
+        {
+          "line": 21,
+          "operation": "add_column",
+          "arg": "'vehicles'"
+        },
+        {
+          "line": 25,
+          "operation": "create_index",
+          "arg": "op.f('ix_vehicles_delivery_company_id')"
+        },
+        {
+          "line": 31,
+          "operation": "create_foreign_key",
+          "arg": "'fk_vehicles_delivery_company_id'"
+        },
+        {
+          "line": 26,
+          "operation": "f",
+          "arg": "'ix_vehicles_delivery_company_id'"
+        }
+      ]
+    },
+    {
+      "file": "apps/api/alembic/versions/d3c4b5a6e7f8_align_commission_records_with_model.py",
+      "revision": "d3c4b5a6e7f8",
+      "down_revision": "a9d7e5c3b1f4",
+      "upgrade_operations": [
+        {
+          "line": 62,
+          "operation": "get_bind",
+          "arg": ""
+        },
+        {
+          "line": 69,
+          "operation": "execute",
+          "arg": "text('UPDATE commission_records SET discount_amount = 0.0 WHERE discount_amount IS NULL')"
+        },
+        {
+          "line": 70,
+          "operation": "alter_column",
+          "arg": "'commission_records'"
+        },
+        {
+          "line": 77,
+          "operation": "execute",
+          "arg": "text('\\n            UPDATE commission_records\\n            SET net_paid_amount = COALESCE("
+        },
+        {
+          "line": 86,
+          "operation": "alter_column",
+          "arg": "'commission_records'"
+        },
+        {
+          "line": 93,
+          "operation": "execute",
+          "arg": "text(\"UPDATE commission_records SET currency = 'CDF' WHERE currency IS NULL\")"
+        },
+        {
+          "line": 94,
+          "operation": "alter_column",
+          "arg": "'commission_records'"
+        },
+        {
+          "line": 65,
+          "operation": "add_column",
+          "arg": "'commission_records'"
+        },
+        {
+          "line": 73,
+          "operation": "add_column",
+          "arg": "'commission_records'"
+        },
+        {
+          "line": 89,
+          "operation": "add_column",
+          "arg": "'commission_records'"
+        },
+        {
+          "line": 97,
+          "operation": "add_column",
+          "arg": "'commission_records'"
+        },
+        {
+          "line": 102,
+          "operation": "execute",
+          "arg": "text('\\n                UPDATE commission_records\\n                SET notes = settlement_"
+        },
+        {
+          "line": 113,
+          "operation": "drop_constraint",
+          "arg": "'commission_records_partner_id_fkey'"
+        },
+        {
+          "line": 118,
+          "operation": "create_foreign_key",
+          "arg": "'commission_records_partner_id_fkey'"
+        }
+      ]
+    },
+    {
+      "file": "apps/api/alembic/versions/d7e8f9a0b1c2_create_loyalty_ledger_entries.py",
+      "revision": "d7e8f9a0b1c2",
+      "down_revision": "f9a0b1c2d3e4",
+      "upgrade_operations": [
+        {
+          "line": 23,
+          "operation": "get_bind",
+          "arg": ""
+        },
+        {
+          "line": 28,
+          "operation": "create_table",
+          "arg": "'loyalty_ledger_entries'"
+        },
+        {
+          "line": 41,
+          "operation": "create_index",
+          "arg": "'ix_loyalty_ledger_entries_user_id'"
+        },
+        {
+          "line": 42,
+          "operation": "create_index",
+          "arg": "'ix_loyalty_ledger_entries_order_id'"
+        },
+        {
+          "line": 43,
+          "operation": "create_index",
+          "arg": "'ix_loyalty_ledger_entries_entry_type'"
+        }
+      ]
+    },
+    {
+      "file": "apps/api/alembic/versions/d8c7c8e810cf_create_orders_module_tables.py",
+      "revision": "d8c7c8e810cf",
+      "down_revision": "9e87723373ba",
+      "upgrade_operations": [
+        {
+          "line": 21,
+          "operation": "add_column",
+          "arg": "'order_items'"
+        },
+        {
+          "line": 22,
+          "operation": "add_column",
+          "arg": "'order_items'"
+        },
+        {
+          "line": 23,
+          "operation": "add_column",
+          "arg": "'order_items'"
+        },
+        {
+          "line": 24,
+          "operation": "drop_column",
+          "arg": "'order_items'"
+        },
+        {
+          "line": 25,
+          "operation": "drop_column",
+          "arg": "'order_items'"
+        },
+        {
+          "line": 26,
+          "operation": "add_column",
+          "arg": "'order_status_history'"
+        },
+        {
+          "line": 27,
+          "operation": "add_column",
+          "arg": "'order_status_history'"
+        },
+        {
+          "line": 28,
+          "operation": "add_column",
+          "arg": "'order_status_history'"
+        },
+        {
+          "line": 29,
+          "operation": "add_column",
+          "arg": "'order_status_history'"
+        },
+        {
+          "line": 30,
+          "operation": "create_foreign_key",
+          "arg": "None"
+        },
+        {
+          "line": 31,
+          "operation": "drop_column",
+          "arg": "'order_status_history'"
+        },
+        {
+          "line": 32,
+          "operation": "drop_column",
+          "arg": "'order_status_history'"
+        },
+        {
+          "line": 33,
+          "operation": "add_column",
+          "arg": "'orders'"
+        },
+        {
+          "line": 34,
+          "operation": "add_column",
+          "arg": "'orders'"
+        },
+        {
+          "line": 35,
+          "operation": "add_column",
+          "arg": "'orders'"
+        },
+        {
+          "line": 36,
+          "operation": "add_column",
+          "arg": "'orders'"
+        },
+        {
+          "line": 37,
+          "operation": "add_column",
+          "arg": "'orders'"
+        },
+        {
+          "line": 38,
+          "operation": "add_column",
+          "arg": "'orders'"
+        },
+        {
+          "line": 39,
+          "operation": "add_column",
+          "arg": "'orders'"
+        },
+        {
+          "line": 40,
+          "operation": "add_column",
+          "arg": "'orders'"
+        },
+        {
+          "line": 41,
+          "operation": "add_column",
+          "arg": "'orders'"
+        },
+        {
+          "line": 42,
+          "operation": "add_column",
+          "arg": "'orders'"
+        },
+        {
+          "line": 43,
+          "operation": "add_column",
+          "arg": "'orders'"
+        },
+        {
+          "line": 44,
+          "operation": "add_column",
+          "arg": "'orders'"
+        },
+        {
+          "line": 45,
+          "operation": "drop_column",
+          "arg": "'orders'"
+        },
+        {
+          "line": 46,
+          "operation": "drop_column",
+          "arg": "'orders'"
+        },
+        {
+          "line": 47,
+          "operation": "drop_column",
+          "arg": "'orders'"
+        },
+        {
+          "line": 48,
+          "operation": "drop_column",
+          "arg": "'orders'"
+        }
+      ]
+    },
+    {
+      "file": "apps/api/alembic/versions/e2f3a4b5c6d7_create_tracking_settings_configs.py",
+      "revision": "e2f3a4b5c6d7",
+      "down_revision": "d1e2f3a4b5c6",
+      "upgrade_operations": [
+        {
+          "line": 20,
+          "operation": "get_bind",
+          "arg": ""
+        },
+        {
+          "line": 25,
+          "operation": "create_table",
+          "arg": "'tracking_settings_configs'"
+        },
+        {
+          "line": 35,
+          "operation": "create_index",
+          "arg": "op.f('ix_tracking_settings_configs_key')"
+        },
+        {
+          "line": 36,
+          "operation": "f",
+          "arg": "'ix_tracking_settings_configs_key'"
+        }
+      ]
+    },
+    {
+      "file": "apps/api/alembic/versions/e4f5a6b7c8d9_add_timestamp_defaults_to_commission_records.py",
+      "revision": "e4f5a6b7c8d9",
+      "down_revision": "d3c4b5a6e7f8",
+      "upgrade_operations": [
+        {
+          "line": 21,
+          "operation": "alter_column",
+          "arg": "'commission_records'"
+        },
+        {
+          "line": 28,
+          "operation": "alter_column",
+          "arg": "'commission_records'"
+        }
+      ]
+    },
+    {
+      "file": "apps/api/alembic/versions/e6a1b3d4f9c2_add_resolution_type_to_disputes.py",
+      "revision": "e6a1b3d4f9c2",
+      "down_revision": "c4f2a6b8d1e9",
+      "upgrade_operations": [
+        {
+          "line": 27,
+          "operation": "add_column",
+          "arg": "'disputes'"
+        }
+      ]
+    },
+    {
+      "file": "apps/api/alembic/versions/e8f9a0b1c2d3_add_referral_fields_to_users.py",
+      "revision": "e8f9a0b1c2d3",
+      "down_revision": "d7e8f9a0b1c2",
+      "upgrade_operations": [
+        {
+          "line": 27,
+          "operation": "get_bind",
+          "arg": ""
+        },
+        {
+          "line": 49,
+          "operation": "execute",
+          "arg": "\"\\n        UPDATE users\\n        SET referral_code = UPPER(SUBSTRING(REPLACE(id::text, '-'"
+        },
+        {
+          "line": 32,
+          "operation": "add_column",
+          "arg": "'users'"
+        },
+        {
+          "line": 33,
+          "operation": "create_index",
+          "arg": "'ix_users_referral_code'"
+        },
+        {
+          "line": 35,
+          "operation": "add_column",
+          "arg": "'users'"
+        },
+        {
+          "line": 36,
+          "operation": "create_index",
+          "arg": "'ix_users_referred_by_user_id'"
+        },
+        {
+          "line": 37,
+          "operation": "create_foreign_key",
+          "arg": "'fk_users_referred_by_user_id_users'"
+        },
+        {
+          "line": 45,
+          "operation": "add_column",
+          "arg": "'users'"
+        },
+        {
+          "line": 47,
+          "operation": "add_column",
+          "arg": "'users'"
+        }
+      ]
+    },
+    {
+      "file": "apps/api/alembic/versions/f1a2b3c4d5e6_default_platform_commission_rate.py",
+      "revision": "f1a2b3c4d5e6",
+      "down_revision": "e4f5a6b7c8d9",
+      "upgrade_operations": [
+        {
+          "line": 21,
+          "operation": "alter_column",
+          "arg": "'commission_records'"
+        }
+      ]
+    },
+    {
+      "file": "apps/api/alembic/versions/f3a4b5c6d7e8_create_advertisement_configs.py",
+      "revision": "f3a4b5c6d7e8",
+      "down_revision": "e2f3a4b5c6d7",
+      "upgrade_operations": [
+        {
+          "line": 20,
+          "operation": "get_bind",
+          "arg": ""
+        },
+        {
+          "line": 25,
+          "operation": "create_table",
+          "arg": "'advertisement_configs'"
+        }
+      ]
+    },
+    {
+      "file": "apps/api/alembic/versions/f4b5c6d7e8f9_create_referral_review_statuses.py",
+      "revision": "f4b5c6d7e8f9",
+      "down_revision": "e8f9a0b1c2d3",
+      "upgrade_operations": [
+        {
+          "line": 20,
+          "operation": "get_bind",
+          "arg": ""
+        },
+        {
+          "line": 25,
+          "operation": "create_table",
+          "arg": "'referral_review_statuses'"
+        },
+        {
+          "line": 36,
+          "operation": "create_index",
+          "arg": "op.f('ix_referral_review_statuses_referrer_user_id')"
+        },
+        {
+          "line": 37,
+          "operation": "create_index",
+          "arg": "op.f('ix_referral_review_statuses_reviewed_by_user_id')"
+        },
+        {
+          "line": 36,
+          "operation": "f",
+          "arg": "'ix_referral_review_statuses_referrer_user_id'"
+        },
+        {
+          "line": 37,
+          "operation": "f",
+          "arg": "'ix_referral_review_statuses_reviewed_by_user_id'"
+        }
+      ]
+    },
+    {
+      "file": "apps/api/alembic/versions/f7b3c1d2e4a5_add_timestamp_defaults_to_disputes.py",
+      "revision": "f7b3c1d2e4a5",
+      "down_revision": "e6a1b3d4f9c2",
+      "upgrade_operations": [
+        {
+          "line": 19,
+          "operation": "alter_column",
+          "arg": "'disputes'"
+        },
+        {
+          "line": 26,
+          "operation": "alter_column",
+          "arg": "'disputes'"
+        }
+      ]
+    },
+    {
+      "file": "apps/api/alembic/versions/f9a0b1c2d3e4_merge_marketplace_and_loyalty_heads.py",
+      "revision": "f9a0b1c2d3e4",
+      "down_revision": [
+        "a7b8c9d0e1f2",
+        "c6d7e8f9a0b1"
+      ],
+      "upgrade_operations": []
+    },
+    {
+      "file": "apps/api/alembic/versions/g1h2i3j4k5l6_create_ad_analytics_tables.py",
+      "revision": "g1h2i3j4k5l6",
+      "down_revision": "f9a0b1c2d3e4",
+      "upgrade_operations": [
+        {
+          "line": 19,
+          "operation": "get_bind",
+          "arg": ""
+        },
+        {
+          "line": 23,
+          "operation": "create_table",
+          "arg": "'ad_campaigns'"
+        },
+        {
+          "line": 40,
+          "operation": "create_table",
+          "arg": "'advertisements'"
+        },
+        {
+          "line": 110,
+          "operation": "create_table",
+          "arg": "table"
+        },
+        {
+          "line": 113,
+          "operation": "create_table",
+          "arg": "'ad_experiments'"
+        }
+      ]
+    },
+    {
+      "file": "apps/api/alembic/versions/h2i3j4k5l6m7_merge_ad_analytics_and_notifications_heads.py",
+      "revision": "h2i3j4k5l6m7",
+      "down_revision": [
+        "g1h2i3j4k5l6",
+        "notifications_event_pipeline"
+      ],
+      "upgrade_operations": []
+    },
+    {
+      "file": "apps/api/alembic/versions/hybrid_dispatch_marketplace.py",
+      "revision": "hybrid_dispatch_marketplace",
+      "down_revision": "79dde77c97d6",
+      "upgrade_operations": [
+        {
+          "line": 26,
+          "operation": "execute",
+          "arg": "\"ALTER TYPE deliverytaskstatus ADD VALUE 'OPEN_MARKET'\""
+        },
+        {
+          "line": 27,
+          "operation": "execute",
+          "arg": "\"ALTER TYPE deliverytaskstatus ADD VALUE 'CLAIMED'\""
+        },
+        {
+          "line": 28,
+          "operation": "execute",
+          "arg": "\"ALTER TYPE deliverytaskstatus ADD VALUE 'DRIVER_ASSIGNED'\""
+        },
+        {
+          "line": 29,
+          "operation": "execute",
+          "arg": "\"ALTER TYPE deliverytaskstatus ADD VALUE 'EXPIRED'\""
+        },
+        {
+          "line": 32,
+          "operation": "create_table",
+          "arg": "'delivery_companies'"
+        },
+        {
+          "line": 51,
+          "operation": "execute",
+          "arg": "\"\\n        ALTER TABLE delivery_companies \\n        ADD CONSTRAINT delivery_companies_stat"
+        },
+        {
+          "line": 56,
+          "operation": "create_index",
+          "arg": "op.f('ix_delivery_companies_name')"
+        },
+        {
+          "line": 57,
+          "operation": "create_index",
+          "arg": "op.f('ix_delivery_companies_slug')"
+        },
+        {
+          "line": 60,
+          "operation": "create_table",
+          "arg": "'company_drivers'"
+        },
+        {
+          "line": 71,
+          "operation": "create_index",
+          "arg": "op.f('ix_company_drivers_company_id')"
+        },
+        {
+          "line": 72,
+          "operation": "create_index",
+          "arg": "op.f('ix_company_drivers_driver_id')"
+        },
+        {
+          "line": 75,
+          "operation": "create_table",
+          "arg": "'company_service_zones'"
+        },
+        {
+          "line": 87,
+          "operation": "create_index",
+          "arg": "op.f('ix_company_service_zones_city')"
+        },
+        {
+          "line": 88,
+          "operation": "create_index",
+          "arg": "op.f('ix_company_service_zones_company_id')"
+        },
+        {
+          "line": 89,
+          "operation": "create_index",
+          "arg": "op.f('ix_company_service_zones_commune')"
+        },
+        {
+          "line": 90,
+          "operation": "create_index",
+          "arg": "op.f('ix_company_service_zones_zone')"
+        },
+        {
+          "line": 93,
+          "operation": "create_table",
+          "arg": "'dispatch_settings'"
+        },
+        {
+          "line": 107,
+          "operation": "execute",
+          "arg": "\"\\n        ALTER TABLE dispatch_settings \\n        ADD CONSTRAINT dispatch_settings_scope_"
+        },
+        {
+          "line": 113,
+          "operation": "execute",
+          "arg": "\"\\n        ALTER TABLE dispatch_settings \\n        ADD CONSTRAINT dispatch_settings_dispat"
+        },
+        {
+          "line": 119,
+          "operation": "create_index",
+          "arg": "op.f('ix_dispatch_settings_scope_id')"
+        },
+        {
+          "line": 120,
+          "operation": "create_index",
+          "arg": "op.f('ix_dispatch_settings_scope_type')"
+        },
+        {
+          "line": 123,
+          "operation": "add_column",
+          "arg": "'delivery_tasks'"
+        },
+        {
+          "line": 124,
+          "operation": "add_column",
+          "arg": "'delivery_tasks'"
+        },
+        {
+          "line": 125,
+          "operation": "add_column",
+          "arg": "'delivery_tasks'"
+        },
+        {
+          "line": 126,
+          "operation": "add_column",
+          "arg": "'delivery_tasks'"
+        },
+        {
+          "line": 127,
+          "operation": "add_column",
+          "arg": "'delivery_tasks'"
+        },
+        {
+          "line": 128,
+          "operation": "add_column",
+          "arg": "'delivery_tasks'"
+        },
+        {
+          "line": 129,
+          "operation": "add_column",
+          "arg": "'delivery_tasks'"
+        },
+        {
+          "line": 130,
+          "operation": "add_column",
+          "arg": "'delivery_tasks'"
+        },
+        {
+          "line": 131,
+          "operation": "add_column",
+          "arg": "'delivery_tasks'"
+        },
+        {
+          "line": 132,
+          "operation": "add_column",
+          "arg": "'delivery_tasks'"
+        },
+        {
+          "line": 135,
+          "operation": "execute",
+          "arg": "\"\\n        ALTER TABLE delivery_tasks \\n        ADD CONSTRAINT delivery_tasks_dispatch_str"
+        },
+        {
+          "line": 141,
+          "operation": "execute",
+          "arg": "\"\\n        ALTER TABLE delivery_tasks \\n        ADD CONSTRAINT delivery_tasks_dispatch_mod"
+        },
+        {
+          "line": 148,
+          "operation": "create_index",
+          "arg": "op.f('ix_delivery_tasks_assigned_company_id')"
+        },
+        {
+          "line": 149,
+          "operation": "create_index",
+          "arg": "op.f('ix_delivery_tasks_claimed_by_company_id')"
+        },
+        {
+          "line": 151,
+          "operation": "create_foreign_key",
+          "arg": "'fk_delivery_tasks_assigned_company_id'"
+        },
+        {
+          "line": 159,
+          "operation": "create_foreign_key",
+          "arg": "'fk_delivery_tasks_claimed_by_company_id'"
+        },
+        {
+          "line": 168,
+          "operation": "execute",
+          "arg": "\"\\n        INSERT INTO dispatch_settings (\\n            id, created_at, updated_at, scope_"
+        },
+        {
+          "line": 56,
+          "operation": "f",
+          "arg": "'ix_delivery_companies_name'"
+        },
+        {
+          "line": 57,
+          "operation": "f",
+          "arg": "'ix_delivery_companies_slug'"
+        },
+        {
+          "line": 71,
+          "operation": "f",
+          "arg": "'ix_company_drivers_company_id'"
+        },
+        {
+          "line": 72,
+          "operation": "f",
+          "arg": "'ix_company_drivers_driver_id'"
+        },
+        {
+          "line": 87,
+          "operation": "f",
+          "arg": "'ix_company_service_zones_city'"
+        },
+        {
+          "line": 88,
+          "operation": "f",
+          "arg": "'ix_company_service_zones_company_id'"
+        },
+        {
+          "line": 89,
+          "operation": "f",
+          "arg": "'ix_company_service_zones_commune'"
+        },
+        {
+          "line": 90,
+          "operation": "f",
+          "arg": "'ix_company_service_zones_zone'"
+        },
+        {
+          "line": 119,
+          "operation": "f",
+          "arg": "'ix_dispatch_settings_scope_id'"
+        },
+        {
+          "line": 120,
+          "operation": "f",
+          "arg": "'ix_dispatch_settings_scope_type'"
+        },
+        {
+          "line": 148,
+          "operation": "f",
+          "arg": "'ix_delivery_tasks_assigned_company_id'"
+        },
+        {
+          "line": 149,
+          "operation": "f",
+          "arg": "'ix_delivery_tasks_claimed_by_company_id'"
+        }
+      ]
+    },
+    {
+      "file": "apps/api/alembic/versions/i3j4k5l6m7n8_loyalty_rewards_and_settings_fields.py",
+      "revision": "i3j4k5l6m7n8",
+      "down_revision": "h2i3j4k5l6m7",
+      "upgrade_operations": [
+        {
+          "line": 19,
+          "operation": "add_column",
+          "arg": "'loyalty_settings_configs'"
+        },
+        {
+          "line": 20,
+          "operation": "add_column",
+          "arg": "'loyalty_settings_configs'"
+        },
+        {
+          "line": 22,
+          "operation": "create_table",
+          "arg": "'loyalty_rewards'"
+        }
+      ]
+    },
+    {
+      "file": "apps/api/alembic/versions/j4k5l6m7n8o9_referral_dashboard_fields.py",
+      "revision": "j4k5l6m7n8o9",
+      "down_revision": "i3j4k5l6m7n8",
+      "upgrade_operations": [
+        {
+          "line": 19,
+          "operation": "add_column",
+          "arg": "'referral_settings_configs'"
+        },
+        {
+          "line": 20,
+          "operation": "add_column",
+          "arg": "'referral_settings_configs'"
+        },
+        {
+          "line": 21,
+          "operation": "add_column",
+          "arg": "'referral_settings_configs'"
+        },
+        {
+          "line": 22,
+          "operation": "add_column",
+          "arg": "'referral_settings_configs'"
+        },
+        {
+          "line": 24,
+          "operation": "create_table",
+          "arg": "'referral_campaigns'"
+        }
+      ]
+    },
+    {
+      "file": "apps/api/alembic/versions/k5l6m7n8o9p0_marketing_campaigns.py",
+      "revision": "k5l6m7n8o9p0",
+      "down_revision": "j4k5l6m7n8o9",
+      "upgrade_operations": [
+        {
+          "line": 19,
+          "operation": "create_table",
+          "arg": "'marketing_campaigns'"
+        },
+        {
+          "line": 43,
+          "operation": "create_table",
+          "arg": "'marketing_automations'"
+        }
+      ]
+    },
+    {
+      "file": "apps/api/alembic/versions/l6m7n8o9p0q1_create_claims_tables.py",
+      "revision": "l6m7n8o9p0q1",
+      "down_revision": "k5l6m7n8o9p0",
+      "upgrade_operations": [
+        {
+          "line": 19,
+          "operation": "create_table",
+          "arg": "'claims'"
+        },
+        {
+          "line": 43,
+          "operation": "create_index",
+          "arg": "'ix_claims_claim_number'"
+        },
+        {
+          "line": 44,
+          "operation": "create_index",
+          "arg": "'ix_claims_status'"
+        },
+        {
+          "line": 45,
+          "operation": "create_index",
+          "arg": "'ix_claims_priority'"
+        },
+        {
+          "line": 87,
+          "operation": "create_table",
+          "arg": "'claim_sla_rules'"
+        },
+        {
+          "line": 96,
+          "operation": "create_table",
+          "arg": "'claim_categories'"
+        },
+        {
+          "line": 79,
+          "operation": "create_table",
+          "arg": "tbl"
+        }
+      ]
+    },
+    {
+      "file": "apps/api/alembic/versions/m7n8o9p0q1r2_create_cms_tables.py",
+      "revision": "m7n8o9p0q1r2",
+      "down_revision": "l6m7n8o9p0q1",
+      "upgrade_operations": [
+        {
+          "line": 27,
+          "operation": "create_table",
+          "arg": "'cms_pages'"
+        },
+        {
+          "line": 51,
+          "operation": "create_index",
+          "arg": "'ix_cms_pages_slug'"
+        },
+        {
+          "line": 52,
+          "operation": "create_index",
+          "arg": "'ix_cms_pages_status'"
+        },
+        {
+          "line": 131,
+          "operation": "create_table",
+          "arg": "name"
+        }
+      ]
+    },
+    {
+      "file": "apps/api/alembic/versions/n8o9p0q1r2s3_create_blog_tables.py",
+      "revision": "n8o9p0q1r2s3",
+      "down_revision": "m7n8o9p0q1r2",
+      "upgrade_operations": [
+        {
+          "line": 27,
+          "operation": "create_table",
+          "arg": "'blog_categories'"
+        },
+        {
+          "line": 31,
+          "operation": "create_table",
+          "arg": "'blog_tags'"
+        },
+        {
+          "line": 35,
+          "operation": "create_table",
+          "arg": "'blog_authors'"
+        },
+        {
+          "line": 40,
+          "operation": "create_table",
+          "arg": "'blog_posts'"
+        },
+        {
+          "line": 57,
+          "operation": "create_index",
+          "arg": "'ix_blog_posts_slug'"
+        },
+        {
+          "line": 58,
+          "operation": "create_index",
+          "arg": "'ix_blog_posts_status'"
+        },
+        {
+          "line": 59,
+          "operation": "create_table",
+          "arg": "'blog_post_tags'"
+        },
+        {
+          "line": 135,
+          "operation": "create_table",
+          "arg": "name"
+        }
+      ]
+    },
+    {
+      "file": "apps/api/alembic/versions/notifications_event_pipeline.py",
+      "revision": "notifications_event_pipeline",
+      "down_revision": "add_order_version_locking",
+      "upgrade_operations": [
+        {
+          "line": 20,
+          "operation": "get_bind",
+          "arg": ""
+        },
+        {
+          "line": 24,
+          "operation": "create_table",
+          "arg": "'notifications'"
+        },
+        {
+          "line": 37,
+          "operation": "create_index",
+          "arg": "'ix_notifications_user_id'"
+        },
+        {
+          "line": 40,
+          "operation": "create_table",
+          "arg": "'notification_deliveries'"
+        },
+        {
+          "line": 55,
+          "operation": "create_index",
+          "arg": "'ix_notification_deliveries_notification_id'"
+        },
+        {
+          "line": 58,
+          "operation": "create_table",
+          "arg": "'notification_templates'"
+        },
+        {
+          "line": 73,
+          "operation": "create_index",
+          "arg": "'ix_notification_templates_template_name'"
+        }
+      ]
+    },
+    {
+      "file": "apps/api/alembic/versions/o9p0q1r2s3t4_create_notification_ops_tables.py",
+      "revision": "o9p0q1r2s3t4",
+      "down_revision": "n8o9p0q1r2s3",
+      "upgrade_operations": [
+        {
+          "line": 27,
+          "operation": "create_table",
+          "arg": "'notification_ops_templates'"
+        },
+        {
+          "line": 28,
+          "operation": "create_index",
+          "arg": "'ix_notification_ops_templates_name'"
+        },
+        {
+          "line": 30,
+          "operation": "create_table",
+          "arg": "'notification_ops_items'"
+        },
+        {
+          "line": 31,
+          "operation": "create_index",
+          "arg": "'ix_notification_ops_items_channel'"
+        },
+        {
+          "line": 32,
+          "operation": "create_index",
+          "arg": "'ix_notification_ops_items_event_type'"
+        },
+        {
+          "line": 34,
+          "operation": "create_table",
+          "arg": "'notification_ops_automations'"
+        },
+        {
+          "line": 36,
+          "operation": "create_table",
+          "arg": "'notification_ops_segments'"
+        },
+        {
+          "line": 38,
+          "operation": "create_table",
+          "arg": "'notification_ops_errors'"
+        },
+        {
+          "line": 40,
+          "operation": "create_table",
+          "arg": "'notification_ops_unsubscribes'"
+        },
+        {
+          "line": 42,
+          "operation": "create_table",
+          "arg": "'notification_ops_provider_health'"
+        },
+        {
+          "line": 44,
+          "operation": "create_table",
+          "arg": "'notification_ops_activities'"
+        }
+      ]
+    },
+    {
+      "file": "apps/api/alembic/versions/p0q1r2s3t4u5_create_payment_gateway_ops_tables.py",
+      "revision": "p0q1r2s3t4u5",
+      "down_revision": "o9p0q1r2s3t4",
+      "upgrade_operations": [
+        {
+          "line": 27,
+          "operation": "create_table",
+          "arg": "'payment_gateway_providers'"
+        },
+        {
+          "line": 28,
+          "operation": "create_index",
+          "arg": "'ix_payment_gateway_providers_slug'"
+        },
+        {
+          "line": 30,
+          "operation": "create_table",
+          "arg": "'payment_gateway_transactions'"
+        },
+        {
+          "line": 31,
+          "operation": "create_index",
+          "arg": "'ix_payment_gateway_transactions_reference'"
+        },
+        {
+          "line": 33,
+          "operation": "create_table",
+          "arg": "'payment_gateway_incidents'"
+        },
+        {
+          "line": 35,
+          "operation": "create_table",
+          "arg": "'payment_gateway_settlements'"
+        },
+        {
+          "line": 37,
+          "operation": "create_table",
+          "arg": "'payment_gateway_webhooks'"
+        },
+        {
+          "line": 39,
+          "operation": "create_table",
+          "arg": "'payment_gateway_reconciliations'"
+        },
+        {
+          "line": 41,
+          "operation": "create_table",
+          "arg": "'payment_gateway_health'"
+        },
+        {
+          "line": 42,
+          "operation": "create_index",
+          "arg": "'ix_payment_gateway_health_slug'"
+        },
+        {
+          "line": 44,
+          "operation": "create_table",
+          "arg": "'payment_gateway_refunds'"
+        },
+        {
+          "line": 46,
+          "operation": "create_table",
+          "arg": "'payment_gateway_cash_flows'"
+        }
+      ]
+    },
+    {
+      "file": "apps/api/alembic/versions/q1r2s3t4u5v6_create_whatsapp_ops_tables.py",
+      "revision": "q1r2s3t4u5v6",
+      "down_revision": "p0q1r2s3t4u5",
+      "upgrade_operations": [
+        {
+          "line": 27,
+          "operation": "create_table",
+          "arg": "'whatsapp_conversations'"
+        },
+        {
+          "line": 41,
+          "operation": "create_index",
+          "arg": "'ix_whatsapp_conversations_phone'"
+        },
+        {
+          "line": 43,
+          "operation": "create_table",
+          "arg": "'whatsapp_templates'"
+        },
+        {
+          "line": 54,
+          "operation": "create_table",
+          "arg": "'whatsapp_campaigns'"
+        },
+        {
+          "line": 68,
+          "operation": "create_table",
+          "arg": "'whatsapp_automations'"
+        },
+        {
+          "line": 77,
+          "operation": "create_table",
+          "arg": "'whatsapp_notifications'"
+        },
+        {
+          "line": 85,
+          "operation": "create_table",
+          "arg": "'whatsapp_webhooks'"
+        },
+        {
+          "line": 95,
+          "operation": "create_table",
+          "arg": "'whatsapp_quality'"
+        },
+        {
+          "line": 103,
+          "operation": "create_table",
+          "arg": "'whatsapp_cost_snapshots'"
+        },
+        {
+          "line": 117,
+          "operation": "create_table",
+          "arg": "'whatsapp_ai_metrics'"
+        },
+        {
+          "line": 128,
+          "operation": "create_table",
+          "arg": "'whatsapp_segments'"
+        },
+        {
+          "line": 135,
+          "operation": "create_index",
+          "arg": "'ix_whatsapp_segments_slug'"
+        }
+      ]
+    },
+    {
+      "file": "apps/api/alembic/versions/r2s3t4u5v6w7_create_sms_ops_tables.py",
+      "revision": "r2s3t4u5v6w7",
+      "down_revision": "q1r2s3t4u5v6",
+      "upgrade_operations": [
+        {
+          "line": 27,
+          "operation": "create_table",
+          "arg": "'sms_providers'"
+        },
+        {
+          "line": 33,
+          "operation": "create_index",
+          "arg": "'ix_sms_providers_slug'"
+        },
+        {
+          "line": 35,
+          "operation": "create_table",
+          "arg": "'sms_senders'"
+        },
+        {
+          "line": 41,
+          "operation": "create_index",
+          "arg": "'ix_sms_senders_sender_id'"
+        },
+        {
+          "line": 43,
+          "operation": "create_table",
+          "arg": "'sms_templates'"
+        },
+        {
+          "line": 49,
+          "operation": "create_table",
+          "arg": "'sms_campaigns'"
+        },
+        {
+          "line": 58,
+          "operation": "create_table",
+          "arg": "'sms_messages'"
+        },
+        {
+          "line": 69,
+          "operation": "create_index",
+          "arg": "'ix_sms_messages_reference'"
+        },
+        {
+          "line": 70,
+          "operation": "create_index",
+          "arg": "'ix_sms_messages_phone'"
+        },
+        {
+          "line": 72,
+          "operation": "create_table",
+          "arg": "'sms_credit_ledger'"
+        },
+        {
+          "line": 78,
+          "operation": "create_table",
+          "arg": "'sms_logs'"
+        },
+        {
+          "line": 84,
+          "operation": "create_index",
+          "arg": "'ix_sms_logs_reference'"
+        },
+        {
+          "line": 86,
+          "operation": "create_table",
+          "arg": "'sms_otp_records'"
+        },
+        {
+          "line": 92,
+          "operation": "create_table",
+          "arg": "'sms_alerts'"
+        },
+        {
+          "line": 98,
+          "operation": "create_table",
+          "arg": "'sms_webhooks'"
+        },
+        {
+          "line": 104,
+          "operation": "create_table",
+          "arg": "'sms_settings'"
+        },
+        {
+          "line": 107,
+          "operation": "create_index",
+          "arg": "'ix_sms_settings_key'"
+        }
+      ]
+    },
+    {
+      "file": "apps/api/alembic/versions/s3t4u5v6w7x8_create_email_ops_tables.py",
+      "revision": "s3t4u5v6w7x8",
+      "down_revision": "r2s3t4u5v6w7",
+      "upgrade_operations": [
+        {
+          "line": 27,
+          "operation": "create_table",
+          "arg": "'email_templates'"
+        },
+        {
+          "line": 35,
+          "operation": "create_table",
+          "arg": "'email_campaigns'"
+        },
+        {
+          "line": 42,
+          "operation": "create_table",
+          "arg": "'email_automations'"
+        },
+        {
+          "line": 48,
+          "operation": "create_table",
+          "arg": "'email_messages'"
+        },
+        {
+          "line": 56,
+          "operation": "create_index",
+          "arg": "'ix_email_messages_reference'"
+        },
+        {
+          "line": 57,
+          "operation": "create_table",
+          "arg": "'email_bounces'"
+        },
+        {
+          "line": 62,
+          "operation": "create_table",
+          "arg": "'email_unsubscribes'"
+        },
+        {
+          "line": 66,
+          "operation": "create_table",
+          "arg": "'email_invoice_logs'"
+        },
+        {
+          "line": 71,
+          "operation": "create_table",
+          "arg": "'email_deliverability'"
+        },
+        {
+          "line": 79,
+          "operation": "create_index",
+          "arg": "'ix_email_deliverability_domain'"
+        },
+        {
+          "line": 80,
+          "operation": "create_table",
+          "arg": "'email_webhooks'"
+        },
+        {
+          "line": 85,
+          "operation": "create_table",
+          "arg": "'email_alerts'"
+        },
+        {
+          "line": 89,
+          "operation": "create_table",
+          "arg": "'email_settings'"
+        },
+        {
+          "line": 92,
+          "operation": "create_index",
+          "arg": "'ix_email_settings_key'"
+        }
+      ]
+    },
+    {
+      "file": "apps/api/alembic/versions/t4u5v6w7x8y9_create_integrations_ops_tables.py",
+      "revision": "t4u5v6w7x8y9",
+      "down_revision": "s3t4u5v6w7x8",
+      "upgrade_operations": [
+        {
+          "line": 27,
+          "operation": "create_table",
+          "arg": "'integrations_api_keys'"
+        },
+        {
+          "line": 36,
+          "operation": "create_table",
+          "arg": "'integrations_webhooks'"
+        },
+        {
+          "line": 46,
+          "operation": "create_table",
+          "arg": "'integrations_webhook_deliveries'"
+        },
+        {
+          "line": 56,
+          "operation": "create_index",
+          "arg": "'ix_integrations_webhook_deliveries_webhook_id'"
+        },
+        {
+          "line": 57,
+          "operation": "create_table",
+          "arg": "'integrations_tracking_configs'"
+        },
+        {
+          "line": 63,
+          "operation": "create_index",
+          "arg": "'ix_integrations_tracking_configs_provider'"
+        },
+        {
+          "line": 64,
+          "operation": "create_table",
+          "arg": "'integrations_health'"
+        },
+        {
+          "line": 72,
+          "operation": "create_table",
+          "arg": "'integrations_api_logs'"
+        },
+        {
+          "line": 82,
+          "operation": "create_table",
+          "arg": "'integrations_alerts'"
+        }
+      ]
+    },
+    {
+      "file": "apps/api/alembic/versions/u5v6w7x8y9z0_create_admin_management_tables.py",
+      "revision": "u5v6w7x8y9z0",
+      "down_revision": "t4u5v6w7x8y9",
+      "upgrade_operations": [
+        {
+          "line": 27,
+          "operation": "create_table",
+          "arg": "'admin_management_users'"
+        },
+        {
+          "line": 38,
+          "operation": "create_index",
+          "arg": "'ix_admin_management_users_email'"
+        },
+        {
+          "line": 39,
+          "operation": "create_table",
+          "arg": "'admin_management_roles'"
+        },
+        {
+          "line": 47,
+          "operation": "create_index",
+          "arg": "'ix_admin_management_roles_slug'"
+        },
+        {
+          "line": 48,
+          "operation": "create_table",
+          "arg": "'admin_management_permissions'"
+        },
+        {
+          "line": 54,
+          "operation": "create_index",
+          "arg": "'ix_admin_management_permissions_slug'"
+        },
+        {
+          "line": 55,
+          "operation": "create_table",
+          "arg": "'admin_management_role_permissions'"
+        },
+        {
+          "line": 60,
+          "operation": "create_index",
+          "arg": "'ix_admin_management_role_permissions_role'"
+        },
+        {
+          "line": 61,
+          "operation": "create_table",
+          "arg": "'admin_management_invitations'"
+        },
+        {
+          "line": 68,
+          "operation": "create_table",
+          "arg": "'admin_management_sessions'"
+        },
+        {
+          "line": 78,
+          "operation": "create_table",
+          "arg": "'admin_management_activity_logs'"
+        },
+        {
+          "line": 87,
+          "operation": "create_table",
+          "arg": "'admin_management_audit_logs'"
+        },
+        {
+          "line": 95,
+          "operation": "create_table",
+          "arg": "'admin_management_security_alerts'"
+        }
+      ]
+    },
+    {
+      "file": "apps/api/alembic/versions/v6w7x8y9z0a1_create_rbac_tables.py",
+      "revision": "v6w7x8y9z0a1",
+      "down_revision": "u5v6w7x8y9z0",
+      "upgrade_operations": [
+        {
+          "line": 27,
+          "operation": "create_table",
+          "arg": "'rbac_roles'"
+        },
+        {
+          "line": 38,
+          "operation": "create_index",
+          "arg": "'ix_rbac_roles_slug'"
+        },
+        {
+          "line": 39,
+          "operation": "create_index",
+          "arg": "'ix_rbac_roles_tenant_id'"
+        },
+        {
+          "line": 41,
+          "operation": "create_table",
+          "arg": "'rbac_permissions'"
+        },
+        {
+          "line": 50,
+          "operation": "create_index",
+          "arg": "'ix_rbac_permissions_slug'"
+        },
+        {
+          "line": 51,
+          "operation": "create_index",
+          "arg": "'ix_rbac_permissions_module'"
+        },
+        {
+          "line": 53,
+          "operation": "create_table",
+          "arg": "'rbac_role_permissions'"
+        },
+        {
+          "line": 59,
+          "operation": "create_index",
+          "arg": "'ix_rbac_role_permissions_role'"
+        },
+        {
+          "line": 61,
+          "operation": "create_table",
+          "arg": "'rbac_user_roles'"
+        },
+        {
+          "line": 71,
+          "operation": "create_index",
+          "arg": "'ix_rbac_user_roles_email'"
+        },
+        {
+          "line": 73,
+          "operation": "create_table",
+          "arg": "'rbac_user_permissions'"
+        },
+        {
+          "line": 80,
+          "operation": "create_index",
+          "arg": "'ix_rbac_user_permissions_email'"
+        },
+        {
+          "line": 82,
+          "operation": "create_table",
+          "arg": "'rbac_permission_exceptions'"
+        },
+        {
+          "line": 90,
+          "operation": "create_table",
+          "arg": "'rbac_temporary_permissions'"
+        },
+        {
+          "line": 98,
+          "operation": "create_table",
+          "arg": "'rbac_permission_audit_logs'"
+        },
+        {
+          "line": 110,
+          "operation": "create_table",
+          "arg": "'rbac_permission_history'"
+        },
+        {
+          "line": 119,
+          "operation": "create_table",
+          "arg": "'rbac_risk_alerts'"
+        },
+        {
+          "line": 127,
+          "operation": "create_table",
+          "arg": "'rbac_security_policies'"
+        },
+        {
+          "line": 133,
+          "operation": "create_index",
+          "arg": "'ix_rbac_security_policies_key'"
+        },
+        {
+          "line": 135,
+          "operation": "create_table",
+          "arg": "'rbac_tenants'"
+        },
+        {
+          "line": 142,
+          "operation": "create_index",
+          "arg": "'ix_rbac_tenants_slug'"
+        }
+      ]
+    },
+    {
+      "file": "apps/api/alembic/versions/w7x8y9z0a1b2_create_activity_logs_table.py",
+      "revision": "w7x8y9z0a1b2",
+      "down_revision": "v6w7x8y9z0a1",
+      "upgrade_operations": [
+        {
+          "line": 27,
+          "operation": "create_table",
+          "arg": "'activity_logs'"
+        },
+        {
+          "line": 56,
+          "operation": "create_index",
+          "arg": "'ix_activity_logs_event_id'"
+        },
+        {
+          "line": 57,
+          "operation": "create_index",
+          "arg": "'ix_activity_logs_occurred_at'"
+        },
+        {
+          "line": 58,
+          "operation": "create_index",
+          "arg": "'ix_activity_logs_reference'"
+        }
+      ]
+    },
+    {
+      "file": "apps/api/alembic/versions/x1y2z3a4b5c6_customer_support_corridor_fields.py",
+      "revision": "x1y2z3a4b5c6",
+      "down_revision": "w7x8y9z0a1b2",
+      "upgrade_operations": [
+        {
+          "line": 19,
+          "operation": "add_column",
+          "arg": "'support_tickets'"
+        },
+        {
+          "line": 23,
+          "operation": "add_column",
+          "arg": "'support_tickets'"
+        },
+        {
+          "line": 27,
+          "operation": "create_index",
+          "arg": "'ix_support_tickets_order_id'"
+        },
+        {
+          "line": 28,
+          "operation": "create_index",
+          "arg": "'ix_support_tickets_partner_id'"
+        },
+        {
+          "line": 30,
+          "operation": "create_table",
+          "arg": "'support_ticket_attachments'"
+        },
+        {
+          "line": 42,
+          "operation": "create_index",
+          "arg": "'ix_support_ticket_attachments_ticket_id'"
+        }
+      ]
+    },
+    {
+      "file": "apps/api/alembic/versions/x8y9z0a1b2c3_create_promo_code_usage_table.py",
+      "revision": "x8y9z0a1b2c3",
+      "down_revision": "w7x8y9z0a1b2",
+      "upgrade_operations": [
+        {
+          "line": 19,
+          "operation": "create_table",
+          "arg": "'promo_code_usage'"
+        },
+        {
+          "line": 30,
+          "operation": "create_index",
+          "arg": "'ix_promo_code_usage_promo_code_id'"
+        },
+        {
+          "line": 31,
+          "operation": "create_index",
+          "arg": "'ix_promo_code_usage_order_id'"
+        },
+        {
+          "line": 32,
+          "operation": "create_index",
+          "arg": "'ix_promo_code_usage_customer_id'"
+        }
+      ]
+    },
+    {
+      "file": "apps/api/alembic/versions/y2z3a4b5c6d7_add_review_status_column.py",
+      "revision": "y2z3a4b5c6d7",
+      "down_revision": "x1y2z3a4b5c6",
+      "upgrade_operations": [
+        {
+          "line": 18,
+          "operation": "add_column",
+          "arg": "'reviews'"
+        },
+        {
+          "line": 22,
+          "operation": "create_index",
+          "arg": "'ix_reviews_status'"
+        }
+      ]
+    },
+    {
+      "file": "apps/api/alembic/versions/z9a0b1c2d3e4_merge_promo_usage_and_review_heads.py",
+      "revision": "z9a0b1c2d3e4",
+      "down_revision": [
+        "x8y9z0a1b2c3",
+        "y2z3a4b5c6d7"
+      ],
+      "upgrade_operations": []
+    }
+  ]
+}

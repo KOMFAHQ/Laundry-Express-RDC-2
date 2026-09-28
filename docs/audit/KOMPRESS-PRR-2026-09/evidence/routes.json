@@ -1,0 +1,3646 @@
+[
+  {
+    "path": "/openapi.json",
+    "methods": [
+      "GET",
+      "HEAD"
+    ],
+    "endpoint": "openapi"
+  },
+  {
+    "path": "/api/v1/auth/register",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "register"
+  },
+  {
+    "path": "/api/v1/auth/login",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "login"
+  },
+  {
+    "path": "/api/v1/auth/refresh",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "refresh_tokens"
+  },
+  {
+    "path": "/api/v1/auth/password-reset/request",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "request_password_reset"
+  },
+  {
+    "path": "/api/v1/auth/password-reset/confirm",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "confirm_password_reset"
+  },
+  {
+    "path": "/api/v1/auth/logout",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "logout"
+  },
+  {
+    "path": "/api/v1/auth/change-password",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "change_password"
+  },
+  {
+    "path": "/api/v1/auth/me",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_current_user_info"
+  },
+  {
+    "path": "/api/v1/auth/me/2fa/enable",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "enable_current_user_2fa"
+  },
+  {
+    "path": "/api/v1/auth/me/2fa/disable",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "disable_current_user_2fa"
+  },
+  {
+    "path": "/api/v1/users/me",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_current_user_info"
+  },
+  {
+    "path": "/api/v1/users/me",
+    "methods": [
+      "PUT"
+    ],
+    "endpoint": "update_current_user"
+  },
+  {
+    "path": "/api/v1/users/me/profile",
+    "methods": [
+      "PUT"
+    ],
+    "endpoint": "update_current_user_profile"
+  },
+  {
+    "path": "/api/v1/users/me/addresses",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_current_user_addresses"
+  },
+  {
+    "path": "/api/v1/users/me/addresses",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "create_address"
+  },
+  {
+    "path": "/api/v1/users/me/addresses/{address_id}",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_address"
+  },
+  {
+    "path": "/api/v1/users/me/addresses/{address_id}",
+    "methods": [
+      "PUT"
+    ],
+    "endpoint": "update_address"
+  },
+  {
+    "path": "/api/v1/users/me/addresses/{address_id}",
+    "methods": [
+      "DELETE"
+    ],
+    "endpoint": "delete_address"
+  },
+  {
+    "path": "/api/v1/users/me/addresses/{address_id}/set-default",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "set_default_address"
+  },
+  {
+    "path": "/api/v1/users/{user_id}",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_user_by_id"
+  },
+  {
+    "path": "/api/v1/users",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "list_users"
+  },
+  {
+    "path": "/api/v1/users/{user_id}",
+    "methods": [
+      "PUT"
+    ],
+    "endpoint": "update_user_by_id"
+  },
+  {
+    "path": "/api/v1/orders/social-proof",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_public_order_social_proof"
+  },
+  {
+    "path": "/api/v1/orders",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "create_order"
+  },
+  {
+    "path": "/api/v1/orders",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "list_orders"
+  },
+  {
+    "path": "/api/v1/orders/{order_id}",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_order"
+  },
+  {
+    "path": "/api/v1/orders/estimate",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "estimate_order_price"
+  },
+  {
+    "path": "/api/v1/orders/{order_id}/cancel",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "cancel_order"
+  },
+  {
+    "path": "/api/v1/orders/{order_id}/status",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "update_order_status"
+  },
+  {
+    "path": "/api/v1/orders/{order_id}/statistics",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_order_statistics"
+  },
+  {
+    "path": "/api/v1/catalog",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_catalog"
+  },
+  {
+    "path": "/api/v1/catalog/partners",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "list_public_partners"
+  },
+  {
+    "path": "/api/v1/catalog/categories",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "list_service_categories"
+  },
+  {
+    "path": "/api/v1/catalog/categories/{category_id}",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_service_category"
+  },
+  {
+    "path": "/api/v1/catalog/service-types",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "list_service_types"
+  },
+  {
+    "path": "/api/v1/catalog/service-types/{type_id}",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_service_type"
+  },
+  {
+    "path": "/api/v1/catalog/partners/{partner_id}/public-profile",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_partner_public_profile"
+  },
+  {
+    "path": "/api/v1/catalog/partners/{partner_id}/services",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "list_partner_services"
+  },
+  {
+    "path": "/api/v1/catalog/partners/{partner_id}/services/{service_id}",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_partner_service"
+  },
+  {
+    "path": "/api/v1/catalog/partners/{partner_id}/services",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "create_partner_service"
+  },
+  {
+    "path": "/api/v1/catalog/partners/{partner_id}/services/{service_id}",
+    "methods": [
+      "PATCH"
+    ],
+    "endpoint": "update_partner_service"
+  },
+  {
+    "path": "/api/v1/catalog/partners/{partner_id}/pricing-rules",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "list_partner_pricing_rules"
+  },
+  {
+    "path": "/api/v1/catalog/partners/{partner_id}/pricing-rules",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "create_pricing_rule"
+  },
+  {
+    "path": "/api/v1/catalog/partners/{partner_id}/pricing-rules/{rule_id}",
+    "methods": [
+      "PATCH"
+    ],
+    "endpoint": "update_pricing_rule"
+  },
+  {
+    "path": "/api/v1/catalog/categories",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "create_service_category"
+  },
+  {
+    "path": "/api/v1/catalog/categories/{category_id}",
+    "methods": [
+      "PATCH"
+    ],
+    "endpoint": "update_service_category"
+  },
+  {
+    "path": "/api/v1/catalog/service-types",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "create_service_type"
+  },
+  {
+    "path": "/api/v1/catalog/service-types/{type_id}",
+    "methods": [
+      "PATCH"
+    ],
+    "endpoint": "update_service_type"
+  },
+  {
+    "path": "/api/v1/catalog/order-add-ons",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_public_order_add_ons"
+  },
+  {
+    "path": "/api/v1/pricing/estimate",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "estimate_order_price"
+  },
+  {
+    "path": "/api/v1/pricing/calculate",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "calculate_order_price"
+  },
+  {
+    "path": "/api/v1/pricing/partners/{partner_id}/summary",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_pricing_summary"
+  },
+  {
+    "path": "/api/v1/pricing/validate",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "validate_order_items"
+  },
+  {
+    "path": "/api/v1/logistics/drivers",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "list_drivers"
+  },
+  {
+    "path": "/api/v1/logistics/drivers/available",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "list_available_drivers"
+  },
+  {
+    "path": "/api/v1/logistics/drivers/me",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_my_driver_profile"
+  },
+  {
+    "path": "/api/v1/logistics/drivers/me/availability",
+    "methods": [
+      "PATCH"
+    ],
+    "endpoint": "update_my_availability"
+  },
+  {
+    "path": "/api/v1/logistics/drivers/{driver_id}",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_driver"
+  },
+  {
+    "path": "/api/v1/logistics/drivers",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "create_driver"
+  },
+  {
+    "path": "/api/v1/logistics/drivers/{driver_id}",
+    "methods": [
+      "PATCH"
+    ],
+    "endpoint": "update_driver"
+  },
+  {
+    "path": "/api/v1/logistics/drivers/{driver_id}/location",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "update_driver_location"
+  },
+  {
+    "path": "/api/v1/logistics/tasks",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "list_tasks"
+  },
+  {
+    "path": "/api/v1/logistics/tasks/{task_id}",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_task"
+  },
+  {
+    "path": "/api/v1/logistics/tasks/pickup",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "create_pickup_task"
+  },
+  {
+    "path": "/api/v1/logistics/tasks/delivery",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "create_delivery_task"
+  },
+  {
+    "path": "/api/v1/logistics/tasks/{task_id}/claim",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "claim_task_for_company"
+  },
+  {
+    "path": "/api/v1/logistics/tasks/{task_id}/assign",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "assign_driver_to_task"
+  },
+  {
+    "path": "/api/v1/logistics/tasks/{task_id}/auto-assign",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "auto_assign_driver_to_task"
+  },
+  {
+    "path": "/api/v1/logistics/tasks/{task_id}/accept",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "accept_task"
+  },
+  {
+    "path": "/api/v1/logistics/tasks/{task_id}/start",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "start_task"
+  },
+  {
+    "path": "/api/v1/logistics/tasks/{task_id}/complete",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "complete_task"
+  },
+  {
+    "path": "/api/v1/logistics/tasks/{task_id}/fail",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "fail_task"
+  },
+  {
+    "path": "/api/v1/logistics/tasks/{task_id}/cancel",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "cancel_task"
+  },
+  {
+    "path": "/api/v1/logistics/vehicles",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "list_vehicles"
+  },
+  {
+    "path": "/api/v1/logistics/vehicles/{vehicle_id}",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_vehicle"
+  },
+  {
+    "path": "/api/v1/logistics/vehicles",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "create_vehicle"
+  },
+  {
+    "path": "/api/v1/logistics/vehicles/{vehicle_id}",
+    "methods": [
+      "PATCH"
+    ],
+    "endpoint": "update_vehicle"
+  },
+  {
+    "path": "/api/v1/logistics/vehicles/{vehicle_id}",
+    "methods": [
+      "DELETE"
+    ],
+    "endpoint": "delete_vehicle"
+  },
+  {
+    "path": "/api/v1/logistics/trips",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "list_trips"
+  },
+  {
+    "path": "/api/v1/logistics/tracking-points",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "list_tracking_points"
+  },
+  {
+    "path": "/api/v1/logistics/maintenance-events",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "list_maintenance_events"
+  },
+  {
+    "path": "/api/v1/logistics/driver-behavior",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_driver_behavior"
+  },
+  {
+    "path": "/api/v1/logistics/fuel-usage",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_fuel_usage"
+  },
+  {
+    "path": "/api/v1/logistics/stock-levels",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_stock_levels"
+  },
+  {
+    "path": "/api/v1/logistics/connectivity-health",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_connectivity_health"
+  },
+  {
+    "path": "/api/v1/logistics/live",
+    "methods": [],
+    "endpoint": "logistics_live_feed"
+  },
+  {
+    "path": "/api/v1/marketplace/companies",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "list_companies"
+  },
+  {
+    "path": "/api/v1/marketplace/companies/{company_id}",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_company"
+  },
+  {
+    "path": "/api/v1/marketplace/companies",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "create_company"
+  },
+  {
+    "path": "/api/v1/marketplace/companies/{company_id}",
+    "methods": [
+      "PATCH"
+    ],
+    "endpoint": "update_company"
+  },
+  {
+    "path": "/api/v1/marketplace/companies/{company_id}/zones",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "list_company_service_zones"
+  },
+  {
+    "path": "/api/v1/marketplace/companies/{company_id}/zones",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "create_service_zone"
+  },
+  {
+    "path": "/api/v1/marketplace/companies/{company_id}/drivers",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "list_company_drivers"
+  },
+  {
+    "path": "/api/v1/marketplace/companies/{company_id}/drivers",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "add_company_driver"
+  },
+  {
+    "path": "/api/v1/marketplace/tasks",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "list_market_tasks"
+  },
+  {
+    "path": "/api/v1/marketplace/tasks/{task_id}",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_market_task"
+  },
+  {
+    "path": "/api/v1/marketplace/tasks/{task_id}/claim",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "claim_market_task"
+  },
+  {
+    "path": "/api/v1/marketplace/tasks/{task_id}/claimed",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_claimed_task"
+  },
+  {
+    "path": "/api/v1/marketplace/tasks/{task_id}/dispatch",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "dispatch_task"
+  },
+  {
+    "path": "/api/v1/marketplace/tasks/{task_id}/assign-internal",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "assign_internal_driver"
+  },
+  {
+    "path": "/api/v1/marketplace/tasks/{task_id}/assign-company",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "assign_company_driver"
+  },
+  {
+    "path": "/api/v1/marketplace/tasks/{task_id}/expire",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "expire_market_task"
+  },
+  {
+    "path": "/api/v1/marketplace/tasks/{task_id}/fallback",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "fallback_to_internal"
+  },
+  {
+    "path": "/api/v1/dispatch-settings",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "list_dispatch_settings"
+  },
+  {
+    "path": "/api/v1/dispatch-settings/{setting_id}",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_dispatch_setting"
+  },
+  {
+    "path": "/api/v1/dispatch-settings",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "create_dispatch_setting"
+  },
+  {
+    "path": "/api/v1/dispatch-settings/{setting_id}",
+    "methods": [
+      "PATCH"
+    ],
+    "endpoint": "update_dispatch_setting"
+  },
+  {
+    "path": "/api/v1/dispatch-settings/{setting_id}",
+    "methods": [
+      "DELETE"
+    ],
+    "endpoint": "delete_dispatch_setting"
+  },
+  {
+    "path": "/api/v1/dispatch-settings/resolve-strategy",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "resolve_dispatch_strategy"
+  },
+  {
+    "path": "/api/v1/payments/intents",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "create_payment_intent"
+  },
+  {
+    "path": "/api/v1/payments/intents/{intent_id}/initiate",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "initiate_payment"
+  },
+  {
+    "path": "/api/v1/payments/intents/{intent_id}/confirm-cash",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "confirm_cash_payment"
+  },
+  {
+    "path": "/api/v1/payments/intents/{intent_id}",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_payment_intent"
+  },
+  {
+    "path": "/api/v1/payments/orders/{order_id}/summary",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_order_payment_summary"
+  },
+  {
+    "path": "/api/v1/payments/webhooks/{provider}",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "handle_payment_webhook"
+  },
+  {
+    "path": "/api/v1/payments/intents",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "list_payment_intents"
+  },
+  {
+    "path": "/api/v1/refunds/requests",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "create_refund_request"
+  },
+  {
+    "path": "/api/v1/refunds/requests/{request_id}/approve",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "approve_refund_request"
+  },
+  {
+    "path": "/api/v1/refunds/requests/{request_id}/reject",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "reject_refund_request"
+  },
+  {
+    "path": "/api/v1/refunds/requests/{request_id}/process",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "process_refund"
+  },
+  {
+    "path": "/api/v1/refunds/requests/{request_id}",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_refund_request"
+  },
+  {
+    "path": "/api/v1/refunds/orders/{order_id}/requests",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_refund_requests_for_order"
+  },
+  {
+    "path": "/api/v1/refunds/summary",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_refund_summary"
+  },
+  {
+    "path": "/api/v1/refunds/requests",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "list_refund_requests"
+  },
+  {
+    "path": "/api/v1/disputes",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "create_dispute"
+  },
+  {
+    "path": "/api/v1/disputes/{dispute_id}/resolve",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "resolve_dispute"
+  },
+  {
+    "path": "/api/v1/disputes/{dispute_id}/reject",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "reject_dispute"
+  },
+  {
+    "path": "/api/v1/disputes/orders/{order_id}",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_disputes_for_order"
+  },
+  {
+    "path": "/api/v1/disputes/summary",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_dispute_summary"
+  },
+  {
+    "path": "/api/v1/disputes",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "list_disputes"
+  },
+  {
+    "path": "/api/v1/disputes/open",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_open_disputes"
+  },
+  {
+    "path": "/api/v1/disputes/{dispute_id}",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_dispute"
+  },
+  {
+    "path": "/api/v1/commissions/recompute/{order_id}",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "recompute_commission"
+  },
+  {
+    "path": "/api/v1/commissions/{commission_id}/settle",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "settle_commission"
+  },
+  {
+    "path": "/api/v1/commissions/orders/{order_id}",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_commission_for_order"
+  },
+  {
+    "path": "/api/v1/commissions/partners/{partner_id}/summary",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_commission_summary_for_partner"
+  },
+  {
+    "path": "/api/v1/commissions/partners/{partner_id}/overview",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_partner_commission_overview"
+  },
+  {
+    "path": "/api/v1/commissions",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "list_commissions"
+  },
+  {
+    "path": "/api/v1/commissions/pending",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_pending_commissions"
+  },
+  {
+    "path": "/api/v1/commissions/computed",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_computed_commissions"
+  },
+  {
+    "path": "/api/v1/commissions/{commission_id}",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_commission"
+  },
+  {
+    "path": "/api/v1/admin/overview",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_admin_overview"
+  },
+  {
+    "path": "/api/v1/admin/activity-logs",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_admin_activity_logs"
+  },
+  {
+    "path": "/api/v1/admin/ads/dashboard",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_ads_dashboard"
+  },
+  {
+    "path": "/api/v1/admin/ads/export",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "export_ads"
+  },
+  {
+    "path": "/api/v1/admin/ads/campaign",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "create_campaign"
+  },
+  {
+    "path": "/api/v1/admin/ads",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "list_ads"
+  },
+  {
+    "path": "/api/v1/admin/ads",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "create_ad"
+  },
+  {
+    "path": "/api/v1/admin/ads/{ad_id}",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_ad"
+  },
+  {
+    "path": "/api/v1/admin/ads/{ad_id}",
+    "methods": [
+      "PUT"
+    ],
+    "endpoint": "update_ad"
+  },
+  {
+    "path": "/api/v1/admin/ads/{ad_id}",
+    "methods": [
+      "DELETE"
+    ],
+    "endpoint": "delete_ad"
+  },
+  {
+    "path": "/api/v1/admin/ads/{ad_id}/duplicate",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "duplicate_ad"
+  },
+  {
+    "path": "/api/v1/admin/ads/{ad_id}/pause",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "pause_ad"
+  },
+  {
+    "path": "/api/v1/admin/ads/{ad_id}/impression",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "track_impression"
+  },
+  {
+    "path": "/api/v1/admin/ads/{ad_id}/click",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "track_click"
+  },
+  {
+    "path": "/api/v1/admin/loyalty/dashboard",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_loyalty_dashboard"
+  },
+  {
+    "path": "/api/v1/admin/loyalty/settings",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_loyalty_settings_admin"
+  },
+  {
+    "path": "/api/v1/admin/loyalty/settings",
+    "methods": [
+      "PUT"
+    ],
+    "endpoint": "update_loyalty_settings_admin"
+  },
+  {
+    "path": "/api/v1/admin/loyalty/activity",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_loyalty_activity"
+  },
+  {
+    "path": "/api/v1/admin/loyalty/users",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_loyalty_users"
+  },
+  {
+    "path": "/api/v1/admin/loyalty/redeemers",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_loyalty_redeemers"
+  },
+  {
+    "path": "/api/v1/admin/loyalty/rewards",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "list_rewards"
+  },
+  {
+    "path": "/api/v1/admin/loyalty/rewards",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "create_reward"
+  },
+  {
+    "path": "/api/v1/admin/loyalty/rewards/{reward_id}",
+    "methods": [
+      "PATCH"
+    ],
+    "endpoint": "update_reward"
+  },
+  {
+    "path": "/api/v1/admin/loyalty/retention",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_retention"
+  },
+  {
+    "path": "/api/v1/admin/loyalty/revenue-impact",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_revenue_impact"
+  },
+  {
+    "path": "/api/v1/admin/loyalty/cohorts",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_cohorts"
+  },
+  {
+    "path": "/api/v1/admin/loyalty/risk",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_risk"
+  },
+  {
+    "path": "/api/v1/admin/loyalty/expire",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "run_expiration"
+  },
+  {
+    "path": "/api/v1/admin/loyalty/export",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "export_loyalty"
+  },
+  {
+    "path": "/api/v1/admin/referrals/dashboard",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_referral_dashboard"
+  },
+  {
+    "path": "/api/v1/admin/referrals/settings",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_settings"
+  },
+  {
+    "path": "/api/v1/admin/referrals/settings",
+    "methods": [
+      "PUT"
+    ],
+    "endpoint": "update_settings"
+  },
+  {
+    "path": "/api/v1/admin/referrals/top-referrers",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "top_referrers"
+  },
+  {
+    "path": "/api/v1/admin/referrals/conversions",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "conversions"
+  },
+  {
+    "path": "/api/v1/admin/referrals/watchlist",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "watchlist"
+  },
+  {
+    "path": "/api/v1/admin/referrals/channels",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "channels"
+  },
+  {
+    "path": "/api/v1/admin/referrals/trends",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "trends"
+  },
+  {
+    "path": "/api/v1/admin/referrals/impact",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "impact"
+  },
+  {
+    "path": "/api/v1/admin/referrals/popular-codes",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "popular_codes"
+  },
+  {
+    "path": "/api/v1/admin/referrals/campaigns",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "create_campaign"
+  },
+  {
+    "path": "/api/v1/admin/referrals/manual-bonus",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "manual_bonus"
+  },
+  {
+    "path": "/api/v1/admin/referrals/audit",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "start_audit"
+  },
+  {
+    "path": "/api/v1/admin/referrals/export",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "export_referrals"
+  },
+  {
+    "path": "/api/v1/admin/campaigns/dashboard",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_dashboard"
+  },
+  {
+    "path": "/api/v1/admin/campaigns",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "list_campaigns"
+  },
+  {
+    "path": "/api/v1/admin/campaigns/channels",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "channels"
+  },
+  {
+    "path": "/api/v1/admin/campaigns/segments",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "segments"
+  },
+  {
+    "path": "/api/v1/admin/campaigns/roi",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "roi"
+  },
+  {
+    "path": "/api/v1/admin/campaigns/watchlist",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "watchlist"
+  },
+  {
+    "path": "/api/v1/admin/campaigns/calendar",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "calendar"
+  },
+  {
+    "path": "/api/v1/admin/campaigns/automations",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "automations"
+  },
+  {
+    "path": "/api/v1/admin/campaigns/growth/dashboard",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "growth_dashboard"
+  },
+  {
+    "path": "/api/v1/admin/campaigns/growth/segments",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "growth_segments"
+  },
+  {
+    "path": "/api/v1/admin/campaigns/growth/automations",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "growth_automations"
+  },
+  {
+    "path": "/api/v1/admin/campaigns/growth/promo-fraud",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "growth_promo_fraud"
+  },
+  {
+    "path": "/api/v1/admin/campaigns/growth/trending-offers",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "growth_trending_offers"
+  },
+  {
+    "path": "/api/v1/admin/campaigns/growth/roi",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "growth_roi"
+  },
+  {
+    "path": "/api/v1/admin/campaigns/growth/promo-fraud/{promo_code}/review",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "review_growth_promo_risk"
+  },
+  {
+    "path": "/api/v1/admin/campaigns/growth/promo-fraud/{promo_code}/suspend",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "suspend_growth_promo"
+  },
+  {
+    "path": "/api/v1/admin/campaigns/growth/automations/{automation_key}/prepare",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "prepare_growth_automation"
+  },
+  {
+    "path": "/api/v1/admin/campaigns/export",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "export_campaigns"
+  },
+  {
+    "path": "/api/v1/admin/campaigns",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "create_campaign"
+  },
+  {
+    "path": "/api/v1/admin/campaigns/{campaign_id}",
+    "methods": [
+      "PUT"
+    ],
+    "endpoint": "update_campaign"
+  },
+  {
+    "path": "/api/v1/admin/campaigns/{campaign_id}",
+    "methods": [
+      "DELETE"
+    ],
+    "endpoint": "delete_campaign"
+  },
+  {
+    "path": "/api/v1/admin/campaigns/{campaign_id}/pause",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "pause_campaign"
+  },
+  {
+    "path": "/api/v1/admin/campaigns/{campaign_id}/resume",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "resume_campaign"
+  },
+  {
+    "path": "/api/v1/admin/campaigns/{campaign_id}/duplicate",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "duplicate_campaign"
+  },
+  {
+    "path": "/api/v1/admin/campaigns/{campaign_id}/analytics",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "campaign_analytics"
+  },
+  {
+    "path": "/api/v1/admin/users/dashboard",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_dashboard"
+  },
+  {
+    "path": "/api/v1/admin/users",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "list_users"
+  },
+  {
+    "path": "/api/v1/admin/users/activity",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "activity"
+  },
+  {
+    "path": "/api/v1/admin/users/security",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "security_summary"
+  },
+  {
+    "path": "/api/v1/admin/users/loyalty",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "loyalty"
+  },
+  {
+    "path": "/api/v1/admin/users/referrals",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "referrals"
+  },
+  {
+    "path": "/api/v1/admin/users/orders",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "orders"
+  },
+  {
+    "path": "/api/v1/admin/users/payments",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "payments"
+  },
+  {
+    "path": "/api/v1/admin/users/segments",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "segments"
+  },
+  {
+    "path": "/api/v1/admin/users/top-users",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "top_users"
+  },
+  {
+    "path": "/api/v1/admin/users/top-zones",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "top_zones"
+  },
+  {
+    "path": "/api/v1/admin/users/watchlist",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "watchlist"
+  },
+  {
+    "path": "/api/v1/admin/users/devices",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "devices"
+  },
+  {
+    "path": "/api/v1/admin/users/export",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "export_users"
+  },
+  {
+    "path": "/api/v1/admin/users/suspend",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "suspend_user"
+  },
+  {
+    "path": "/api/v1/admin/users/reactivate",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "reactivate_user"
+  },
+  {
+    "path": "/api/v1/admin/users/reset-password",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "reset_password"
+  },
+  {
+    "path": "/api/v1/admin/users/logout-all",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "logout_all"
+  },
+  {
+    "path": "/api/v1/admin/users/{user_id}",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_user"
+  },
+  {
+    "path": "/api/v1/admin/users/{user_id}/security",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_user_security"
+  },
+  {
+    "path": "/api/v1/admin/support/dashboard",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_dashboard"
+  },
+  {
+    "path": "/api/v1/admin/support/tickets",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "list_tickets"
+  },
+  {
+    "path": "/api/v1/admin/support/sla",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "sla"
+  },
+  {
+    "path": "/api/v1/admin/support/agents",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "agents"
+  },
+  {
+    "path": "/api/v1/admin/support/top-issues",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "top_issues"
+  },
+  {
+    "path": "/api/v1/admin/support/sentiment",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "sentiment"
+  },
+  {
+    "path": "/api/v1/admin/support/ai-triage",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "ai_triage"
+  },
+  {
+    "path": "/api/v1/admin/support/export",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "export_support"
+  },
+  {
+    "path": "/api/v1/admin/support/tickets",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "create_ticket"
+  },
+  {
+    "path": "/api/v1/admin/support/tickets/{ticket_id}",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_ticket"
+  },
+  {
+    "path": "/api/v1/admin/support/tickets/{ticket_id}",
+    "methods": [
+      "PATCH"
+    ],
+    "endpoint": "update_ticket"
+  },
+  {
+    "path": "/api/v1/admin/support/tickets/{ticket_id}/reply",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "reply_ticket"
+  },
+  {
+    "path": "/api/v1/admin/support/tickets/{ticket_id}/assign",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "assign_ticket"
+  },
+  {
+    "path": "/api/v1/admin/support/tickets/{ticket_id}/escalate",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "escalate_ticket"
+  },
+  {
+    "path": "/api/v1/admin/support/tickets/{ticket_id}/resolve",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "resolve_ticket"
+  },
+  {
+    "path": "/api/v1/admin/reviews/dashboard",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_dashboard"
+  },
+  {
+    "path": "/api/v1/admin/reviews",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "list_reviews"
+  },
+  {
+    "path": "/api/v1/admin/reviews/sentiment",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "sentiment"
+  },
+  {
+    "path": "/api/v1/admin/reviews/trends",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "trends"
+  },
+  {
+    "path": "/api/v1/admin/reviews/channels",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "channels"
+  },
+  {
+    "path": "/api/v1/admin/reviews/partners",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "partners"
+  },
+  {
+    "path": "/api/v1/admin/reviews/drivers",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "drivers"
+  },
+  {
+    "path": "/api/v1/admin/reviews/issues",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "issues"
+  },
+  {
+    "path": "/api/v1/admin/reviews/insights",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "insights"
+  },
+  {
+    "path": "/api/v1/admin/reviews/export",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "export_reviews"
+  },
+  {
+    "path": "/api/v1/admin/reviews/{review_id}",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_review"
+  },
+  {
+    "path": "/api/v1/admin/reviews/{review_id}/reply",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "reply_review"
+  },
+  {
+    "path": "/api/v1/admin/reviews/{review_id}/escalate",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "escalate_review"
+  },
+  {
+    "path": "/api/v1/admin/reviews/{review_id}/report",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "report_review"
+  },
+  {
+    "path": "/api/v1/admin/claims/dashboard",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_dashboard"
+  },
+  {
+    "path": "/api/v1/admin/claims",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "list_claims"
+  },
+  {
+    "path": "/api/v1/admin/claims",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "create_claim"
+  },
+  {
+    "path": "/api/v1/admin/claims/{claim_id}",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_claim"
+  },
+  {
+    "path": "/api/v1/admin/claims/{claim_id}/status",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "update_status"
+  },
+  {
+    "path": "/api/v1/admin/claims/{claim_id}/assign",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "assign_claim"
+  },
+  {
+    "path": "/api/v1/admin/claims/{claim_id}/notes",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "add_note"
+  },
+  {
+    "path": "/api/v1/admin/claims/{claim_id}/attachments",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "add_attachment"
+  },
+  {
+    "path": "/api/v1/admin/claims/{claim_id}/escalate",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "escalate_claim"
+  },
+  {
+    "path": "/api/v1/admin/claims/{claim_id}/refund",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "refund_action"
+  },
+  {
+    "path": "/api/v1/admin/cms/dashboard",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_dashboard"
+  },
+  {
+    "path": "/api/v1/admin/cms/pages",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "list_pages"
+  },
+  {
+    "path": "/api/v1/admin/cms/pages",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "create_page"
+  },
+  {
+    "path": "/api/v1/admin/cms/pages/{page_id}",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_page"
+  },
+  {
+    "path": "/api/v1/admin/cms/pages/{page_id}",
+    "methods": [
+      "PUT"
+    ],
+    "endpoint": "update_page"
+  },
+  {
+    "path": "/api/v1/admin/cms/pages/{page_id}/publish",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "publish_page"
+  },
+  {
+    "path": "/api/v1/admin/cms/pages/{page_id}/rollback",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "rollback_page"
+  },
+  {
+    "path": "/api/v1/admin/cms/faqs",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "list_faqs"
+  },
+  {
+    "path": "/api/v1/admin/cms/faqs",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "create_faq"
+  },
+  {
+    "path": "/api/v1/admin/cms/media",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "list_media"
+  },
+  {
+    "path": "/api/v1/admin/cms/media",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "upload_media"
+  },
+  {
+    "path": "/api/v1/admin/cms/seo",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "list_seo"
+  },
+  {
+    "path": "/api/v1/admin/cms/seo",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "upsert_seo"
+  },
+  {
+    "path": "/api/v1/admin/blog/dashboard",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_dashboard"
+  },
+  {
+    "path": "/api/v1/admin/blog/posts",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "list_posts"
+  },
+  {
+    "path": "/api/v1/admin/blog/posts",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "create_post"
+  },
+  {
+    "path": "/api/v1/admin/blog/posts/{post_id}",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_post"
+  },
+  {
+    "path": "/api/v1/admin/blog/posts/{post_id}",
+    "methods": [
+      "PUT"
+    ],
+    "endpoint": "update_post"
+  },
+  {
+    "path": "/api/v1/admin/blog/posts/{post_id}/publish",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "publish_post"
+  },
+  {
+    "path": "/api/v1/admin/blog/posts/{post_id}/schedule",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "schedule_post"
+  },
+  {
+    "path": "/api/v1/admin/blog/analytics",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_analytics"
+  },
+  {
+    "path": "/api/v1/admin/blog/ai/generate",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "ai_generate"
+  },
+  {
+    "path": "/api/v1/admin/blog/seo/audit",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "seo_audit"
+  },
+  {
+    "path": "/api/v1/admin/notifications/dashboard",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_dashboard"
+  },
+  {
+    "path": "/api/v1/admin/notifications/channels/performance",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "channel_performance"
+  },
+  {
+    "path": "/api/v1/admin/notifications/errors",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "list_errors"
+  },
+  {
+    "path": "/api/v1/admin/notifications/unsubscribes",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "list_unsubscribes"
+  },
+  {
+    "path": "/api/v1/admin/notifications/segments",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "list_segments"
+  },
+  {
+    "path": "/api/v1/admin/notifications/templates",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "list_templates"
+  },
+  {
+    "path": "/api/v1/admin/notifications/templates",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "create_template"
+  },
+  {
+    "path": "/api/v1/admin/notifications/templates/{template_id}",
+    "methods": [
+      "PUT"
+    ],
+    "endpoint": "update_template"
+  },
+  {
+    "path": "/api/v1/admin/notifications/templates/{template_id}",
+    "methods": [
+      "DELETE"
+    ],
+    "endpoint": "delete_template"
+  },
+  {
+    "path": "/api/v1/admin/notifications/automations",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "list_automations"
+  },
+  {
+    "path": "/api/v1/admin/notifications/automations",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "create_automation"
+  },
+  {
+    "path": "/api/v1/admin/notifications/automations/{automation_id}",
+    "methods": [
+      "PATCH"
+    ],
+    "endpoint": "patch_automation"
+  },
+  {
+    "path": "/api/v1/admin/notifications/send",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "send_notification"
+  },
+  {
+    "path": "/api/v1/admin/notifications/schedule",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "schedule_notification"
+  },
+  {
+    "path": "/api/v1/admin/notifications/retry",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "retry_notification"
+  },
+  {
+    "path": "/api/v1/admin/notifications/export",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "export_notifications"
+  },
+  {
+    "path": "/api/v1/admin/notifications",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "list_notifications"
+  },
+  {
+    "path": "/api/v1/admin/notifications/{notification_id}",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_notification"
+  },
+  {
+    "path": "/api/v1/admin/payment-gateways/dashboard",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_dashboard"
+  },
+  {
+    "path": "/api/v1/admin/payment-gateways/health",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_health"
+  },
+  {
+    "path": "/api/v1/admin/payment-gateways/incidents",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_incidents"
+  },
+  {
+    "path": "/api/v1/admin/payment-gateways/transactions",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_transactions"
+  },
+  {
+    "path": "/api/v1/admin/payment-gateways/settlements",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_settlements"
+  },
+  {
+    "path": "/api/v1/admin/payment-gateways/reconciliation",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_reconciliation"
+  },
+  {
+    "path": "/api/v1/admin/payment-gateways/reconciliation/run",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "run_reconciliation"
+  },
+  {
+    "path": "/api/v1/admin/payment-gateways/webhooks",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_webhooks"
+  },
+  {
+    "path": "/api/v1/admin/payment-gateways/webhooks/test",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "test_webhook"
+  },
+  {
+    "path": "/api/v1/admin/payment-gateways/webhooks/replay",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "replay_webhook"
+  },
+  {
+    "path": "/api/v1/admin/payment-gateways/refunds",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_refunds"
+  },
+  {
+    "path": "/api/v1/admin/payment-gateways/analytics",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_analytics"
+  },
+  {
+    "path": "/api/v1/admin/payment-gateways/export",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "export_data"
+  },
+  {
+    "path": "/api/v1/admin/payment-gateways",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "list_gateways"
+  },
+  {
+    "path": "/api/v1/admin/payment-gateways/{gateway_id}",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_gateway"
+  },
+  {
+    "path": "/api/v1/admin/whatsapp/dashboard",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_dashboard"
+  },
+  {
+    "path": "/api/v1/admin/whatsapp/conversations",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_conversations"
+  },
+  {
+    "path": "/api/v1/admin/whatsapp/conversations/{conv_id}",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_conversation"
+  },
+  {
+    "path": "/api/v1/admin/whatsapp/send",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "send_message"
+  },
+  {
+    "path": "/api/v1/admin/whatsapp/reply",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "reply_message"
+  },
+  {
+    "path": "/api/v1/admin/whatsapp/templates",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_templates"
+  },
+  {
+    "path": "/api/v1/admin/whatsapp/templates",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "create_template"
+  },
+  {
+    "path": "/api/v1/admin/whatsapp/templates/{template_id}",
+    "methods": [
+      "PUT"
+    ],
+    "endpoint": "update_template"
+  },
+  {
+    "path": "/api/v1/admin/whatsapp/templates/{template_id}",
+    "methods": [
+      "DELETE"
+    ],
+    "endpoint": "delete_template"
+  },
+  {
+    "path": "/api/v1/admin/whatsapp/templates/submit",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "submit_template"
+  },
+  {
+    "path": "/api/v1/admin/whatsapp/campaigns",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_campaigns"
+  },
+  {
+    "path": "/api/v1/admin/whatsapp/campaigns",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "create_campaign"
+  },
+  {
+    "path": "/api/v1/admin/whatsapp/automations",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_automations"
+  },
+  {
+    "path": "/api/v1/admin/whatsapp/automations",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "create_automation"
+  },
+  {
+    "path": "/api/v1/admin/whatsapp/analytics",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_analytics"
+  },
+  {
+    "path": "/api/v1/admin/whatsapp/costs",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_costs"
+  },
+  {
+    "path": "/api/v1/admin/whatsapp/webhooks",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_webhooks"
+  },
+  {
+    "path": "/api/v1/admin/whatsapp/webhooks/test",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "test_webhook"
+  },
+  {
+    "path": "/api/v1/admin/whatsapp/webhooks/replay",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "replay_webhook"
+  },
+  {
+    "path": "/api/v1/admin/whatsapp/quality",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_quality"
+  },
+  {
+    "path": "/api/v1/admin/whatsapp/ai",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_ai"
+  },
+  {
+    "path": "/api/v1/admin/whatsapp/export",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "export_data"
+  },
+  {
+    "path": "/api/v1/admin/sms/dashboard",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_dashboard"
+  },
+  {
+    "path": "/api/v1/admin/sms/messages",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_messages"
+  },
+  {
+    "path": "/api/v1/admin/sms/messages/{msg_id}",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_message"
+  },
+  {
+    "path": "/api/v1/admin/sms/send",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "send_sms"
+  },
+  {
+    "path": "/api/v1/admin/sms/send-bulk",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "send_bulk"
+  },
+  {
+    "path": "/api/v1/admin/sms/campaigns",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_campaigns"
+  },
+  {
+    "path": "/api/v1/admin/sms/campaigns",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "create_campaign"
+  },
+  {
+    "path": "/api/v1/admin/sms/campaigns/{campaign_id}",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_campaign"
+  },
+  {
+    "path": "/api/v1/admin/sms/campaigns/{campaign_id}",
+    "methods": [
+      "PUT"
+    ],
+    "endpoint": "update_campaign"
+  },
+  {
+    "path": "/api/v1/admin/sms/templates",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_templates"
+  },
+  {
+    "path": "/api/v1/admin/sms/templates",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "create_template"
+  },
+  {
+    "path": "/api/v1/admin/sms/templates/{template_id}",
+    "methods": [
+      "PUT"
+    ],
+    "endpoint": "update_template"
+  },
+  {
+    "path": "/api/v1/admin/sms/templates/{template_id}",
+    "methods": [
+      "DELETE"
+    ],
+    "endpoint": "delete_template"
+  },
+  {
+    "path": "/api/v1/admin/sms/senders",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_senders"
+  },
+  {
+    "path": "/api/v1/admin/sms/senders",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "create_sender"
+  },
+  {
+    "path": "/api/v1/admin/sms/credits",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_credits"
+  },
+  {
+    "path": "/api/v1/admin/sms/recharge",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "recharge"
+  },
+  {
+    "path": "/api/v1/admin/sms/logs",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_logs"
+  },
+  {
+    "path": "/api/v1/admin/sms/logs/{log_id}",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_log"
+  },
+  {
+    "path": "/api/v1/admin/sms/analytics",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_analytics"
+  },
+  {
+    "path": "/api/v1/admin/sms/providers",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_providers"
+  },
+  {
+    "path": "/api/v1/admin/sms/webhooks/provider",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "provider_webhook"
+  },
+  {
+    "path": "/api/v1/admin/sms/export",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "export_data"
+  },
+  {
+    "path": "/api/v1/admin/email/dashboard",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_dashboard"
+  },
+  {
+    "path": "/api/v1/admin/email/messages",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_messages"
+  },
+  {
+    "path": "/api/v1/admin/email/messages/{msg_id}",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_message"
+  },
+  {
+    "path": "/api/v1/admin/email/send",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "send_email"
+  },
+  {
+    "path": "/api/v1/admin/email/retry",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "retry_email"
+  },
+  {
+    "path": "/api/v1/admin/email/templates",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_templates"
+  },
+  {
+    "path": "/api/v1/admin/email/templates",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "create_template"
+  },
+  {
+    "path": "/api/v1/admin/email/templates/{template_id}",
+    "methods": [
+      "PUT"
+    ],
+    "endpoint": "update_template"
+  },
+  {
+    "path": "/api/v1/admin/email/templates/{template_id}",
+    "methods": [
+      "DELETE"
+    ],
+    "endpoint": "delete_template"
+  },
+  {
+    "path": "/api/v1/admin/email/templates/{template_id}/test",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "test_template"
+  },
+  {
+    "path": "/api/v1/admin/email/campaigns",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_campaigns"
+  },
+  {
+    "path": "/api/v1/admin/email/campaigns",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "create_campaign"
+  },
+  {
+    "path": "/api/v1/admin/email/campaigns/{campaign_id}",
+    "methods": [
+      "PATCH"
+    ],
+    "endpoint": "update_campaign"
+  },
+  {
+    "path": "/api/v1/admin/email/automations",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_automations"
+  },
+  {
+    "path": "/api/v1/admin/email/automations",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "create_automation"
+  },
+  {
+    "path": "/api/v1/admin/email/automations/{automation_id}",
+    "methods": [
+      "PATCH"
+    ],
+    "endpoint": "update_automation"
+  },
+  {
+    "path": "/api/v1/admin/email/deliverability",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_deliverability"
+  },
+  {
+    "path": "/api/v1/admin/email/bounces",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_bounces"
+  },
+  {
+    "path": "/api/v1/admin/email/unsubscribes",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_unsubscribes"
+  },
+  {
+    "path": "/api/v1/admin/email/invoices",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_invoices"
+  },
+  {
+    "path": "/api/v1/admin/email/webhooks",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_webhooks"
+  },
+  {
+    "path": "/api/v1/admin/email/webhooks/test",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "test_webhook"
+  },
+  {
+    "path": "/api/v1/admin/email/webhooks/replay",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "replay_webhook"
+  },
+  {
+    "path": "/api/v1/admin/email/analytics",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_analytics"
+  },
+  {
+    "path": "/api/v1/admin/email/export",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "export_data"
+  },
+  {
+    "path": "/api/v1/admin/integrations/dashboard",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_dashboard"
+  },
+  {
+    "path": "/api/v1/admin/api-keys",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_api_keys"
+  },
+  {
+    "path": "/api/v1/admin/api-keys",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "create_api_key"
+  },
+  {
+    "path": "/api/v1/admin/api-keys/{key_id}",
+    "methods": [
+      "PATCH"
+    ],
+    "endpoint": "patch_api_key"
+  },
+  {
+    "path": "/api/v1/admin/api-keys/{key_id}",
+    "methods": [
+      "DELETE"
+    ],
+    "endpoint": "delete_api_key"
+  },
+  {
+    "path": "/api/v1/admin/webhooks",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_webhooks"
+  },
+  {
+    "path": "/api/v1/admin/webhooks",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "create_webhook"
+  },
+  {
+    "path": "/api/v1/admin/webhooks/{webhook_id}",
+    "methods": [
+      "PATCH"
+    ],
+    "endpoint": "patch_webhook"
+  },
+  {
+    "path": "/api/v1/admin/webhooks/{webhook_id}",
+    "methods": [
+      "DELETE"
+    ],
+    "endpoint": "delete_webhook"
+  },
+  {
+    "path": "/api/v1/admin/webhooks/{webhook_id}/test",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "test_webhook"
+  },
+  {
+    "path": "/api/v1/admin/webhooks/{webhook_id}/replay",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "replay_webhook"
+  },
+  {
+    "path": "/api/v1/admin/webhooks/logs",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_webhook_logs"
+  },
+  {
+    "path": "/api/v1/admin/tracking",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_tracking"
+  },
+  {
+    "path": "/api/v1/admin/tracking",
+    "methods": [
+      "PATCH"
+    ],
+    "endpoint": "patch_tracking"
+  },
+  {
+    "path": "/api/v1/admin/integrations",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_integrations"
+  },
+  {
+    "path": "/api/v1/admin/integrations/health",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_integrations_health"
+  },
+  {
+    "path": "/api/v1/admin/api-analytics",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_api_analytics"
+  },
+  {
+    "path": "/api/v1/admin/api-logs",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_api_logs"
+  },
+  {
+    "path": "/api/v1/admin/security",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_security"
+  },
+  {
+    "path": "/api/v1/admin/openapi",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_openapi"
+  },
+  {
+    "path": "/api/v1/admin/webhooks/test",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "test_webhook_generic"
+  },
+  {
+    "path": "/api/v1/admin/webhooks/replay",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "replay_webhook_generic"
+  },
+  {
+    "path": "/api/v1/admin/management/dashboard",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_dashboard"
+  },
+  {
+    "path": "/api/v1/admin/management/admins",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "list_admins"
+  },
+  {
+    "path": "/api/v1/admin/management/admins",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "create_admin"
+  },
+  {
+    "path": "/api/v1/admin/management/roles",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "list_roles"
+  },
+  {
+    "path": "/api/v1/admin/management/roles",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "create_role"
+  },
+  {
+    "path": "/api/v1/admin/management/permissions",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "list_permissions"
+  },
+  {
+    "path": "/api/v1/admin/management/invitations",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "list_invitations"
+  },
+  {
+    "path": "/api/v1/admin/management/invitations",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "create_invitation"
+  },
+  {
+    "path": "/api/v1/admin/management/sessions",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "list_sessions"
+  },
+  {
+    "path": "/api/v1/admin/management/sessions/{session_id}",
+    "methods": [
+      "DELETE"
+    ],
+    "endpoint": "revoke_session"
+  },
+  {
+    "path": "/api/v1/admin/management/audit",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_audit"
+  },
+  {
+    "path": "/api/v1/admin/management/activity",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_activity"
+  },
+  {
+    "path": "/api/v1/admin/rbac/dashboard",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_dashboard"
+  },
+  {
+    "path": "/api/v1/admin/roles",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "list_roles"
+  },
+  {
+    "path": "/api/v1/admin/roles",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "create_role"
+  },
+  {
+    "path": "/api/v1/admin/roles/{role_id}",
+    "methods": [
+      "PUT"
+    ],
+    "endpoint": "update_role"
+  },
+  {
+    "path": "/api/v1/admin/roles/{role_id}",
+    "methods": [
+      "DELETE"
+    ],
+    "endpoint": "delete_role"
+  },
+  {
+    "path": "/api/v1/admin/permissions",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "list_permissions"
+  },
+  {
+    "path": "/api/v1/admin/permissions",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "create_permission"
+  },
+  {
+    "path": "/api/v1/admin/users/permissions",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "list_user_permissions"
+  },
+  {
+    "path": "/api/v1/admin/users/{user_id}/permissions",
+    "methods": [
+      "PUT"
+    ],
+    "endpoint": "update_user_permissions"
+  },
+  {
+    "path": "/api/v1/admin/permission-audit",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_permission_audit"
+  },
+  {
+    "path": "/api/v1/admin/activity-log",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_activity_log_dashboard"
+  },
+  {
+    "path": "/api/v1/admin/activity-log/stats",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_activity_log_stats"
+  },
+  {
+    "path": "/api/v1/admin/activity-log/anomalies",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_activity_log_anomalies"
+  },
+  {
+    "path": "/api/v1/admin/activity-log/{event_id}",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_activity_log_event"
+  },
+  {
+    "path": "/api/v1/admin/activity-log/export",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "export_activity_log"
+  },
+  {
+    "path": "/api/v1/admin/activity-log/live",
+    "methods": [],
+    "endpoint": "activity_log_live"
+  },
+  {
+    "path": "/api/v1/admin/order-add-ons",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "list_order_add_ons_admin"
+  },
+  {
+    "path": "/api/v1/admin/order-add-ons",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "create_order_add_on"
+  },
+  {
+    "path": "/api/v1/admin/order-add-ons/{add_on_id}",
+    "methods": [
+      "PUT"
+    ],
+    "endpoint": "update_order_add_on"
+  },
+  {
+    "path": "/api/v1/admin/order-add-ons/{add_on_id}",
+    "methods": [
+      "DELETE"
+    ],
+    "endpoint": "deactivate_order_add_on"
+  },
+  {
+    "path": "/api/v1/blog/posts",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "list_posts"
+  },
+  {
+    "path": "/api/v1/blog/posts/{slug}",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_post"
+  },
+  {
+    "path": "/api/v1/support/tickets",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "create_support_ticket"
+  },
+  {
+    "path": "/api/v1/support/tickets",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "list_support_tickets"
+  },
+  {
+    "path": "/api/v1/support/tickets/{ticket_id}",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_support_ticket"
+  },
+  {
+    "path": "/api/v1/support/tickets/{ticket_id}/messages",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "add_support_ticket_message"
+  },
+  {
+    "path": "/api/v1/support/tickets/{ticket_id}/attachments",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "add_support_ticket_attachment"
+  },
+  {
+    "path": "/api/v1/claims",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "create_claim"
+  },
+  {
+    "path": "/api/v1/claims",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "list_claims"
+  },
+  {
+    "path": "/api/v1/claims/{claim_id}",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_claim"
+  },
+  {
+    "path": "/api/v1/reviews",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "create_review"
+  },
+  {
+    "path": "/api/v1/reviews/public",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "list_public_reviews"
+  },
+  {
+    "path": "/api/v1/reviews/me",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "list_my_reviews"
+  },
+  {
+    "path": "/api/v1/promotions/me/history",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_my_promo_usage_history"
+  },
+  {
+    "path": "/api/v1/promotions",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "list_promo_codes"
+  },
+  {
+    "path": "/api/v1/promotions/partners/{partner_id}",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "list_partner_promo_codes"
+  },
+  {
+    "path": "/api/v1/promotions",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "create_promo_code"
+  },
+  {
+    "path": "/api/v1/promotions/partners/{partner_id}",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "create_partner_promo_code"
+  },
+  {
+    "path": "/api/v1/promotions/{promo_id}",
+    "methods": [
+      "PATCH"
+    ],
+    "endpoint": "update_promo_code"
+  },
+  {
+    "path": "/api/v1/promotions/partners/{partner_id}/{promo_id}",
+    "methods": [
+      "PATCH"
+    ],
+    "endpoint": "update_partner_promo_code"
+  },
+  {
+    "path": "/api/v1/promotions/{promo_id}",
+    "methods": [
+      "DELETE"
+    ],
+    "endpoint": "delete_promo_code"
+  },
+  {
+    "path": "/api/v1/promotions/partners/{partner_id}/{promo_id}",
+    "methods": [
+      "DELETE"
+    ],
+    "endpoint": "delete_partner_promo_code"
+  },
+  {
+    "path": "/api/v1/content/site",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_site_content"
+  },
+  {
+    "path": "/api/v1/content/site",
+    "methods": [
+      "PUT"
+    ],
+    "endpoint": "update_site_content"
+  },
+  {
+    "path": "/api/v1/subscriptions/plans",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "list_subscription_plans"
+  },
+  {
+    "path": "/api/v1/subscriptions/plans",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "create_subscription_plan"
+  },
+  {
+    "path": "/api/v1/subscriptions/plans/{plan_id}",
+    "methods": [
+      "PATCH"
+    ],
+    "endpoint": "update_subscription_plan"
+  },
+  {
+    "path": "/api/v1/subscriptions/plans/{plan_id}",
+    "methods": [
+      "DELETE"
+    ],
+    "endpoint": "delete_subscription_plan"
+  },
+  {
+    "path": "/api/v1/tracking/settings",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_tracking_settings"
+  },
+  {
+    "path": "/api/v1/tracking/settings",
+    "methods": [
+      "PUT"
+    ],
+    "endpoint": "update_tracking_settings"
+  },
+  {
+    "path": "/api/v1/notifications/me",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "list_my_notifications"
+  },
+  {
+    "path": "/api/v1/notifications",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "list_notifications"
+  },
+  {
+    "path": "/api/v1/notifications",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "create_notification"
+  },
+  {
+    "path": "/api/v1/notifications/{notification_id}/read",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "mark_notification_read"
+  },
+  {
+    "path": "/api/v1/notifications/read-all",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "mark_all_notifications_read"
+  },
+  {
+    "path": "/api/v1/notifications/{notification_id}",
+    "methods": [
+      "DELETE"
+    ],
+    "endpoint": "delete_notification"
+  },
+  {
+    "path": "/api/v1/advertisements",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "list_advertisements"
+  },
+  {
+    "path": "/api/v1/advertisements",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "create_advertisement"
+  },
+  {
+    "path": "/api/v1/advertisements/{advertisement_id}",
+    "methods": [
+      "PATCH"
+    ],
+    "endpoint": "update_advertisement"
+  },
+  {
+    "path": "/api/v1/advertisements/{advertisement_id}",
+    "methods": [
+      "DELETE"
+    ],
+    "endpoint": "delete_advertisement"
+  },
+  {
+    "path": "/api/v1/loyalty/settings",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_loyalty_settings"
+  },
+  {
+    "path": "/api/v1/loyalty/me/history",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_my_loyalty_history"
+  },
+  {
+    "path": "/api/v1/loyalty/admin/overview",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_loyalty_admin_overview"
+  },
+  {
+    "path": "/api/v1/loyalty/admin/run-expiration",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "run_loyalty_expiration"
+  },
+  {
+    "path": "/api/v1/loyalty/admin/adjustments",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "adjust_loyalty_points"
+  },
+  {
+    "path": "/api/v1/loyalty/settings",
+    "methods": [
+      "PUT"
+    ],
+    "endpoint": "update_loyalty_settings"
+  },
+  {
+    "path": "/api/v1/referral/settings",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_referral_settings"
+  },
+  {
+    "path": "/api/v1/referral/me",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_my_referral_stats"
+  },
+  {
+    "path": "/api/v1/referral/admin/reviews/{referrer_user_id}",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_referral_review_status"
+  },
+  {
+    "path": "/api/v1/referral/admin/reviews/{referrer_user_id}",
+    "methods": [
+      "PUT"
+    ],
+    "endpoint": "upsert_referral_review_status"
+  },
+  {
+    "path": "/api/v1/referral/admin/overview",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_referral_admin_overview"
+  },
+  {
+    "path": "/api/v1/referral/settings",
+    "methods": [
+      "PUT"
+    ],
+    "endpoint": "update_referral_settings"
+  },
+  {
+    "path": "/api/v1/partners/{partner_id}/dashboard-summary",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_partner_dashboard_summary"
+  },
+  {
+    "path": "/api/v1/partners/{partner_id}/orders",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "list_partner_orders"
+  },
+  {
+    "path": "/api/v1/partners/{partner_id}/financial-summary",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_partner_financial_summary"
+  },
+  {
+    "path": "/api/v1/partners/{partner_id}/analytics-summary",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_partner_analytics_summary"
+  },
+  {
+    "path": "/api/v1/partners/{partner_id}/invoice-eligible-orders",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "list_partner_invoice_eligible_orders"
+  },
+  {
+    "path": "/api/v1/partners/{partner_id}/profile-detail",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_partner_profile_detail"
+  },
+  {
+    "path": "/api/v1/partners/{partner_id}/profile-detail",
+    "methods": [
+      "PUT"
+    ],
+    "endpoint": "update_partner_profile_detail"
+  },
+  {
+    "path": "/api/v1/partners/{partner_id}/profile-detail/working-hours",
+    "methods": [
+      "PUT"
+    ],
+    "endpoint": "update_partner_profile_working_hours"
+  },
+  {
+    "path": "/api/v1/partners/{partner_id}/profile-detail/media",
+    "methods": [
+      "PUT"
+    ],
+    "endpoint": "update_partner_profile_media"
+  },
+  {
+    "path": "/api/v1/partners/{partner_id}/security/activity-logs",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_partner_security_activity_logs"
+  },
+  {
+    "path": "/api/v1/partners/orders/{order_id}/proforma",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "generate_partner_order_proforma"
+  },
+  {
+    "path": "/api/v1/partners/orders/{order_id}/invoice",
+    "methods": [
+      "POST"
+    ],
+    "endpoint": "generate_partner_order_invoice"
+  },
+  {
+    "path": "/api/v1/partners/orders/{order_id}/documents",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_partner_order_documents"
+  },
+  {
+    "path": "/api/v1/ops/orders/{order_id}/truth-timeline",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_order_truth_timeline"
+  },
+  {
+    "path": "/api/v1/ops/orders/{order_id}/proofs",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_order_proofs"
+  },
+  {
+    "path": "/api/v1/ops/corridors/health",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_corridors_health"
+  },
+  {
+    "path": "/api/v1/ops/anomalies",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "get_anomalies"
+  },
+  {
+    "path": "/api/v1/ops/investigate",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "investigate"
+  },
+  {
+    "path": "/health",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "health_check"
+  },
+  {
+    "path": "/",
+    "methods": [
+      "GET"
+    ],
+    "endpoint": "root"
+  }
+]

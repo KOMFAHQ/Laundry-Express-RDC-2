@@ -1,0 +1,13 @@
+{
+  "observed_date": "2026-09-28",
+  "repository": "KOMFAHQ/Laundry-Express-RDC-2",
+  "expected_head": "f55e775831e812e77892072c9fcfed16e4ee26fe",
+  "actual_head": "f55e775831e812e77892072c9fcfed16e4ee26fe",
+  "diff": "NONE",
+  "open_prs": 0,
+  "branches": [
+    "main",
+    "codex/prepare-release-changes"
+  ],
+  "phase": "before documentary publication"
+}

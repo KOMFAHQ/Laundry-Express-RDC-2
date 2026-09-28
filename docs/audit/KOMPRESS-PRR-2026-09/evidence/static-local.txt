@@ -1,0 +1,45 @@
+Production Readiness Gate
+TRUTH_RUN_E2E=0 (static only)
+
+=== [8] Repo safety / secrets scan ===
+PASS check:repo-safety
+
+=== [4-9] Static production readiness ===
+[PASS] docker_compose_mock_api_disabled: set VITE_USE_MOCK_API=false on web service
+[PASS] env_example_documents_mock_api: document VITE_USE_MOCK_API=false in .env.example
+[PASS] env_example_documents_payment_mode: document VITE_PAYMENT_MODE in .env.example
+[PASS] env_example_frontend_port_3003: frontend port 3003 documented
+[PASS] env_example_secret_key_documented: SECRET_KEY production note
+[PASS] auth_no_network_mock_fallback: AuthContext must not mock-login on network errors
+[PASS] datacontext_skips_mock_db_without_flag: DataContext must not always load localStorage mock DB
+[PASS] pilot_config_exists: config/pilot.ts
+[PASS] admin_sidebar_filters_hidden_modules: ControlCenterSidebar filters pilot-hidden modules
+[PASS] hidden_module_listed:WhatsApp: WhatsApp
+[PASS] hidden_module_listed:SMS: SMS
+[PASS] hidden_module_listed:Email: Email
+[PASS] hidden_module_listed:Campagnes: Campagnes
+[PASS] hidden_module_listed:Permissions: Permissions
+[PASS] payment_modal_sandbox_label: PaymentModal shows sandbox banner
+[PASS] truth_script_exists:validate_customer_corridor_truth.py: validate_customer_corridor_truth.py
+[PASS] truth_script_exists:validate_loyalty_referral_truth.py: validate_loyalty_referral_truth.py
+[PASS] truth_script_exists:validate_promotion_truth.py: validate_promotion_truth.py
+[PASS] truth_script_exists:validate_growth_engine_truth.py: validate_growth_engine_truth.py
+[PASS] truth_script_exists:verify_promo_pricing_consumption.py: verify_promo_pricing_consumption.py
+[PASS] alembic_single_head: heads=1 ['d2e3f4a5b6c7 (head)']
+
+Static readiness: 21/21
+
+=== [1] Customer corridor truth E2E === SKIPPED (set TRUTH_RUN_E2E=1)
+
+=== [2] Loyalty / referral truth E2E === SKIPPED (set TRUTH_RUN_E2E=1)
+
+=== [3] Promotions truth E2E === SKIPPED (set TRUTH_RUN_E2E=1)
+
+=== [3.5] Growth Engine V1.1 truth E2E === SKIPPED (set TRUTH_RUN_E2E=1)
+
+=== [10] API smoke test === SKIPPED (set TRUTH_RUN_E2E=1)
+
+=== [promo-ci] Promo pricing consumption gate === SKIPPED (set TRUTH_RUN_E2E=1)
+
+GO: 2/2 executed steps passed
+Tip: run full gate with TRUTH_RUN_E2E=1 after docker compose up

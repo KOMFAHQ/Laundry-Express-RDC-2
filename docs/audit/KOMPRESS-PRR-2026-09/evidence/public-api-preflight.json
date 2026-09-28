@@ -1,0 +1,45 @@
+[
+  {
+    "path": "",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "path": "environments",
+    "observed_at": "2026-09-27T11:17:23.195841+00:00",
+    "data": {
+      "total_count": 0,
+      "environments": []
+    }
+  },
+  {
+    "path": "deployments?per_page=100",
+    "observed_at": "2026-09-27T11:17:22.888158+00:00",
+    "data": []
+  },
+  {
+    "path": "tags?per_page=100",
+    "observed_at": "2026-09-27T11:17:22.886747+00:00",
+    "data": []
+  },
+  {
+    "path": "actions/workflows",
+    "observed_at": "2026-09-27T11:17:22.935901+00:00",
+    "data": {
+      "total_count": 1,
+      "workflows": [
+        {
+          "id": 296179163,
+          "node_id": "W_kwDORnD9is4Rp1Xb",
+          "name": "Production Readiness Gate",
+          "path": ".github/workflows/production-readiness.yml",
+          "state": "active",
+          "created_at": "2026-06-15T09:13:59.000Z",
+          "updated_at": "2026-06-15T09:14:04.000Z",
+          "url": "https://api.github.com/repos/KOMFAHQ/Laundry-Express-RDC-2/actions/workflows/296179163",
+          "html_url": "https://github.com/KOMFAHQ/Laundry-Express-RDC-2/blob/main/.github/workflows/production-readiness.yml",
+          "badge_url": "https://github.com/KOMFAHQ/Laundry-Express-RDC-2/workflows/Production%20Readiness%20Gate/badge.svg"
+        }
+      ]
+    }
+  }
+]

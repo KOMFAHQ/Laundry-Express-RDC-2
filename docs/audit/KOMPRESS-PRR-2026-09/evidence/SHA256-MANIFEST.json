@@ -1,0 +1,146 @@
+[
+  {
+    "file": "evidence/github-summary.json",
+    "bytes": 24451,
+    "sha256": "64d3d9f0c7e30d94c56464eb8545758a633b7b6d9929c9ced50e1dcf7a2477d8",
+    "origin": "captured during this audit; source bytes retained"
+  },
+  {
+    "file": "evidence/canonical-recheck.json",
+    "bytes": 358,
+    "sha256": "7fad1ed4b3451e1741ff111cc0ac1d41727767db41750f68186e9a34c26acbe8",
+    "origin": "captured during this audit; source bytes retained"
+  },
+  {
+    "file": "evidence/public-api-preflight.json",
+    "bytes": 1322,
+    "sha256": "0ad8f09788497fc2326932f36e0c24cfb5fcb963e5467191a75970e540d378e3",
+    "origin": "captured during this audit; source bytes retained"
+  },
+  {
+    "file": "evidence/ci-static-job.txt",
+    "bytes": 64315,
+    "sha256": "29a06dcb8eb141f7c8fc6c7277de3a84968e9c18185b48dc1252c6b97914eb1a",
+    "origin": "captured during this audit; source bytes retained"
+  },
+  {
+    "file": "evidence/npm-ci.txt",
+    "bytes": 704,
+    "sha256": "315368a99da8da7a0c472b1cb7e9929ee22ddaf9fa476bc74458ec52b10c920d",
+    "origin": "captured during this audit; source bytes retained"
+  },
+  {
+    "file": "evidence/frontend-build.txt",
+    "bytes": 1814,
+    "sha256": "aa9ff540b479027d6657e955dc22e41eb2e992c306769a746e0457f2ee41561f",
+    "origin": "captured during this audit; source bytes retained"
+  },
+  {
+    "file": "evidence/vitest.txt",
+    "bytes": 19794,
+    "sha256": "717e6715f7f60c653f77c8a877c8ad9d4f8cc0111d165f586a924ffca4eb4417",
+    "origin": "captured during this audit; source bytes retained"
+  },
+  {
+    "file": "evidence/pytest.txt",
+    "bytes": 100379,
+    "sha256": "31d7ea32bdb3a1fe397b001820ad120863ed02e7fc06eed246d9cc3262a421b7",
+    "origin": "captured during this audit; source bytes retained"
+  },
+  {
+    "file": "evidence/static-local.txt",
+    "bytes": 2258,
+    "sha256": "299b72f2a308a9f010b68ed4d24550127eba9e1286bd41bb425a166c0a198096",
+    "origin": "captured during this audit; source bytes retained"
+  },
+  {
+    "file": "evidence/runtime-probes.txt",
+    "bytes": 1012,
+    "sha256": "020b59ddb04ce4fc9a34b55660c6f4f105d9750354d0f83d844764fc5b6a1365",
+    "origin": "captured during this audit; source bytes retained"
+  },
+  {
+    "file": "evidence/env-example-import.txt",
+    "bytes": 2431,
+    "sha256": "f281cd2c6e4e53e9487f631b47ed1b54c20c9a7590a897fd49c0da8e0c29cb70",
+    "origin": "captured during this audit; source bytes retained"
+  },
+  {
+    "file": "evidence/first-two-migrations.sql",
+    "bytes": 5998,
+    "sha256": "635b88ce4e09c7177fe15dfa9e38e78fc220ddad681260d5f56355b533cb7fc7",
+    "origin": "captured during this audit; source bytes retained"
+  },
+  {
+    "file": "evidence/alembic-offline.txt",
+    "bytes": 381,
+    "sha256": "cbe7fad241e7f1fa96518174b42fa996a4a846e654bc29ad307396a5a3c495b3",
+    "origin": "captured during this audit; source bytes retained"
+  },
+  {
+    "file": "evidence/migration-inventory.json",
+    "bytes": 95695,
+    "sha256": "294f82dcaa691bb94110320da830371c2a817eef72ba24756544a729c025955e",
+    "origin": "captured during this audit; source bytes retained"
+  },
+  {
+    "file": "evidence/routes.json",
+    "bytes": 67234,
+    "sha256": "448b89d992400dae8ed8f3c3eca77429b9cb3e2bb8dafdd12f36d1c1ff7e9837",
+    "origin": "captured during this audit; source bytes retained"
+  },
+  {
+    "file": "evidence/frontend-request-inventory.json",
+    "bytes": 21996,
+    "sha256": "ac33de162019a459f7ebc3f64209394caa9ca4f4351b28d92b6fb6ec7a6326c1",
+    "origin": "captured during this audit; source bytes retained"
+  },
+  {
+    "file": "evidence/test-file-inventory.json",
+    "bytes": 17806,
+    "sha256": "8592e6efef101c7e048b09b988c6860bb9f28eb232ee2fa6c557c0c9d477e21e",
+    "origin": "captured during this audit; source bytes retained"
+  },
+  {
+    "file": "evidence/identity-inventory.json",
+    "bytes": 5547,
+    "sha256": "a8ffed55d2a2faae094f58acd86f34f83461239a964f2e51483e8826a51e21d6",
+    "origin": "captured during this audit; source bytes retained"
+  },
+  {
+    "file": "evidence/domain-inventory.json",
+    "bytes": 9200,
+    "sha256": "8058c475827b0e716d5134dc0d105697dc6975cf202780bb40042775a6848d9a",
+    "origin": "captured during this audit; source bytes retained"
+  },
+  {
+    "file": "evidence/domain-dns.json",
+    "bytes": 731,
+    "sha256": "222d07370459d2b31735799fb1627f48b23bad14b236430e4576cf96dd84398d",
+    "origin": "captured during this audit; source bytes retained"
+  },
+  {
+    "file": "evidence/staging-prereqs.txt",
+    "bytes": 860,
+    "sha256": "80c25100171558827f581e2f7c3f143c0dd4a790ad2fe1202c31db7eb52d1a6b",
+    "origin": "captured during this audit; source bytes retained"
+  },
+  {
+    "file": "evidence/npm-audit.json",
+    "bytes": 51898,
+    "sha256": "338a98ae41f3534f20cb00ad29016492d808c77740f7573c6d41da0c67e31c03",
+    "origin": "captured during this audit; source bytes retained"
+  },
+  {
+    "file": "evidence/apt-update.txt",
+    "bytes": 1021,
+    "sha256": "1c5b6b1c143c1ee03b82d05413fad9ea7c3daaa2c7fe89a2faf1aaf1574ea8fb",
+    "origin": "captured during this audit; source bytes retained"
+  },
+  {
+    "file": "evidence/document-excerpts.json",
+    "bytes": 24180,
+    "sha256": "635300d69d80e8c26d3cd8e0a142e232a983e2be40a2c3d5df0489745315258e",
+    "origin": "captured during this audit; source bytes retained"
+  }
+]

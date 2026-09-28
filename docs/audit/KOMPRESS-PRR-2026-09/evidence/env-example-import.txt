@@ -1,0 +1,26 @@
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/workspace/scratch/cc83b73ba02e/repo/apps/api/app/main.py", line 7, in <module>
+    from app.api import api_router
+  File "/workspace/scratch/cc83b73ba02e/repo/apps/api/app/api/__init__.py", line 3, in <module>
+    from app.api.routes import auth, users, orders, catalog, pricing, logistics, marketplace, dispatch_settings, payments, refunds, disputes, commissions, admin, admin_ads, admin_loyalty, admin_referrals, admin_campaigns, admin_users, admin_support, admin_reviews, admin_claims, admin_cms, admin_blog, admin_notifications, admin_payment_gateways, admin_whatsapp, admin_sms, admin_email, admin_integrations_ops, admin_management, admin_rbac, admin_activity_log, admin_order_addons, blog, support, claims, reviews, promotions, content, subscriptions, tracking, notifications, advertisements, loyalty, referral, dashboard, ops
+  File "/workspace/scratch/cc83b73ba02e/repo/apps/api/app/api/routes/auth.py", line 7, in <module>
+    from app.api.dependencies import get_db, get_current_user, get_auth_service, get_sync_db, get_user_service
+  File "/workspace/scratch/cc83b73ba02e/repo/apps/api/app/api/dependencies.py", line 7, in <module>
+    from app.core.database import get_db as get_async_db, get_sync_db as get_sync_db_session
+  File "/workspace/scratch/cc83b73ba02e/repo/apps/api/app/core/database.py", line 8, in <module>
+    async_engine = create_async_engine(
+                   ^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/cc83b73ba02e/audit-venv/lib/python3.12/site-packages/sqlalchemy/ext/asyncio/engine.py", line 117, in create_async_engine
+    sync_engine = _create_engine(url, **kw)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<string>", line 2, in create_engine
+  File "/workspace/scratch/cc83b73ba02e/audit-venv/lib/python3.12/site-packages/sqlalchemy/util/deprecations.py", line 281, in warned
+    return fn(*args, **kwargs)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/cc83b73ba02e/audit-venv/lib/python3.12/site-packages/sqlalchemy/engine/create.py", line 601, in create_engine
+    dbapi = dbapi_meth(**dbapi_args)
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/cc83b73ba02e/audit-venv/lib/python3.12/site-packages/sqlalchemy/dialects/postgresql/psycopg.py", line 706, in import_dbapi
+    import psycopg
+ModuleNotFoundError: No module named 'psycopg'
