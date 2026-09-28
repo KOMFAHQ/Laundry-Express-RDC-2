@@ -1,0 +1,24 @@
+Staging prerequisite check
+=========================
+
+Required
+FAIL STAGING_API_BASE_URL: remote staging API base URL missing
+FAIL STAGING_DATABASE_URL: remote staging async database URL missing
+FAIL STAGING_DATABASE_URL_SYNC: remote staging sync database URL missing
+
+Optional
+INFO STAGING_FRONTEND_URL: staging frontend URL not set
+INFO STAGING_LOGISTICS_WS_URL: staging logistics live WebSocket URL (wss://) not set
+INFO STAGING_SMOKE_TEST_USER_EMAIL: existing staging smoke-test user email not set
+INFO STAGING_SMOKE_TEST_USER_PASSWORD: existing staging smoke-test user password not set
+INFO STAGING_PAYMENT_PROVIDER_MODE: declared provider mode for staging not set
+
+Local context
+INFO .env not present
+
+Verdict
+NO-GO: staging target is not configured in this environment.
+Missing:
+- STAGING_API_BASE_URL
+- STAGING_DATABASE_URL
+- STAGING_DATABASE_URL_SYNC

@@ -1,0 +1,12 @@
+/workspace/scratch/cc83b73ba02e/audit-venv/lib/python3.12/site-packages/pydantic/_internal/_fields.py:184: UserWarning: Field name "schema_json" shadows an attribute in parent "BaseModel"; 
+  warnings.warn(
+2026-09-27 07:16:08,176 - httpx - INFO - HTTP Request: GET http://testserver/health "HTTP/1.1 200 OK"
+2026-09-27 07:16:08,186 - httpx - INFO - HTTP Request: POST http://testserver/api/v1/auth/register "HTTP/1.1 422 Unprocessable Entity"
+AUDITED_HEAD=f55e775831e812e77892072c9fcfed16e4ee26fe
+APP_ENV= production
+MODEL_TABLE_COUNT= 183
+ROUTE_COUNT= 521
+health_without_db_untrusted_host 200 {'status': 'healthy', 'service': 'Laundry Express RDC', 'version': '1.0.0', 'environment': 'production'}
+public_registration_privilege_escalation 422
+reset_route_with_explicit_stub_service {"message": "Si cet email existe, un lien de r\u00e9initialisation a \u00e9t\u00e9 envoy\u00e9", "token": "AUDIT_SYNTHETIC_TOKEN", "expires_at": "2026-09-27T00:00:00+00:00"} DB/provider NOT tested
+middleware= ['CORSMiddleware']

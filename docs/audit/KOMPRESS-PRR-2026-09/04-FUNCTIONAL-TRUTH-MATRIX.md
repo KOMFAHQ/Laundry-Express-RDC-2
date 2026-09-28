@@ -1,0 +1,40 @@
+# Functional truth matrix
+
+Mission : **KOMPRESS-PRR-2026-09** · Collecte : **2026-09-27 UTC** · Recontrôle canonique : **2026-09-28 UTC**
+
+Repository : `KOMFAHQ/Laundry-Express-RDC-2` · Branche : `main` · HEAD audité : `f55e775831e812e77892072c9fcfed16e4ee26fe`.
+Les chemins de code cités désignent exclusivement ce HEAD, consultable [sur GitHub](https://github.com/KOMFAHQ/Laundry-Express-RDC-2/blob/f55e775831e812e77892072c9fcfed16e4ee26fe/).
+Les preuves locales, leur portée et leurs limites sont indexées dans [EVIDENCE-INDEX.md](EVIDENCE-INDEX.md).
+
+Dans **Local**, une mention de tests unitaires/contrats n’est pas une validation de la capability entière. Les tests utilisent largement mocks et objets construits ; seuls les probes et commandes de §08 ont été exécutés. **CI : statique seulement** signifie contrôles de présence/textes au SHA, jamais corridor métier validé. Toutes les colonnes Staging/Production restent UNKNOWN.
+
+| Capability | Code | Tests | Local | CI | Staging | Production | Status | Evidence |
+|---|---|---|---|---|---|---|---|---|
+| registration | auth.py / auth_service / schemas.user | test_auth_service ; intégration historique skip | 422 rôle super_admin ; unités asyncio passent | Statique seulement | UNKNOWN | UNKNOWN | PARTIAL | création DB réelle non rejouée ; élévation publique rejetée |
+| login/authentication | auth routes/service, AuthContext | test_auth_service ; AuthContext tests | unités asyncio PASS ; reset probe montre fuite | Statique seulement | UNKNOWN | UNKNOWN | BROKEN | B03/B19 ; ni login DB réel ni MFA vérifiés |
+| users | users.py, user_service, admin_users | tests services/admin frontend | sous-tests suite ; corridor non exécuté | Statique seulement | UNKNOWN | UNKNOWN | PARTIAL | création/modification utilisateur inter-rôles à valider |
+| RBAC | dependencies.py ; checks par route ; admin_rbac | verify_role_access_matrix ; CMS permissions | unités ciblées seulement | Statique seulement | UNKNOWN | UNKNOWN | BROKEN | B06/B07/B08 ; booléen ou rôle global ne prouve pas périmètre |
+| partners | catalog/partner_* ; users / applications | test_partner_profile_route, test_partner_orders_route | tests de contrats ; onboarding UI local | Statique seulement | UNKNOWN | UNKNOWN | PARTIAL | DataContext→constants pour candidatures ; B13 |
+| services/catalog | catalog.py ; models.catalog ; DataContext | routes et tests de pricing | compilation/tests ; DB non exécutée | Statique seulement | UNKNOWN | UNKNOWN | PARTIAL | catalogue API et prix/articles front hardcodés coexistent |
+| pricing | pricing_service.py ; pricing.py | test_pricing_service ; verify_promo_pricing_consumption | unités PASS ; consommation E2E non lancée | Statique seulement | UNKNOWN | UNKNOWN | PARTIAL | prix total serveur, détails items issus requête ; vérifier cohérence et devise |
+| orders | order_service/repository/models ; OrderContext | test_orders_stability_real ; verify_order_truth_corridor | 4 ERROR liés DB ; tests UI PASS | Statique seulement | UNKNOWN | UNKNOWN | PARTIAL | idempotency unique et lock update présents ; E2E/concurrence DB non validés |
+| payments | payment_service.py ; payments.py ; payment-flow.ts | test_payment_service ; verify_payment_truth_corridor | tests unité simulation PASS ; intégration skip | Statique seulement | UNKNOWN | UNKNOWN | BROKEN | B04–B06/B09 ; aucun fournisseur vérifié |
+| refunds | payment_service create/approve/process_refund ; refunds.py | verify_refunds_flow ; unités payment | code/tests présents ; corridor non lancé | Statique seulement | UNKNOWN | UNKNOWN | BROKEN | simulation success et budget cumulé non verrouillé |
+| disputes | payment_service ; disputes.py ; schemas.payment | verify_disputes_flow ; claims tests | unités partiels ; corridor non lancé | Statique seulement | UNKNOWN | UNKNOWN | PARTIAL | workflow persisté ≠ résolution financière réelle |
+| commissions | payment_service ; commissions.py ; models.commission | verify_commissions_flow | corridor non lancé | Statique seulement | UNKNOWN | UNKNOWN | PARTIAL | Float et unicité manquante ; pas de settlement externe |
+| logistics | logistics.py ; dispatch/fleet/live services | verify_logistics_truth_corridor ; fleet tests | unités/fonctions de contrat ; E2E non lancé | Statique seulement | UNKNOWN | UNKNOWN | BROKEN | périmètres REST/WS B07/B08 |
+| dispatch | dispatch_service ; hybrid_dispatch_service | test_hybrid_dispatch_service ; driver corridor | 2 FAIL stratégie attendue internal_first | Statique seulement | UNKNOWN | UNKNOWN | PARTIAL | implémentation et contraintes existent, conflit contrat à arbitrer |
+| drivers | logistics.py ; logistics_marketplace_service ; UI driver | driver/mobile tests ; self_service gate | tests UI PASS ; mission réelle non lancée | Statique seulement | UNKNOWN | UNKNOWN | PARTIAL | profils, disponibilité, flotte ; pas de terrain ni isolation exhaustive |
+| tracking | tracking.py ; logistics/live ; GPS/WS UI | verify_tracking_flow ; staging_ws_probe | tests UI PASS ; aucun WS distant testé | Statique seulement | UNKNOWN | UNKNOWN | BROKEN | broadcast global B08 ; GPS terrain UNKNOWN |
+| marketplace | marketplace.py ; logistics_marketplace_service | verify_marketplace_flow ; intégration historique skip | E2E non lancé | Statique seulement | UNKNOWN | UNKNOWN | PARTIAL | claim/assign/company contracts présents, concurrence à prouver |
+| promotions | promotion_service ; promotions/admin_campaigns | unités ; validate_promotion_truth | suite partielle ; truth skip | Statique seulement | UNKNOWN | UNKNOWN | PARTIAL | application pricing et consommation existent ; E2E courant absent |
+| loyalty | loyalty_service ; admin_loyalty/loyalty | unités ; validate_loyalty_referral_truth | unités PASS ; truth skip | Statique seulement | UNKNOWN | UNKNOWN | PARTIAL | débit/crédit/expiration présents ; invariants concurrence non prouvés |
+| referrals | loyalty_service ; referral/admin_referrals | verify_referral_* ; validate_growth_engine_truth | unités PASS ; truth non exécuté | Statique seulement | UNKNOWN | UNKNOWN | PARTIAL | anti-fraude/review/reporting implémentés ; réel inconnu |
+| subscriptions | subscriptions.py ; models/config ; DataContext | verify_subscriptions_flow ; UI tests | test UI ; corridor non lancé | Statique seulement | UNKNOWN | UNKNOWN | PARTIAL | gestion plans ≠ facturation récurrente fournisseur |
+| advertisements | advertisements/admin_ads ; config ; UI | test_admin_ads_route ; verify_advertisements_flow | tests de contrat ; diffusion externe inconnue | Statique seulement | UNKNOWN | UNKNOWN | PARTIAL | config et placements ne prouvent ni facturation ni campagne externe |
+| content management | content/admin_cms/blog ; services | test_admin_cms_route ; CMS unit tests ; public blog | 2 FAIL blog sur DB indisponible | Statique seulement | UNKNOWN | UNKNOWN | PARTIAL | CMS partiel testé ; lecture DB réelle non validée |
+| admin | admin_* ; nombreux dashboards ; pilotConfig | nombreux Vitest/unités et contrats | front PASS ; quelques fixtures ERROR | Statique seulement | UNKNOWN | UNKNOWN | PARTIAL | B14 ; modules masqués restent API accessibles selon permissions |
+| reporting | dashboard/ops ; partner_analytics ; workers | unités analytics ; verify_ops_dashboard | unités partiels ; report worker stub | Statique seulement | UNKNOWN | UNKNOWN | PARTIAL | KPI synthétiques possibles ; aucun rapprochement terrain |
+| audit/activity | audit_service, AuditLog ; activity dashboard | test_activity_log_dashboard_service | unités de dashboard ; couverture producteurs partielle | Statique seulement | UNKNOWN | UNKNOWN | PARTIAL | AuditLog et ActivityLogEvent distincts ; pas de journal exhaustif/immuable démontré |
+
+Les familles de services sont réelles ; leur quantité ne justifie aucune promotion de statut. La présence d’un enum de provider, d’un bouton de test, d’un modèle de webhook ou d’un seed n’équivaut pas à un moteur externe opérationnel. Les liens exacts entre scripts et gates sont dans §08. Les chemins de code et inventaires de routes permettent de reproduire cette matrice.

@@ -1,0 +1,319 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+ RUN  v3.2.4 /workspace/scratch/cc83b73ba02e/repo
+
+ ✓ components/ui/__tests__/HorizontalFilter.mobile.test.tsx (11 tests) 209ms
+ ✓ components/ui/__tests__/BottomSheet.mobile.test.tsx (10 tests) 403ms
+ ✓ components/ui/__tests__/MobileButton.mobile.test.tsx (18 tests) 265ms
+ ✓ components/ui/__tests__/DeliveryTimeline.mobile.test.tsx (12 tests) 634ms
+stderr | pages/CampaignsPage.test.tsx > CampaignsPage > renders Marketing Campaign Center header
+An update to Root inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+
+stderr | pages/CampaignsPage.test.tsx > CampaignsPage > renders Growth Engine mode without campaign center header
+An update to Root inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+
+ ✓ pages/CampaignsPage.test.tsx (2 tests) 1621ms
+   ✓ CampaignsPage > renders Marketing Campaign Center header  1149ms
+   ✓ CampaignsPage > renders Growth Engine mode without campaign center header  469ms
+ ✓ components/ui/__tests__/StatusChip.mobile.test.tsx (17 tests) 141ms
+ ✓ pages/DriverDashboardPage.test.tsx (4 tests) 2549ms
+   ✓ DriverDashboardPage > renders the professional driver dashboard shell  1377ms
+   ✓ DriverDashboardPage > navigates to the missions section from the sidebar  500ms
+   ✓ DriverDashboardPage > renders mobile driver dashboard content at 390px  630ms
+ ✓ components/driver/__tests__/DriverMobileDashboard.mobile.test.tsx (8 tests) 1937ms
+   ✓ DriverMobileDashboard Mobile > renders active mission at 360px  527ms
+   ✓ DriverMobileDashboard Mobile > opens incident sheet and submits  367ms
+ ✓ pages/RevenueLeakagePage.test.tsx (6 tests) 2824ms
+   ✓ RevenueLeakageControlCenter > renders header and KPI strip  1106ms
+   ✓ RevenueLeakageControlCenter > renders detection blocks P0  301ms
+   ✓ RevenueLeakageControlCenter > renders risk gauge and financial impact  457ms
+   ✓ RevenueLeakageControlCenter > renders corridor partners and insights  516ms
+   ✓ RevenueLeakageControlCenter > does not render undefined placeholders  402ms
+ ✓ hooks/__tests__/usePilotMetrics.test.ts (9 tests) 148ms
+ ✓ pages/PromotionsPage.test.tsx (6 tests) 3333ms
+   ✓ PromotionsControlCenter > renders header and KPI strip  1306ms
+   ✓ PromotionsControlCenter > renders active promotions table P0  515ms
+   ✓ PromotionsControlCenter > renders funnel segments and growth score  780ms
+   ✓ PromotionsControlCenter > renders insights and top promotions  407ms
+   ✓ PromotionsControlCenter > does not render undefined placeholders  310ms
+ ✓ pages/PaymentsPage.test.tsx (6 tests) 2423ms
+   ✓ PaymentsControlCenter > renders header and KPI strip  888ms
+   ✓ PaymentsControlCenter > renders transactions and failed card  313ms
+   ✓ PaymentsControlCenter > renders truth corridor and insights  567ms
+   ✓ PaymentsControlCenter > does not render undefined placeholders  418ms
+ ✓ pages/RefundsPage.test.tsx (6 tests) 2391ms
+   ✓ RefundsControlCenter > renders header and KPI strip  812ms
+   ✓ RefundsControlCenter > renders health, pipeline and requests table  479ms
+   ✓ RefundsControlCenter > renders truth corridor and fraud detection  447ms
+   ✓ RefundsControlCenter > does not render undefined placeholders  375ms
+ ✓ components/dispatcher/__tests__/DispatcherMobileDashboard.mobile.test.tsx (7 tests) 1055ms
+   ✓ DispatcherMobileDashboard Mobile > renders dispatch tabs at 390px  356ms
+ ✓ pages/CommissionsPage.test.tsx (6 tests) 3135ms
+   ✓ CommissionsControlCenter > renders header and KPI strip  1140ms
+   ✓ CommissionsControlCenter > renders health card and partner matrix  631ms
+   ✓ CommissionsControlCenter > renders truth corridor and investigate  317ms
+   ✓ CommissionsControlCenter > shows degraded banner  507ms
+   ✓ CommissionsControlCenter > does not render undefined placeholders  513ms
+ ✓ pages/SlaPage.test.tsx (6 tests) 2374ms
+   ✓ SlaControlCenter > renders header and KPIs  1188ms
+   ✓ SlaControlCenter > renders zone map and at-risk orders  333ms
+   ✓ SlaControlCenter > renders financial impact and alerts  361ms
+   ✓ SlaControlCenter > shows degraded banner  301ms
+ ✓ pages/DisputesPage.test.tsx (5 tests) 1940ms
+   ✓ DisputesControlCenter > renders KPI row and header  956ms
+   ✓ DisputesControlCenter > shows degraded mode banner  375ms
+   ✓ DisputesControlCenter > does not render undefined or null placeholders  399ms
+stderr | pages/UsersPage.test.tsx > UsersPage > renders User Operations Center header
+An update to Root inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+
+ ✓ pages/UsersPage.test.tsx (1 test) 929ms
+   ✓ UsersPage > renders User Operations Center header  927ms
+ ✓ components/admin/pilot/PilotDashboard.test.tsx (1 test) 268ms
+ ✓ pages/LogisticsDashboardPage.test.tsx (16 tests) 11235ms
+   ✓ LogisticsDashboardPage > renders the dispatcher cockpit and logistics controls  1764ms
+   ✓ LogisticsDashboardPage > navigates to the dispatch section from the sidebar  734ms
+   ✓ LogisticsDashboardPage > navigates to the missions section from the sidebar  589ms
+   ✓ LogisticsDashboardPage > manages dispatch tasks with matching and operational actions  1226ms
+   ✓ LogisticsDashboardPage > opens the new TMS foundation sections from the sidebar  1097ms
+   ✓ LogisticsDashboardPage > opens every logistics section from the mobile menu  2099ms
+   ✓ LogisticsDashboardPage > shows dedicated trip details and handles trip actions  400ms
+   ✓ LogisticsDashboardPage > shows live tracking map, active mission panel and geolocation fallback  597ms
+   ✓ LogisticsDashboardPage > manages shipments with filters, search and operational actions  472ms
+   ✓ LogisticsDashboardPage > tracks vehicle maintenance alerts and blocks unavailable vehicles from dispatch assignment  625ms
+   ✓ LogisticsDashboardPage > routes logistics alert actions to the section that can handle them  765ms
+ ✓ pages/RevenuePage.test.tsx (6 tests) 1654ms
+   ✓ RevenueControlCenter > renders header and trend KPI  552ms
+   ✓ RevenueControlCenter > renders KPI grid and breakdown  372ms
+   ✓ RevenueControlCenter > shows degraded banner  356ms
+ ✓ components/ui/__tests__/MobileButton.test.tsx (10 tests) 150ms
+ ✓ pages/DispatcherPage.test.tsx (5 tests) 2046ms
+   ✓ DispatcherControlCenter > renders KPI row and header  997ms
+   ✓ DispatcherControlCenter > renders backlog and active missions sections  309ms
+   ✓ DispatcherControlCenter > shows degraded mode banner  456ms
+ ✓ components/ui/__tests__/StatusChip.test.tsx (10 tests) 107ms
+ ✓ pages/WhatsappDashboard.test.tsx (1 test) 432ms
+   ✓ WhatsappControlCenter > renders whatsapp business center header  427ms
+ ✓ components/logistics/__tests__/TripDetailsMobile.mobile.test.tsx (6 tests) 1001ms
+   ✓ TripDetailsMobile Mobile > submits the selected incident type  301ms
+ ✓ pages/OrdersPage.test.tsx (6 tests) 2495ms
+   ✓ OrdersControlCenter > renders KPI row and header  1321ms
+   ✓ OrdersControlCenter > renders pipeline and live operations sections  525ms
+   ✓ OrdersControlCenter > shows degraded mode banner  310ms
+   ✓ OrdersControlCenter > does not render undefined or null placeholders  310ms
+ ✓ components/ui/__tests__/DeliveryTimeline.test.tsx (6 tests) 299ms
+ ✓ components/dispatcher/__tests__/DispatcherMobileQueue.mobile.test.tsx (5 tests) 333ms
+ ✓ pages/DriversPage.test.tsx (5 tests) 2150ms
+   ✓ DriversControlCenter > renders header and KPIs  1144ms
+   ✓ DriversControlCenter > renders driver table and health card  452ms
+   ✓ DriversControlCenter > does not render undefined placeholders  301ms
+stderr | pages/SupportPage.test.tsx > SupportPage > renders Support Operations Center header
+An update to Root inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+
+ ✓ pages/SupportPage.test.tsx (1 test) 686ms
+   ✓ SupportPage > renders Support Operations Center header  678ms
+stderr | pages/ReferralsPage.test.tsx > ReferralsPage > renders Referral Growth Center header
+An update to Root inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+
+ ✓ pages/ReferralsPage.test.tsx (1 test) 559ms
+   ✓ ReferralsPage > renders Referral Growth Center header  555ms
+ ✓ hooks/__tests__/useRealTimeTracking.test.ts (3 tests) 212ms
+stderr | pages/ReviewsPage.test.tsx > ReviewsPage > renders Customer Feedback Intelligence Center
+An update to Root inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://react.dev/link/wrap-tests-with-act
+
+ ✓ pages/ReviewsPage.test.tsx (1 test) 469ms
+   ✓ ReviewsPage > renders Customer Feedback Intelligence Center  466ms
+ ✓ components/ui/__tests__/HorizontalFilter.test.tsx (5 tests) 111ms
+ ✓ components/order-marketplace/ServiceSelectionPage.test.tsx (1 test) 539ms
+   ✓ ServiceSelectionPage > renders the marketplace sections and triggers service navigation  535ms
+ ✓ pages/ZonesPage.test.tsx (5 tests) 2364ms
+   ✓ ZonesControlCenter > renders header and KPIs  1087ms
+   ✓ ZonesControlCenter > renders zone table and map  632ms
+   ✓ ZonesControlCenter > does not render undefined placeholders  333ms
+stderr | pages/PaymentGatewayPage.test.tsx > PaymentGatewaysControlCenter > renders payment gateway header
+The current testing environment is not configured to support act(...)
+
+ ✓ pages/PaymentGatewayPage.test.tsx (1 test) 360ms
+   ✓ PaymentGatewaysControlCenter > renders payment gateway header  349ms
+ ✓ pages/SmsDashboard.test.tsx (1 test) 482ms
+   ✓ SmsControlCenter > renders SMS Center header  479ms
+ ✓ components/tracking/__tests__/ClientMobileDashboard.mobile.test.tsx (5 tests) 891ms
+ ✓ pages/ActiveMissionCard.test.tsx (2 tests) 225ms
+ ✓ components/logistics/__tests__/TrackingMobile.mobile.test.tsx (5 tests) 417ms
+ ✓ pages/EmailPage.test.tsx (1 test) 443ms
+   ✓ EmailControlCenter > renders Email Center header  441ms
+stderr | pages/NotificationsPage.test.tsx > NotificationsControlCenter > renders notifications header
+The current testing environment is not configured to support act(...)
+
+ ✓ components/order-marketplace/QuickEstimate.test.tsx (2 tests) 195ms
+ ✓ pages/IntegrationsPage.test.tsx (1 test) 291ms
+ ✓ pages/NotificationsPage.test.tsx (1 test) 437ms
+   ✓ NotificationsControlCenter > renders notifications header  434ms
+ ✓ components/order-marketplace/PartnerComparison.test.tsx (1 test) 133ms
+ ✓ pages/PermissionsPage.test.tsx (1 test) 252ms
+ ✓ components/admin/loyalty/LoyaltyKpiCards.test.tsx (1 test) 144ms
+ ✓ components/admin/ads/AdsKpiStrip.test.tsx (1 test) 150ms
+ ✓ pages/PilotControlCenter.test.tsx (1 test) 410ms
+   ✓ PilotControlCenter > renders admin pilot KPIs and logistics instrumentation  407ms
+ ✓ pages/AdminManagementPage.test.tsx (1 test) 215ms
+ ✓ pages/ActivityLogPage.test.tsx (1 test) 375ms
+   ✓ ActivityLogControlCenter > renders journal admin header  369ms
+ ✓ components/admin/dispatcher/MissionAssignment.test.tsx (2 tests) 159ms
+ ✓ components/admin/dispatcher/AutoDispatch.test.tsx (2 tests) 107ms
+ ✓ components/admin/referrals/ReferralKpiCards.test.tsx (1 test) 143ms
+ ✓ components/pilot/__tests__/PilotDashboard.mobile.test.tsx (4 tests) 674ms
+ ✓ components/admin/dispatcher/IncidentCenter.test.tsx (2 tests) 156ms
+ ✓ components/admin/dispatcher/DispatchBacklog.test.tsx (2 tests) 142ms
+ ✓ components/admin/whatsapp/WhatsappKpiCards.test.tsx (1 test) 232ms
+ ✓ components/admin/campaigns/CampaignKpiCards.test.tsx (1 test) 202ms
+ ✓ components/admin/drivers/DriverTable.test.tsx (2 tests) 631ms
+   ✓ DriverTable > renders drivers with status badges  525ms
+ ✓ components/admin/disputes/DisputeDetailDrawer.test.tsx (2 tests) 269ms
+ ✓ components/admin/email/RecentEmailTable.test.tsx (2 tests) 198ms
+ ✓ components/admin/drivers/DriverProfileDrawer.test.tsx (2 tests) 199ms
+ ✓ components/admin/support/SupportKpiCards.test.tsx (1 test) 108ms
+ ✓ components/admin/integrations/ApiKpiCards.test.tsx (1 test) 150ms
+ ✓ components/admin/email/EmailKpiCards.test.tsx (1 test) 206ms
+ ✓ components/admin/dispatcher/DispatchMap.test.tsx (2 tests) 284ms
+ ✓ components/admin/reviews/ReviewsKpiCards.test.tsx (1 test) 212ms
+ ✓ components/admin/sms/SmsKpiCards.test.tsx (1 test) 243ms
+ ✓ components/admin/zones/ZoneTable.test.tsx (2 tests) 571ms
+   ✓ ZoneTable > renders zones with status badges  491ms
+ ✓ components/admin/sla/SlaKpiCards.test.tsx (1 test) 156ms
+ ✓ components/admin/notifications/NotificationKpiCards.test.tsx (1 test) 113ms
+ ✓ lib/logistics-websocket.test.ts (2 tests) 43ms
+ ✓ components/admin/referrals/ReferralSettingsCard.test.tsx (1 test) 141ms
+ ✓ components/admin/users/UserSecurityDrawer.test.tsx (1 test) 176ms
+ ✓ components/admin/dispatcher/DriverAvailability.test.tsx (2 tests) 179ms
+ ✓ components/admin/payment-gateways/PaymentKpiCards.test.tsx (1 test) 156ms
+ ✓ components/admin/whatsapp/ConversationTable.test.tsx (2 tests) 166ms
+ ✓ components/admin/finance/FinanceKpiGrid.test.tsx (1 test) 177ms
+ ✓ components/order-marketplace/FeaturedReviews.test.tsx (1 test) 119ms
+ ✓ components/admin/commissions/CommissionsKpiStrip.test.tsx (1 test) 193ms
+ ✓ pages/DriverStatusCard.test.tsx (2 tests) 324ms
+ ✓ components/admin/promotions/PromotionsKpiStrip.test.tsx (1 test) 174ms
+ ✓ components/admin/disputes/DisputeTable.test.tsx (1 test) 330ms
+   ✓ DisputeTable > renders dispute rows and CTA  326ms
+ ✓ components/admin/payments/PaymentsKpiStrip.test.tsx (1 test) 203ms
+ ✓ components/admin/users/UserDetailDrawer.test.tsx (1 test) 178ms
+ ✓ components/admin/revenue-leakage/LeakageKpiStrip.test.tsx (1 test) 196ms
+ ✓ components/admin/refunds/RefundsKpiStrip.test.tsx (1 test) 182ms
+ ✓ components/admin/email/DeliverabilityCenter.test.tsx (1 test) 101ms
+ ✓ components/admin/campaigns/CampaignsTable.test.tsx (1 test) 113ms
+ ✓ components/admin/referrals/ReferralPerformanceDonut.test.tsx (1 test) 321ms
+   ✓ ReferralPerformanceDonut > renders revenue center and channels  317ms
+ ✓ components/admin/disputes/ApproveRefundModal.test.tsx (1 test) 221ms
+ ✓ components/admin/email/EmailTemplateCenter.test.tsx (1 test) 258ms
+ ✓ components/admin/drivers/AddDriverModal.test.tsx (2 tests) 137ms
+ ✓ components/admin/disputes/DisputeActions.test.tsx (1 test) 91ms
+ ✓ components/admin/users/UsersTable.test.tsx (1 test) 117ms
+ ✓ components/admin/email/EmailTemplateEditor.test.tsx (1 test) 76ms
+ ✓ components/admin/disputes/RejectRefundModal.test.tsx (1 test) 434ms
+   ✓ RejectRefundModal > requires rejection reason and client message  426ms
+ ✓ components/admin/disputes/CreateDisputeModal.test.tsx (2 tests) 196ms
+ ✓ components/admin/admin-mgmt/AdminKpiCards.test.tsx (1 test) 161ms
+ ✓ components/admin/disputes/DisputeKpiCards.test.tsx (1 test) 243ms
+ ✓ components/admin/dispatcher/SlaCenter.test.tsx (1 test) 213ms
+ ✓ components/admin/disputes/DisputeFilters.test.tsx (1 test) 141ms
+ ✓ components/admin/email/EmailCampaignCenter.test.tsx (1 test) 101ms
+ ✓ components/admin/email/EmailWebhookCenter.test.tsx (1 test) 234ms
+ ✓ components/admin/referrals/ReferralCampaignModal.test.tsx (2 tests) 75ms
+ ✓ pages/DriverEarningsSummary.test.tsx (1 test) 228ms
+ ✓ components/admin/email/UnsubscribeCenter.test.tsx (1 test) 59ms
+ ✓ components/admin/sla/SlaDistributionBar.test.tsx (1 test) 88ms
+ ✓ components/admin/campaigns/CampaignAnalyticsDrawer.test.tsx (1 test) 158ms
+ ✓ components/admin/referrals/RecentReferralConversions.test.tsx (1 test) 154ms
+ ✓ components/admin/referrals/TopReferrersTable.test.tsx (1 test) 134ms
+ ✓ components/admin/disputes/DisputeBreakdownChart.test.tsx (1 test) 191ms
+ ✓ components/admin/disputes/DisputeFinancialImpact.test.tsx (1 test) 206ms
+ ✓ components/admin/whatsapp/WebhookCenter.test.tsx (1 test) 163ms
+ ✓ components/admin/users/UsersLoyaltyCard.test.tsx (1 test) 140ms
+ ✓ components/admin/drivers/DriverRevenueChart.test.tsx (1 test) 209ms
+ ✓ components/admin/email/BounceCenter.test.tsx (1 test) 169ms
+ ✓ components/admin/whatsapp/QualityCenter.test.tsx (1 test) 118ms
+ ✓ components/admin/referrals/ReferralImpactTable.test.tsx (1 test) 93ms
+ ✓ components/admin/drivers/DriverRanking.test.tsx (1 test) 117ms
+ ✓ components/admin/referrals/ReferralWatchlistCard.test.tsx (1 test) 149ms
+ ✓ components/admin/drivers/DriverIncidentCenter.test.tsx (1 test) 93ms
+ ✓ components/admin/drivers/DriverMap.test.tsx (1 test) 418ms
+   ✓ DriverMap > renders live map with legend  413ms
+ ✓ components/admin/users/UsersSecurityCard.test.tsx (1 test) 397ms
+   ✓ UsersSecurityCard > renders security metrics  394ms
+ ✓ components/admin/campaigns/CampaignROIWidget.test.tsx (1 test) 100ms
+ ✓ components/admin/users/UsersRoleDistribution.test.tsx (1 test) 182ms
+ ✓ components/admin/campaigns/CampaignWatchlistCard.test.tsx (1 test) 93ms
+ ✓ components/admin/campaigns/CampaignAutomationsCard.test.tsx (1 test) 143ms
+ ✓ components/admin/referrals/ReferralTrendChart.test.tsx (1 test) 252ms
+ ✓ components/admin/campaigns/CampaignTrendChart.test.tsx (1 test) 64ms
+ ✓ components/admin/zones/ZoneMap.test.tsx (1 test) 235ms
+ ✓ components/admin/users/UsersGrowthChart.test.tsx (1 test) 103ms
+ ✓ components/admin/disputes/DisputeSlaCard.test.tsx (1 test) 59ms
+ ✓ pages/logistics/operational/__tests__/operational-decisions.test.ts (4 tests) 13ms
+ ✓ services/logistics-api.test.ts (7 tests) 31ms
+ ✓ components/admin/campaigns/CampaignCreateModal.test.tsx (1 test) 83ms
+ ✓ lib/tms/generic-mission.test.ts (3 tests) 18ms
+ ✓ components/admin/zones/CreateZoneModal.test.tsx (1 test) 146ms
+ ✓ lib/admin/orders-mappers.test.ts (3 tests) 14ms
+ ✓ lib/handle-notification-click.test.ts (3 tests) 11ms
+ ✓ components/admin/referrals/ManualBonusModal.test.tsx (1 test) 81ms
+ ✓ lib/ws-url.test.ts (5 tests) 27ms
+ ✓ config/logistics-nav.test.ts (2 tests) 11ms
+
+ Test Files  146 passed (146)
+      Tests  393 passed (393)
+   Start at  07:12:47
+   Duration  100.22s (transform 37.14s, setup 0ms, collect 93.35s, tests 77.11s, environment 319.36s, prepare 40.55s)
+

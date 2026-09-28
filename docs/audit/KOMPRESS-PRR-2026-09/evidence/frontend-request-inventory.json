@@ -1,0 +1,1097 @@
+[
+  {
+    "path": "/auth/login",
+    "line": 2196,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/auth/register",
+    "line": 2208,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/auth/logout",
+    "line": 2216,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/auth/me",
+    "line": 2231,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/users/me/profile",
+    "line": 2241,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/users/me/addresses",
+    "line": 2253,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/users",
+    "line": 2260,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/refunds/requests{}",
+    "line": 2265,
+    "exact_path_shape_match": false
+  },
+  {
+    "path": "/refunds/requests/{}/approve",
+    "line": 2269,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/refunds/requests/{}/reject",
+    "line": 2279,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/support/tickets",
+    "line": 2289,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/support/tickets",
+    "line": 2299,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/support/tickets",
+    "line": 2306,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/support/tickets/{}",
+    "line": 2310,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/support/tickets/{}/messages",
+    "line": 2314,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/support/tickets/{}/attachments",
+    "line": 2324,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/claims",
+    "line": 2336,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/claims",
+    "line": 2343,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/claims/{}",
+    "line": 2347,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/reviews",
+    "line": 2351,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/reviews/public{}",
+    "line": 2362,
+    "exact_path_shape_match": false
+  },
+  {
+    "path": "/reviews/me",
+    "line": 2366,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/catalog/partners",
+    "line": 2370,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/catalog",
+    "line": 2374,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/catalog/partners/{}/services{}",
+    "line": 2385,
+    "exact_path_shape_match": false
+  },
+  {
+    "path": "/catalog/order-add-ons",
+    "line": 2389,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/admin/order-add-ons",
+    "line": 2393,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/admin/order-add-ons",
+    "line": 2405,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/admin/order-add-ons/{}",
+    "line": 2423,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/admin/order-add-ons/{}",
+    "line": 2430,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/catalog/partners/{}/services",
+    "line": 2444,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/catalog/partners/{}/services/{}",
+    "line": 2462,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/pricing/partners/{}/summary",
+    "line": 2469,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/partners/{}/dashboard-summary",
+    "line": 2497,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/partners/{}/financial-summary",
+    "line": 2569,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/partners/{}/invoice-eligible-orders",
+    "line": 2576,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/partners/orders/{}/proforma",
+    "line": 2583,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/partners/orders/{}/invoice",
+    "line": 2593,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/partners/orders/{}/documents",
+    "line": 2603,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/partners/{}/profile-detail",
+    "line": 2628,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/partners/{}/profile-detail",
+    "line": 2638,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/partners/{}/profile-detail/working-hours",
+    "line": 2651,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/partners/{}/profile-detail/media",
+    "line": 2668,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/catalog/partners/{}/public-profile",
+    "line": 2691,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/partners/{}/analytics-summary",
+    "line": 2717,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/partners/{}/security/activity-logs{}",
+    "line": 2730,
+    "exact_path_shape_match": false
+  },
+  {
+    "path": "/auth/me/2fa/enable",
+    "line": 2736,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/auth/me/2fa/disable",
+    "line": 2743,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/admin/overview",
+    "line": 2750,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/admin/ads/dashboard",
+    "line": 2754,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/admin/ads/{}/pause",
+    "line": 2758,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/admin/ads/{}",
+    "line": 2762,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/admin/ads/{}/duplicate",
+    "line": 2766,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/admin/ads",
+    "line": 2784,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/admin/ads/campaign",
+    "line": 2793,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/admin/ads/export",
+    "line": 2797,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/admin/activity-logs",
+    "line": 2801,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/promotions",
+    "line": 2805,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/promotions",
+    "line": 2809,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/promotions/{}",
+    "line": 2819,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/promotions/{}",
+    "line": 2826,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/promotions/partners/{}",
+    "line": 2836,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/promotions/partners/{}",
+    "line": 2846,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/promotions/partners/{}/{}",
+    "line": 2860,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/promotions/partners/{}/{}",
+    "line": 2870,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/content/site",
+    "line": 2876,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/content/site",
+    "line": 2880,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/subscriptions/plans",
+    "line": 2887,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/subscriptions/plans",
+    "line": 2893,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/subscriptions/plans/{}",
+    "line": 2903,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/subscriptions/plans/{}",
+    "line": 2910,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/tracking/settings",
+    "line": 2916,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/tracking/settings",
+    "line": 2923,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/advertisements",
+    "line": 2930,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/advertisements",
+    "line": 2940,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/advertisements/{}",
+    "line": 2956,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/advertisements/{}",
+    "line": 2963,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/loyalty/settings",
+    "line": 2969,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/loyalty/settings",
+    "line": 2978,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/admin/loyalty/dashboard",
+    "line": 2985,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/admin/loyalty/settings",
+    "line": 2996,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/admin/loyalty/expire",
+    "line": 3000,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/admin/loyalty/rewards",
+    "line": 3004,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/admin/loyalty/rewards/{}",
+    "line": 3008,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/admin/loyalty/export",
+    "line": 3012,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/loyalty/admin/overview",
+    "line": 3016,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/loyalty/admin/run-expiration",
+    "line": 3027,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/loyalty/me/history",
+    "line": 3045,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/referral/me",
+    "line": 3054,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/referral/settings",
+    "line": 3058,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/referral/settings",
+    "line": 3066,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/referral/admin/overview",
+    "line": 3073,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/admin/referrals/dashboard",
+    "line": 3077,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/admin/referrals/settings",
+    "line": 3089,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/admin/referrals/campaigns",
+    "line": 3095,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/admin/referrals/manual-bonus",
+    "line": 3099,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/admin/referrals/audit",
+    "line": 3103,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/admin/referrals/export",
+    "line": 3107,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/admin/reviews/dashboard",
+    "line": 3111,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/admin/reviews/{}",
+    "line": 3121,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/admin/reviews/{}/reply",
+    "line": 3125,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/admin/reviews/{}/escalate",
+    "line": 3129,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/admin/reviews/{}/report",
+    "line": 3133,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/admin/reviews/export",
+    "line": 3137,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/admin/claims/dashboard",
+    "line": 3141,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/admin/claims/{}",
+    "line": 3158,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/admin/claims",
+    "line": 3162,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/admin/claims/{}/status",
+    "line": 3166,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/admin/claims/{}/assign",
+    "line": 3170,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/admin/claims/{}/notes",
+    "line": 3174,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/admin/claims/{}/escalate",
+    "line": 3178,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/admin/claims/{}/refund",
+    "line": 3182,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/admin/cms/dashboard",
+    "line": 3186,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/admin/cms/pages/{}",
+    "line": 3198,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/admin/cms/pages",
+    "line": 3202,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/admin/cms/pages/{}",
+    "line": 3206,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/admin/cms/pages/{}/publish",
+    "line": 3210,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/admin/blog/dashboard",
+    "line": 3214,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/admin/blog/posts/{}",
+    "line": 3229,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/admin/blog/posts",
+    "line": 3233,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/admin/blog/posts/{}/publish",
+    "line": 3237,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/admin/blog/ai/generate",
+    "line": 3241,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/admin/blog/seo/audit",
+    "line": 3245,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/admin/payment-gateways/dashboard",
+    "line": 3249,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/admin/payment-gateways/export",
+    "line": 3253,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/admin/payment-gateways/reconciliation/run",
+    "line": 3257,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/admin/payment-gateways/webhooks/test",
+    "line": 3261,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/admin/sms/dashboard",
+    "line": 3265,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/admin/sms/export",
+    "line": 3269,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/admin/sms/send",
+    "line": 3273,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/admin/management/dashboard",
+    "line": 3277,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/admin/rbac/dashboard",
+    "line": 3281,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/admin/activity-log",
+    "line": 3285,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/admin/integrations/dashboard",
+    "line": 3289,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/admin/email/dashboard",
+    "line": 3293,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/admin/email/export",
+    "line": 3297,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/admin/whatsapp/dashboard",
+    "line": 3301,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/admin/whatsapp/export",
+    "line": 3305,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/admin/whatsapp/webhooks/test",
+    "line": 3309,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/admin/whatsapp/send",
+    "line": 3313,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/admin/notifications/dashboard",
+    "line": 3317,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/admin/notifications/send",
+    "line": 3321,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/admin/notifications/retry",
+    "line": 3325,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/admin/notifications/templates",
+    "line": 3329,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/admin/notifications/export",
+    "line": 3333,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/blog/posts{}",
+    "line": 3338,
+    "exact_path_shape_match": false
+  },
+  {
+    "path": "/blog/posts/{}",
+    "line": 3342,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/admin/support/dashboard",
+    "line": 3346,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/admin/support/tickets/{}",
+    "line": 3359,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/admin/support/tickets",
+    "line": 3363,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/admin/support/tickets/{}/reply",
+    "line": 3367,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/admin/support/tickets/{}/assign",
+    "line": 3371,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/admin/support/tickets/{}/escalate",
+    "line": 3375,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/admin/support/tickets/{}/resolve",
+    "line": 3379,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/admin/support/export",
+    "line": 3383,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/admin/users/dashboard",
+    "line": 3387,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/admin/users/{}",
+    "line": 3396,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/admin/users/{}/security",
+    "line": 3403,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/admin/users/export",
+    "line": 3407,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/admin/users/suspend",
+    "line": 3411,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/admin/users/reactivate",
+    "line": 3415,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/admin/campaigns/dashboard",
+    "line": 3419,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/admin/campaigns/growth/dashboard",
+    "line": 3423,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/admin/campaigns/growth/promo-fraud/{}/review",
+    "line": 3427,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/admin/campaigns/growth/promo-fraud/{}/suspend",
+    "line": 3434,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/admin/campaigns/growth/automations/{}/prepare",
+    "line": 3441,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/admin/campaigns",
+    "line": 3448,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/admin/campaigns/{}",
+    "line": 3455,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/admin/campaigns/{}",
+    "line": 3459,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/admin/campaigns/{}/pause",
+    "line": 3463,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/admin/campaigns/{}/resume",
+    "line": 3467,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/admin/campaigns/{}/duplicate",
+    "line": 3471,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/admin/campaigns/{}/analytics",
+    "line": 3478,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/admin/campaigns/export",
+    "line": 3482,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/referral/admin/reviews/{}",
+    "line": 3495,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/orders",
+    "line": 3502,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/orders/social-proof",
+    "line": 3542,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/orders/{}",
+    "line": 3552,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/orders/{}/status",
+    "line": 3569,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/logistics/drivers",
+    "line": 3597,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/logistics/vehicles",
+    "line": 3604,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/logistics/vehicles",
+    "line": 3608,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/logistics/vehicles/{}",
+    "line": 3615,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/logistics/vehicles/{}",
+    "line": 3622,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/logistics/trips",
+    "line": 3628,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/logistics/tracking-points",
+    "line": 3632,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/logistics/maintenance-events",
+    "line": 3636,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/logistics/driver-behavior",
+    "line": 3640,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/logistics/fuel-usage",
+    "line": 3644,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/logistics/stock-levels",
+    "line": 3648,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/logistics/connectivity-health",
+    "line": 3652,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/driver/availability",
+    "line": 3656,
+    "exact_path_shape_match": false
+  },
+  {
+    "path": "/logistics/drivers/me",
+    "line": 3663,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/logistics/drivers/me/availability",
+    "line": 3667,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/logistics/tasks/{}/assign",
+    "line": 3687,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/logistics/tasks/{}/claim",
+    "line": 3694,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/logistics/tasks/{}/auto-assign",
+    "line": 3701,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/logistics/tasks/{}/accept",
+    "line": 3708,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/logistics/tasks/{}/start",
+    "line": 3715,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/logistics/tasks/{}/complete",
+    "line": 3726,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/logistics/drivers/{}/location",
+    "line": 3740,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/logistics/tasks/{}/fail",
+    "line": 3747,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/logistics/tasks/{}/cancel",
+    "line": 3754,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/pricing/estimate",
+    "line": 3761,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/payments/intents",
+    "line": 3768,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/payments/intents/{}/initiate",
+    "line": 3782,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/payments/orders/{}/summary",
+    "line": 3795,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/payments/intents/{}",
+    "line": 3799,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/payments/intents/{}/confirm-cash",
+    "line": 3806,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/ops/orders/{}/truth-timeline",
+    "line": 3861,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/ops/orders/{}/proofs",
+    "line": 3883,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/ops/corridors/health",
+    "line": 3896,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/ops/investigate",
+    "line": 3943,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/notifications/me",
+    "line": 3963,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/notifications",
+    "line": 3988,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/notifications/{}/read",
+    "line": 4004,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/notifications/read-all",
+    "line": 4016,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/notifications/{}",
+    "line": 4028,
+    "exact_path_shape_match": true
+  },
+  {
+    "path": "/partner-applications/{}/reject",
+    "line": 4068,
+    "exact_path_shape_match": false
+  }
+]

@@ -1,0 +1,326 @@
+{
+  "localhost": [
+    ".env.example",
+    ".github/workflows/production-readiness.yml",
+    "AUDIT_CTO_AMELIORE.md",
+    "AUDIT_CTO_PROFESSIONNEL_FINAL.md",
+    "AUDIT_FINAL_CTO_CORRIGE.md",
+    "CREDENTIALS_COMPLETS.md",
+    "NEXT_STEPS.md",
+    "PILOT_BASELINE.md",
+    "PLAN_EXECUTION_CTO.md",
+    "PROMPT_EXECUTION_INTEGRATION.md",
+    "README_DOCKER.md",
+    "SECURITY_AUDIT_FINAL_REPORT.md",
+    "START_PHASE1.md",
+    "VALIDATION_HYBRID_DISPATCH.md",
+    "VALIDATION_TECHNIQUE_PHASE1.md",
+    "apps/api/app/core/config.py",
+    "apps/api/tests/integration/test_orders_stability_real.py",
+    "apps/api/verify_driver_operational_corridor.py",
+    "apps/api/verify_logistics_self_service_gate.py",
+    "infra/docker/api.Dockerfile",
+    "infra/docker/web.Dockerfile",
+    "lib/admin/activity-log-api.ts",
+    "scripts/api_smoke_test.py",
+    "scripts/pilot-e2e-corridors.ps1",
+    "scripts/run_production_readiness_gate.mjs",
+    "scripts/validate-e2e.js",
+    "scripts/validate_customer_corridor_truth.py",
+    "scripts/verify_advertisements_flow.py",
+    "scripts/verify_commissions_flow.py",
+    "scripts/verify_content_flow.py",
+    "scripts/verify_disputes_flow.py",
+    "scripts/verify_driver_operational_corridor.py",
+    "scripts/verify_logistics_flow.py",
+    "scripts/verify_logistics_self_service_gate.py",
+    "scripts/verify_loyalty_adjustment_flow.py",
+    "scripts/verify_loyalty_engine_flow.py",
+    "scripts/verify_loyalty_expiry_flow.py",
+    "scripts/verify_loyalty_flow.py",
+    "scripts/verify_loyalty_referral_reporting_flow.py",
+    "scripts/verify_marketplace_flow.py",
+    "scripts/verify_promo_pricing_consumption.py",
+    "scripts/verify_promotions_flow.py",
+    "scripts/verify_referral_antifraud_flow.py",
+    "scripts/verify_referral_engine_flow.py",
+    "scripts/verify_referral_flow.py",
+    "scripts/verify_referral_review_flow.py",
+    "scripts/verify_refunds_flow.py",
+    "scripts/verify_role_access_matrix.py",
+    "scripts/verify_seeded_credentials.py",
+    "scripts/verify_subscriptions_flow.py",
+    "scripts/verify_tracking_flow.py",
+    "vite.config.ts"
+  ],
+  "127.0.0.1": [
+    ".env.example",
+    "LOCAL_DEFAULT_CREDENTIALS.md",
+    "apps/api/app/core/config.py",
+    "scripts/browser_ui_flow_check.mjs",
+    "scripts/run_local_staging_simulation.ps1"
+  ],
+  "staging-api.example.com": [
+    ".env.staging.build.example",
+    ".env.staging.example",
+    ".env.staging.local.example",
+    "lib/ws-url.test.ts",
+    "scripts/test_staging_ws_probe.py"
+  ],
+  "staging.example.com": [
+    ".env.staging.example",
+    ".env.staging.local.example"
+  ],
+  "staging-api...": [
+    ".env.staging.example"
+  ],
+  "www.googletagmanager.com": [
+    "App.tsx"
+  ],
+  "www.facebook.com": [
+    "App.tsx"
+  ],
+  "laundry.app": [
+    "App.tsx",
+    "index.html",
+    "pages/DriverDashboardPage.tsx",
+    "pages/HomePage.tsx",
+    "pages/MiniSitePage.tsx",
+    "pages/PartnerDetailPage.tsx",
+    "pages/ProfilePage.tsx",
+    "pages/partner/ProfileManagement.tsx",
+    "public/robots.txt",
+    "public/sitemap.xml"
+  ],
+  "connect.facebook.net": [
+    "App.tsx"
+  ],
+  "...": [
+    "CORRIDOR_TRUTH_ENGINE_SPEC.md",
+    "pages/admin/AdManagement.tsx",
+    "pages/partner/profile/PartnerMediaModal.tsx"
+  ],
+  "fastapi.tiangolo.com": [
+    "NEXT_STEPS.md",
+    "README_DOCKER.md"
+  ],
+  "docs.sqlalchemy.org": [
+    "NEXT_STEPS.md",
+    "README_DOCKER.md"
+  ],
+  "jwt.io": [
+    "NEXT_STEPS.md"
+  ],
+  "www.postgresqltutorial.com": [
+    "NEXT_STEPS.md"
+  ],
+  "test": [
+    "PROMPT_EXECUTION_INTEGRATION.md",
+    "apps/api/tests/integration/test_auth_integration.py",
+    "apps/api/tests/integration/test_payments_integration.py",
+    "apps/api/tests/integration/test_payments_integration_fixed.py"
+  ],
+  "ai.studio": [
+    "README.md"
+  ],
+  "github.com": [
+    "README.md",
+    "package-lock.json"
+  ],
+  "docs.docker.com": [
+    "README_DOCKER.md"
+  ],
+  "votre-domaine.com": [
+    "README_DOCKER.md"
+  ],
+  "images.unsplash.com": [
+    "apps/api/alembic/versions/b2c3d4e5f6a7_create_order_add_ons_table.py",
+    "components/order-marketplace/ServiceSelectionPage.tsx",
+    "constants.tsx",
+    "context/DataContext.tsx",
+    "lib/admin/order-truth-api.ts",
+    "pages/OrderPage.tsx",
+    "pages/PartnerDetailPage.tsx",
+    "pages/partner/InventoryManagement.tsx",
+    "pages/partner/ProfileManagement.tsx",
+    "pages/partner/inventory/InventoryItemModal.tsx",
+    "pages/partner/profile/PartnerMediaModal.tsx",
+    "utils/order-addons.ts",
+    "utils/partner-catalog-mappers.ts"
+  ],
+  "schema.org": [
+    "apps/api/app/services/blog_seo_service.py",
+    "components/order-marketplace/ServiceSelectionPage.tsx",
+    "index.html",
+    "pages/FAQPage.tsx",
+    "pages/LandingPage.tsx",
+    "pages/PartnerDetailPage.tsx"
+  ],
+  "api.laundryexpress.cd": [
+    "apps/api/app/services/email_ops_service.py",
+    "apps/api/app/services/payment_gateways_ops_service.py",
+    "apps/api/app/services/sms_ops_service.py",
+    "apps/api/app/services/whatsapp_ops_service.py",
+    "components/admin/integrations/DeveloperDocsPanel.tsx",
+    "components/admin/whatsapp/WebhookCenter.test.tsx"
+  ],
+  "support.laundryexpress.cd": [
+    "apps/api/app/services/integrations_ops_service.py"
+  ],
+  "hooks.zapier.com": [
+    "apps/api/app/services/integrations_ops_service.py"
+  ],
+  "erp.partner.cd": [
+    "apps/api/app/services/integrations_ops_service.py"
+  ],
+  "finance.laundryexpress.cd": [
+    "apps/api/app/services/integrations_ops_service.py"
+  ],
+  "dispatch.laundryexpress.cd": [
+    "apps/api/app/services/integrations_ops_service.py"
+  ],
+  "cdn.example.com": [
+    "apps/api/tests/integration/test_customer_support_corridor.py",
+    "apps/api/tests/unit/test_customer_support_service.py"
+  ],
+  "example.com": [
+    "apps/api/tests/integration/test_marketplace_integration.py",
+    "apps/api/tests/unit/test_hybrid_dispatch_service.py",
+    "apps/api/verify_driver_operational_corridor.py",
+    "components/ServiceEditModal.tsx",
+    "scripts/pilot-e2e-corridors.ps1",
+    "scripts/validate_customer_corridor_truth.py",
+    "scripts/verify_advertisements_flow.py",
+    "scripts/verify_driver_operational_corridor.py",
+    "scripts/verify_logistics_flow.py",
+    "scripts/verify_staging_flows.py"
+  ],
+  "y.com": [
+    "apps/api/tests/unit/test_blog_comments.py"
+  ],
+  "x.com": [
+    "apps/api/tests/unit/test_blog_comments.py"
+  ],
+  "spam.com": [
+    "apps/api/tests/unit/test_blog_comments.py"
+  ],
+  "cdn": [
+    "apps/api/tests/unit/test_cms_media.py"
+  ],
+  "s3.example.com": [
+    "apps/api/verify_logistics_truth_corridor.py",
+    "scripts/verify_logistics_truth_corridor.py",
+    "scripts/verify_order_truth_corridor.py"
+  ],
+  "wa.me": [
+    "components/Footer.tsx",
+    "pages/logistics/LogisticsTracking.tsx",
+    "pages/logistics/LogisticsTripDetails.tsx"
+  ],
+  "facebook.com": [
+    "components/Footer.tsx"
+  ],
+  "instagram.com": [
+    "components/Footer.tsx"
+  ],
+  "www.w3.org": [
+    "components/Header.tsx",
+    "components/Icon.tsx",
+    "components/OrderTrackingMap.tsx",
+    "components/PartnerMapView.tsx",
+    "components/admin/KinshasaMap.tsx",
+    "components/admin/subscriptions/ExportCenter.tsx",
+    "components/admin/subscriptions/InvoiceWidget.tsx",
+    "favicon.svg",
+    "pages/FAQPage.tsx",
+    "pages/LoginPage.tsx",
+    "pages/RegisterPage.tsx",
+    "public/images/driver/driver-scooter.svg",
+    "public/images/driver/referral-earnings.svg",
+    "public/images/drivers/driver-1.svg",
+    "public/images/drivers/driver-2.svg",
+    "public/images/drivers/driver-3.svg",
+    "public/partner-hero-illustration.svg"
+  ],
+  "www.openstreetmap.org": [
+    "components/MapLocationPickerModal.tsx",
+    "components/PartnerMapView.tsx",
+    "pages/PartnerDetailPage.tsx"
+  ],
+  "picsum.photos": [
+    "components/ServiceEditModal.tsx",
+    "components/ServiceTypeSelector.tsx"
+  ],
+  "api.example.com": [
+    "components/admin/email/EmailWebhookCenter.test.tsx",
+    "lib/ws-url.ts"
+  ],
+  "api": [
+    "docker-compose.yml"
+  ],
+  "fonts.gstatic.com": [
+    "index.html"
+  ],
+  "aistudiocdn.com": [
+    "index.html"
+  ],
+  "fonts.googleapis.com": [
+    "index.html"
+  ],
+  "unpkg.com": [
+    "index.html"
+  ],
+  "cdnjs.cloudflare.com": [
+    "index.html"
+  ],
+  "your-app.com": [
+    "locales/en.json",
+    "public/locales/en.json"
+  ],
+  "feross.org": [
+    "package-lock.json"
+  ],
+  "registry.npmjs.org": [
+    "package-lock.json"
+  ],
+  "tidelift.com": [
+    "package-lock.json"
+  ],
+  "opencollective.com": [
+    "package-lock.json"
+  ],
+  "eslint.org": [
+    "package-lock.json"
+  ],
+  "paypal.me": [
+    "package-lock.json"
+  ],
+  "www.patreon.com": [
+    "package-lock.json"
+  ],
+  "paulmillr.com": [
+    "package-lock.json"
+  ],
+  "www.google.com": [
+    "pages/DriverDashboardPage.tsx"
+  ],
+  "votre-app.com": [
+    "pages/partner/ApiIntegrationsPage.tsx",
+    "public/locales/fr.json"
+  ],
+  "exemple.com": [
+    "pages/partner/inventory/InventoryItemModal.tsx"
+  ],
+  "youtube.com": [
+    "pages/partner/profile/PartnerMediaModal.tsx"
+  ],
+  "www.youtube.com": [
+    "pages/partner/profile/partnerMedia.ts"
+  ],
+  "programu-yako.com": [
+    "public/locales/sw.json"
+  ],
+  "www.sitemaps.org": [
+    "public/sitemap.xml"
+  ]
+}

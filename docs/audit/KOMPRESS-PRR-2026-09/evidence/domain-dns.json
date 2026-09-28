@@ -1,0 +1,22 @@
+[
+  {
+    "host": "api.laundryexpress.cd",
+    "error": "[Errno -3] Temporary failure in name resolution",
+    "source": "synthetic seeded service URLs; not confirmed staging"
+  },
+  {
+    "host": "support.laundryexpress.cd",
+    "error": "[Errno -3] Temporary failure in name resolution",
+    "source": "synthetic seeded service URLs; not confirmed staging"
+  },
+  {
+    "host": "finance.laundryexpress.cd",
+    "error": "[Errno -3] Temporary failure in name resolution",
+    "source": "synthetic seeded service URLs; not confirmed staging"
+  },
+  {
+    "host": "dispatch.laundryexpress.cd",
+    "error": "[Errno -3] Temporary failure in name resolution",
+    "source": "synthetic seeded service URLs; not confirmed staging"
+  }
+]

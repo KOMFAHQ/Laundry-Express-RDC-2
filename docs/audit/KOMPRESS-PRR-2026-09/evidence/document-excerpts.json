@@ -1,0 +1,719 @@
+[
+  {
+    "file": ".continue/prompts/architect-ai.system.md",
+    "lines": 108,
+    "excerpts": [
+      "32: 5. operational proof",
+      "63: 1. Verdict",
+      "70: Verdict values:",
+      "107: Be skeptical, precise, and operationally minded."
+    ]
+  },
+  {
+    "file": ".continue/prompts/architect-audit-api-contract.prompt.md",
+    "lines": 22,
+    "excerpts": []
+  },
+  {
+    "file": ".continue/prompts/architect-audit-backend.prompt.md",
+    "lines": 22,
+    "excerpts": []
+  },
+  {
+    "file": ".continue/prompts/architect-audit-flows.prompt.md",
+    "lines": 23,
+    "excerpts": [
+      "19: Return a verdict for each flow:"
+    ]
+  },
+  {
+    "file": ".continue/prompts/architect-audit-frontend-backend.prompt.md",
+    "lines": 20,
+    "excerpts": []
+  },
+  {
+    "file": ".continue/prompts/architect-audit-infra.prompt.md",
+    "lines": 15,
+    "excerpts": []
+  },
+  {
+    "file": ".continue/prompts/architect-audit-repo.prompt.md",
+    "lines": 26,
+    "excerpts": []
+  },
+  {
+    "file": ".continue/prompts/architect-audit-tests.prompt.md",
+    "lines": 16,
+    "excerpts": []
+  },
+  {
+    "file": ".continue/prompts/architect-staging-gate.prompt.md",
+    "lines": 12,
+    "excerpts": [
+      "1: Produce a go/no-go staging gate based on:",
+      "8: 1. GO / NO-GO / GO WITH RESTRICTIONS",
+      "9: 2. Evidence for the verdict"
+    ]
+  },
+  {
+    "file": "ADMIN_LOCAL_ONLY_STAGING_NO_GO.md",
+    "lines": 157,
+    "excerpts": [
+      "1: # Admin Local-Only Staging No-Go",
+      "6: ## Verdict",
+      "8: NO-GO",
+      "18: ## Why They Are No-Go",
+      "20: This document remains as an operational guardrail.",
+      "35: - Operational claims",
+      "58: However, audit producers are still incomplete, so it is not yet a full operational audit source.",
+      "157: and use this document as the operational restriction source for any page that is still local-only or any backend-real surface whose proven scope remains intentionally narrow."
+    ]
+  },
+  {
+    "file": "ADMIN_SURFACE_TRUTH_MATRIX.md",
+    "lines": 115,
+    "excerpts": [
+      "1: # Admin Surface Truth Matrix",
+      "6: ## Verdict",
+      "53:   - Restriction: backend coverage is now real but still partial, not yet a full operational audit trail",
+      "90: ## Operational Meaning",
+      "98: - Use backend-real pages for local proof, demos with operational claims, and staging preparation."
+    ]
+  },
+  {
+    "file": "ANALYSE_ALIGNEMENT_MODELES.md",
+    "lines": 260,
+    "excerpts": [
+      "1: # Analyse d'alignement entre modèles, schémas et services",
+      "29: # Dans models/order.py",
+      "36: # Dans schemas/order.py",
+      "48: # Dans models/order.py",
+      "52: # Dans schemas/order.py (correct)",
+      "95: # Ligne 56-57"
+    ]
+  },
+  {
+    "file": "API_CONTRACT_MVP.md",
+    "lines": 447,
+    "excerpts": [
+      "1: # API Contract MVP",
+      "7: ## Verdict"
+    ]
+  },
+  {
+    "file": "API_DIFF.md",
+    "lines": 80,
+    "excerpts": [
+      "1: # API Diff",
+      "6: ## Verdict global",
+      "80: - NO-GO pour brancher l'UI sans corriger les écarts P0 ci-dessus"
+    ]
+  },
+  {
+    "file": "API_ROUTES_REAL.md",
+    "lines": 173,
+    "excerpts": [
+      "1: # API Routes Real",
+      "169: ## Verdict"
+    ]
+  },
+  {
+    "file": "ARCHITECTURE_AUDIT.md",
+    "lines": 529,
+    "excerpts": [
+      "1: # ARCHITECTURE AUDIT",
+      "66: # This is business logic, not data access",
+      "81: # backend",
+      "127: # ... business logic",
+      "170: # Migration adds NOT NULL column without default",
+      "198: # payment_service.py",
+      "202: # dispatch_service.py  ",
+      "257: **Business Impact:** $10,000+ monthly operational waste + driver churn.",
+      "282: # Current: payment_service.py (600+ lines)"
+    ]
+  },
+  {
+    "file": "ARCHITECT_AI_PLAYBOOK.md",
+    "lines": 145,
+    "excerpts": [
+      "1: # Architect AI Playbook",
+      "23: - Human: business arbitration, priority, go/no-go decisions",
+      "69: - Staging handoff note: [STAGING_HANDOFF.md](/workspace/STAGING_HANDOFF.md)",
+      "73: - Admin local-only staging restriction: [ADMIN_LOCAL_ONLY_STAGING_NO_GO.md](/workspace/ADMIN_LOCAL_ONLY_STAGING_NO_GO.md)",
+      "83: 5. Staging go/no-go gate",
+      "132: Produce a go/no-go staging gate based on:",
+      "145: - Do not accept a verdict without evidence and proof status."
+    ]
+  },
+  {
+    "file": "AUDIT_CTO_AMELIORE.md",
+    "lines": 339,
+    "excerpts": [
+      "1: # Audit CTO - Laundry Express RDC 2",
+      "132: ### Phase 1: MVP Production Ready (1-2 mois)",
+      "199: # 1. Health Check API",
+      "201: # ✅ {\"status\": \"healthy\", ...}",
+      "203: # 2. Services Docker",
+      "205: # ✅ 6/7 services healthy (frontend unhealthy)",
+      "207: # 3. Database Connection",
+      "209: # ✅ Tables créées",
+      "211: # 4. Redis Connectivity"
+    ]
+  },
+  {
+    "file": "AUDIT_CTO_PROFESSIONNEL_FINAL.md",
+    "lines": 261,
+    "excerpts": [
+      "1: # Audit CTO Professionnel - Laundry Express RDC 2",
+      "17: | **Production Ready** | **6.0** | 2-3 semaines de corrections nécessaires |",
+      "21: **Verdict:** MVP technique sérieux, prêt pour corrections finales avant lancement",
+      "65: # Correction dans infra/docker/web.Dockerfile",
+      "79: # Dans docker-compose.yml",
+      "223: ### Verdict Technique",
+      "256: **Verdict Final:** **Excellent candidat seed investment** - MVP technique solide, marché adressable, équipe technique compétente."
+    ]
+  },
+  {
+    "file": "AUDIT_FINAL_CTO_CORRIGE.md",
+    "lines": 245,
+    "excerpts": [
+      "1: # Audit CTO Final Corrigé - Laundry Express RDC 2",
+      "17: | **Production Ready** | **6.0** | Corrections nécessaires |",
+      "19: **Verdict:** Excellent MVP, corrections techniques requises pour production",
+      "30: # Dans infra/docker/web.Dockerfile",
+      "40: # Dans docker-compose.yml",
+      "77: ## 🚀 Roadmap Production Ready",
+      "188: # 1. Corriger le healthcheck",
+      "191: # 2. Redémarrer le service",
+      "194: # 3. Vérifier le statut"
+    ]
+  },
+  {
+    "file": "AUDIT_GLOBAL_PROJET.md",
+    "lines": 292,
+    "excerpts": [
+      "1: # Audit Global du Projet \"Laundry Express SRC 2\""
+    ]
+  },
+  {
+    "file": "AUDIT_REPORT.md",
+    "lines": 359,
+    "excerpts": [
+      "1: # Audit Technique - Laundry Express RDC 2"
+    ]
+  },
+  {
+    "file": "AUDIT_REPORT_COMPLETED.md",
+    "lines": 122,
+    "excerpts": [
+      "1: # Audit Global - Laundry Express SRC 2"
+    ]
+  },
+  {
+    "file": "CODE_REVIEW_PRODUCTION.md",
+    "lines": 277,
+    "excerpts": [
+      "1: # CODE REVIEW - PRODUCTION READINESS",
+      "14: # payment_service.py line 130-180",
+      "28: # payment.py line 70-75",
+      "42: # payment_service.py line 240-250",
+      "57: # payment_service.py line 290-340",
+      "72: # payment_service.py line 580-590",
+      "119: # In payment.py schema",
+      "128: # In payment_service.py",
+      "138: # Database migration"
+    ]
+  },
+  {
+    "file": "CORRIDOR_TRUTH_ENGINE_SPEC.md",
+    "lines": 614,
+    "excerpts": [
+      "1: # CORRIDOR TRUTH ENGINE — SPECIFICATION TECHNIQUE",
+      "21: ### 2.1 Preuve Opérationnelle (OperationalProof)",
+      "24: class OperationalProof(BaseModel):",
+      "26:     __tablename__ = \"operational_proofs\"",
+      "182:     def validate(self, transition: str, proofs: List[OperationalProof]) -> ValidationResult:",
+      "221:         proofs: Optional[List[OperationalProof]] = None,",
+      "301: CREATE TABLE operational_proofs (",
+      "325: CREATE INDEX idx_proofs_order ON operational_proofs(order_id);",
+      "326: CREATE INDEX idx_proofs_type ON operational_proofs(proof_type);"
+    ]
+  },
+  {
+    "file": "CREDENTIALS_COMPLETS.md",
+    "lines": 324,
+    "excerpts": [
+      "1: # 📋 CREDENTIALS COMPLETS - LAUNDRY EXPRESS SRC 2",
+      "21: # Email: admin@laundryexpress.cd",
+      "22: # Mot de passe: fourni via `SUPER_ADMIN_PASSWORD`",
+      "23: # Téléphone: +243810000000",
+      "24: # Nom: \"Super Administrateur\"",
+      "35: # Email: admin@laundryexpress.cd (configuré mais non créé automatiquement)",
+      "36: # Mot de passe: fourni explicitement via `ADMIN_PASSWORD`",
+      "52: # Types de partenaires :",
+      "53: # - LAUNDRY (Laverie)"
+    ]
+  },
+  {
+    "file": "CRITICAL_CTO_AUDIT.md",
+    "lines": 250,
+    "excerpts": [
+      "1: # CRITICAL CTO AUDIT - Laundry Express RDC-2",
+      "14: **VERDICT:** BROKEN - Critical business flows have unverified contracts, race conditions, and missing transactional safety.",
+      "26: - **P1:** Operational failure from deadlocked logistics coordination",
+      "60: **Priority:** P0 - OPERATIONAL DEADLOCK",
+      "129: **Priority:** P2 - OPERATIONAL OBSERVABILITY",
+      "240: **THIS SYSTEM IS NOT PRODUCTION READY.**",
+      "245: - Operational deadlocks in logistics"
+    ]
+  },
+  {
+    "file": "CRITICAL_FIXES.md",
+    "lines": 483,
+    "excerpts": [
+      "1: # CRITICAL PRODUCTION FIXES",
+      "46: # File: apps/api/app/schemas/payment.py",
+      "75: # File: apps/api/app/services/payment_service.py",
+      "154: # File: apps/api/app/repositories/payment_repository.py",
+      "169: # File: apps/api/app/services/webhook_validator.py",
+      "237: # File: apps/api/app/services/payment_service.py",
+      "302: # File: apps/api/app/api/routes/payments.py",
+      "380: # File: apps/api/app/services/atomic_dispatch_service.py"
+    ]
+  },
+  {
+    "file": "CRITICAL_FIXES_COMPLETE.md",
+    "lines": 419,
+    "excerpts": [
+      "1: # CRITICAL PRODUCTION FIXES - COMPLETE",
+      "29: # File: apps/api/app/services/atomic_dispatch_service.py",
+      "141: # File: apps/api/app/services/dispatch_service.py",
+      "305: # File: apps/api/app/models/payment.py",
+      "365: # File: apps/api/app/services/payment_service.py"
+    ]
+  },
+  {
+    "file": "DATABASE_SCHEMA.md",
+    "lines": 879,
+    "excerpts": [
+      "1: # Schéma de Base de Données - Laundry Express RDC"
+    ]
+  },
+  {
+    "file": "LOCAL_DEFAULT_CREDENTIALS.md",
+    "lines": 195,
+    "excerpts": [
+      "1: # Local Default Credentials",
+      "164: | `npm run test:driver-operational-corridor` | Gate unifiée : self-service + mission complète sans admin + invariants DB |",
+      "171: python scripts/verify_driver_operational_corridor.py",
+      "180:   api python /app/verify_driver_operational_corridor.py",
+      "185: Verdict attendu : **DRIVER OPERATIONAL CORRIDOR : PASS**."
+    ]
+  },
+  {
+    "file": "LOGISTICS_SYSTEM_AUDIT.md",
+    "lines": 459,
+    "excerpts": [
+      "1: # LOGISTICS SYSTEM AUDIT",
+      "36: **Impact:** Double assignment, operational conflict.",
+      "57: # Every status update reads, validates, updates without locking",
+      "59: # ... validation",
+      "70: # In assign_driver_to_task: driver.is_available = False",
+      "71: # In complete_task: driver.is_available = True",
+      "72: # In fail_task: driver.is_available = True",
+      "73: # In cancel_task: driver.is_available = True",
+      "108: # Par défaut: internal_first avec timeout de 30 minutes"
+    ]
+  },
+  {
+    "file": "MIGRATION_PLAN.md",
+    "lines": 542,
+    "excerpts": [
+      "1: # Plan de Migration - Laundry Express RDC",
+      "24: # Structure du projet",
+      "382: # tests/test_orders.py"
+    ]
+  },
+  {
+    "file": "MVP_FLOW_GO_NO_GO.md",
+    "lines": 132,
+    "excerpts": [
+      "1: # MVP Flow Go / No-Go",
+      "6: ## Verdict",
+      "8: GO WITH RESTRICTIONS",
+      "119: ## Remaining No-Go Areas",
+      "125: ## Operational Recommendation"
+    ]
+  },
+  {
+    "file": "NEXT_STEPS.md",
+    "lines": 325,
+    "excerpts": [
+      "1: # Prochaines Actions Immédiates - Laundry Express RDC",
+      "33: # Étape 1 - Setup backend minimal",
+      "160: # backend/scripts/migrate_from_localstorage.py"
+    ]
+  },
+  {
+    "file": "OPS_MINI_AUDIT.md",
+    "lines": 76,
+    "excerpts": [
+      "1: # Ops Mini Audit",
+      "4: Scope: fallback operational audit when staging target is not configured",
+      "6: ## Verdict",
+      "10: The staging path cannot advance in this environment because:",
+      "16: It is operational hardening around startup, health, and auditability.",
+      "26: ## What Still Looks Operationally Weak",
+      "71: - If staging env vars do not appear:",
+      "76: Since staging is not configured, the correct next step is a focused ops audit and readiness hardening pass, not another broad feature cycle."
+    ]
+  },
+  {
+    "file": "OPTIMIZATION_REPORT.md",
+    "lines": 96,
+    "excerpts": [
+      "1: # Rapport d'Optimisation du Build - Laundry Express RDC"
+    ]
+  },
+  {
+    "file": "ORDERS_SYSTEM_AUDIT.md",
+    "lines": 454,
+    "excerpts": [
+      "1: # ORDERS SYSTEM AUDIT",
+      "60: # Reads order",
+      "62: # Validates transition",
+      "65: # Updates order (NO LOCK)",
+      "76: # ... creates order with calculated price",
+      "77: # NO LOCK on partner pricing during this window",
+      "88: # ... continues with order creation",
+      "89: # If order creation fails after this point, points are lost forever",
+      "101: # Race window: Two concurrent requests both check, find nothing, both create"
+    ]
+  },
+  {
+    "file": "ORDER_STABILITY_VALIDATION_REPORT.md",
+    "lines": 48,
+    "excerpts": [
+      "1: # Order Stability Validation Report",
+      "45: - Remote staging has not been exercised yet; local Docker is not a substitute for staging data reality."
+    ]
+  },
+  {
+    "file": "ORDER_STABILIZATION_PLAN.md",
+    "lines": 258,
+    "excerpts": [
+      "1: # PLAN DE STABILISATION DU SYSTÈME DE COMMANDE"
+    ]
+  },
+  {
+    "file": "PAYMENTS_MODULE_CTO_VERDICT.md",
+    "lines": 196,
+    "excerpts": [
+      "1: # Verdict CTO - Module Payments",
+      "122: ## 5. Verdict Final 🎯",
+      "156: ### **Semaine 2: Production Ready**",
+      "196: **Verdict: MVP Backend Validé - Production Hardening En Cours**"
+    ]
+  },
+  {
+    "file": "PAYMENTS_MODULE_FINAL_REPORT.md",
+    "lines": 128,
+    "excerpts": [
+      "1: # Rapport Final - Module Payments",
+      "102: ## 5. Verdict Final"
+    ]
+  },
+  {
+    "file": "PAYMENT_SYSTEM_AUDIT.md",
+    "lines": 405,
+    "excerpts": [
+      "1: # PAYMENT SYSTEM AUDIT",
+      "27: # Race window: Two concurrent requests both check, find nothing, both create",
+      "76: # Called AFTER payment status update commit",
+      "77: # NOT in same transaction",
+      "110: # NO idempotency check for webhook events",
+      "111: # NO deduplication by provider_event_id",
+      "112: # Same webhook processed multiple times",
+      "204: # Update PaymentIntentCreate schema",
+      "209: # Update create_payment_intent"
+    ]
+  },
+  {
+    "file": "PILOT_BASELINE.md",
+    "lines": 155,
+    "excerpts": [
+      "1: # Pilot Baseline — Controlled Transactional Pilot",
+      "7: **Not:** `Fully production ready` / `Enterprise ready`",
+      "41: docker compose exec -T api sh -c \"API_BASE_URL=http://localhost:8000/api/v1 API_SMOKE_DATABASE_URL=postgresql://laundry_user:laundry_pass@db:5432/laundry_express python verify_driver_operational_corridor.py\"",
+      "52: DRIVER OPERATIONAL CORRIDOR       : PASS",
+      "88: ## Explicitly NO GO",
+      "120: 3. Ensure `Driver operational corridor gate` passes in the `truth-e2e` job."
+    ]
+  },
+  {
+    "file": "PLAN_EXECUTION_CTO.md",
+    "lines": 362,
+    "excerpts": [
+      "1: # PLAN D'EXÉCUTION ULTRA CONCRET - Laundry Express SRC 2",
+      "240: # Tests",
+      "243: # Migrations",
+      "246: # Logs",
+      "249: # Health check",
+      "255: # Développement",
+      "258: # Build",
+      "261: # Tests",
+      "264: # E2E"
+    ]
+  },
+  {
+    "file": "PRICING_ENGINE_SUMMARY.md",
+    "lines": 154,
+    "excerpts": [
+      "1: # Moteur de Pricing - Résumé d'Implémentation"
+    ]
+  },
+  {
+    "file": "PROMPT_EXECUTION_INTEGRATION.md",
+    "lines": 477,
+    "excerpts": [
+      "1: # PROMPT D'EXÉCUTION COMPLET - Laundry Express SRC 2",
+      "2: ## Phase Intégration Opérationnelle - Transformation Engineering MVP → Operational MVP STAGING READY",
+      "10: **Mission** : Transformer l'état actuel du projet (Engineering MVP) en **Operational MVP STAGING READY**.",
+      "57: 9. **Ne jamais conclure \"production ready\" sans validation E2E** - Objectif : staging ready",
+      "154: # Vérifier logs erreurs",
+      "157: # Tester routes manuelles",
+      "175: # Fixture correcte",
+      "181: # Test auth corrigé",
+      "198: # Dans les services"
+    ]
+  },
+  {
+    "file": "PROOF_STATUS_NEXT_STEP.md",
+    "lines": 134,
+    "excerpts": [
+      "1: # Proof Status / Next Step",
+      "6: ## Verdict",
+      "46: - Full operational audit-trail coverage across the whole platform",
+      "100: ## If Staging Is Not Available Yet",
+      "104: 1. Operational mini-audit",
+      "117: - If staging credentials cannot be provided now:",
+      "134: The next correct move is a focused staging-readiness mini-audit, not another open-ended local build cycle."
+    ]
+  },
+  {
+    "file": "README.md",
+    "lines": 20,
+    "excerpts": [
+      "5: # Run and deploy your AI Studio app"
+    ]
+  },
+  {
+    "file": "README_DOCKER.md",
+    "lines": 549,
+    "excerpts": [
+      "1: # Laundry Express RDC - Docker Setup",
+      "27: # Copier le fichier d'environnement",
+      "30: # Éditer les variables si nécessaire",
+      "31: # nano .env  # ou utiliser VS Code",
+      "87: # Démarrer tous les services",
+      "90: # Démarrer en arrière-plan",
+      "93: # Arrêter tous les services",
+      "96: # Reconstruire et démarrer",
+      "99: # Voir les logs"
+    ]
+  },
+  {
+    "file": "ROLE_ACCESS_DRIFT_REPORT.md",
+    "lines": 64,
+    "excerpts": [
+      "1: # Role Access Drift Report",
+      "6: ## Verdict"
+    ]
+  },
+  {
+    "file": "SECURITY_AUDIT_FINAL_REPORT.md",
+    "lines": 185,
+    "excerpts": [
+      "1: # Rapport Final d'Audit de Sécurité - Laundry Express RDC 2",
+      "164: # Vérifier l'état des services",
+      "167: # Tester l'API",
+      "171: # Accéder à l'interface",
+      "172: # Adminer (DB): http://localhost:8080",
+      "173: # Mailpit (Emails): http://localhost:8025",
+      "174: # API Docs: http://localhost:18000/docs",
+      "175: # Frontend: http://localhost:5173"
+    ]
+  },
+  {
+    "file": "SECURITY_FIXES_SUMMARY.md",
+    "lines": 122,
+    "excerpts": [
+      "1: # Résumé des Corrections de Sécurité - Laundry Express RDC 2"
+    ]
+  },
+  {
+    "file": "STAGING_FLOW_RESULT_INTERPRETATION.md",
+    "lines": 331,
+    "excerpts": [
+      "1: # Staging Flow Result Interpretation",
+      "10: `test:staging-flows` is not a certification tool.",
+      "11: It is a first-pass runtime verdict tool for five critical flows:",
+      "20: The goal is to classify each `NO-GO` into the right family of root cause and choose the smallest safe fix.",
+      "174: - `AUTH NO-GO: /auth/register returned 422`",
+      "176: - `AUTH NO-GO: /auth/login returned 401 after successful register`",
+      "178: - `AUTH NO-GO: /auth/me returned 401 after login`",
+      "198: - `ORDER NO-GO: catalog partners list is empty`",
+      "200: - `ORDER NO-GO: create_address returned 403`"
+    ]
+  },
+  {
+    "file": "STAGING_GATE_REPORT.md",
+    "lines": 66,
+    "excerpts": [
+      "1: # Staging Gate Report",
+      "6: ## Verdict",
+      "8: GO WITH RESTRICTIONS",
+      "33: - The admin activity page is now backend-backed and already records reads plus selected financial admin events, but audit-log producer coverage is still partial for strong operational audit claims.",
+      "40: - Several admin configuration modules are backend-real but still prove scoped contracts more than full operational engines; see [ADMIN_SURFACE_TRUTH_MATRIX.md](/workspace/ADMIN_SURFACE_TRUTH_MATRIX.md).",
+      "66: - Do not call the system production-ready from this report alone."
+    ]
+  },
+  {
+    "file": "STAGING_HANDOFF.md",
+    "lines": 97,
+    "excerpts": [
+      "1: # Staging Handoff",
+      "46: - if `STAGING_*` remote variables do not exist, the only valid oracle is the local simulation target",
+      "74: - `test:staging-flows` executes the 5 real flows against the remote target and returns `GO` or `NO-GO`",
+      "76: - if `check:staging-prereqs` says required `STAGING_*` are missing, do not rerun the remote harness again until the target is configured",
+      "86: 6. Classify each `NO-GO` by:",
+      "95: - If staging target variables are missing: `NO-GO`",
+      "96: - If migration or browser walkthrough is unproven on staging: `GO WITH RESTRICTIONS`"
+    ]
+  },
+  {
+    "file": "STAGING_RUN_REPORT_TEMPLATE.md",
+    "lines": 200,
+    "excerpts": [
+      "1: # Staging Run Report Template",
+      "11: ## Run Verdict",
+      "13: Overall verdict:",
+      "15: - `NO-GO`",
+      "17: Promotion verdict:",
+      "19: - `GO WITH RESTRICTIONS`",
+      "20: - `NO-GO`",
+      "24: > Example: `NO-GO because the first primary blocker is an order contract failure on POST /orders after auth succeeds.`",
+      "66: - Verdict: `GO / NO-GO`"
+    ]
+  },
+  {
+    "file": "START_PHASE1.md",
+    "lines": 391,
+    "excerpts": [
+      "1: # Phase 1 - Fondations - PRÊTE À L'EMPLOI 🚀",
+      "82: # Créer un utilisateur",
+      "92: # Se connecter",
+      "135: # Appliquer la migration initiale",
+      "138: # Créer une nouvelle migration",
+      "141: # Vérifier l'état",
+      "195: # API",
+      "198: # PostgreSQL",
+      "201: # Redis"
+    ]
+  },
+  {
+    "file": "TESTS_MVP_AUDIT.md",
+    "lines": 88,
+    "excerpts": [
+      "1: # Tests MVP Audit",
+      "6: ## Verdict",
+      "32: | Fichier | Verdict | Evidence |"
+    ]
+  },
+  {
+    "file": "VALIDATION_FACTUELLE.md",
+    "lines": 241,
+    "excerpts": [
+      "1: # VALIDATION FACTUELLE ET EXÉCUTÉE - Hybrid Dispatch + Marketplace",
+      "98: # GET /api/v1/marketplace/companies",
+      "99: # POST /api/v1/marketplace/companies",
+      "100: # GET /api/v1/marketplace/companies/{company_id}",
+      "101: # PUT /api/v1/marketplace/companies/{company_id}",
+      "102: # GET /api/v1/marketplace/tasks",
+      "103: # POST /api/v1/marketplace/tasks/{task_id}/claim",
+      "104: # POST /api/v1/marketplace/tasks/{task_id}/assign-driver",
+      "109: # GET /api/v1/dispatch-settings"
+    ]
+  },
+  {
+    "file": "VALIDATION_HYBRID_DISPATCH.md",
+    "lines": 270,
+    "excerpts": [
+      "1: # Validation du système Hybrid Dispatch + Marketplace",
+      "99: # Appliquer la migration",
+      "103: # Vérifier le statut",
+      "106: # Rollback si nécessaire",
+      "137: # Démarrer le serveur",
+      "141: # Tester les endpoints",
+      "201: # 1. Appliquer la migration",
+      "204: # 2. Démarrer les services",
+      "207: # 3. Créer des données de test"
+    ]
+  },
+  {
+    "file": "VALIDATION_TECHNIQUE_PHASE1.md",
+    "lines": 400,
+    "excerpts": [
+      "1: # VALIDATION TECHNIQUE PHASE 1 - AUDIT CRITIQUE",
+      "29: # 1. Tester build individuel",
+      "32: # 2. Vérifier ports disponibles",
+      "36: # 3. Tester health checks",
+      "62: # 1. Tester la migration",
+      "65: # 2. Vérifier les tables créées",
+      "68: # 3. Tester la connexion",
+      "87: # Dans app/schemas/user.py",
+      "91: # Dans app/api/routes/auth.py - register() accepte ANY role du payload!"
+    ]
+  },
+  {
+    "file": "VERDICT_CTO_FINAL.md",
+    "lines": 214,
+    "excerpts": [
+      "1: # VERDICT CTO FINAL - Laundry Express SRC 2",
+      "158: ## 🎖️ VERDICT FINAL"
+    ]
+  },
+  {
+    "file": "docs/marketing-ai-growth-platform-v1.md",
+    "lines": 405,
+    "excerpts": [
+      "1: # Laundry Express Marketing & AI Growth Platform V1",
+      "403: ## Verdict"
+    ]
+  },
+  {
+    "file": "docs/pilot-measurement-operating-model.md",
+    "lines": 152,
+    "excerpts": [
+      "1: # Pilot Measurement Operating Model",
+      "17: - freeze new operational workflows;",
+      "95: | Daily | Check the 10 pilot KPIs | Pilot lead | GO/WATCH/STOP snapshot |",
+      "97: | Monthly | Decide GO / HOLD / SCALE | Leadership | Scale decision based on field data |",
+      "150: ## Verdict"
+    ]
+  },
+  {
+    "file": "docs/pr-growth-v1-contract-audit.md",
+    "lines": 63,
+    "excerpts": [
+      "1: # PR Checklist - Growth Engine V1"
+    ]
+  },
+  {
+    "file": "docs/sprints/growth-v1.1-e2e.md",
+    "lines": 57,
+    "excerpts": [
+      "1: # Sprint Growth V1.1 - E2E Contracts"
+    ]
+  }
+]
